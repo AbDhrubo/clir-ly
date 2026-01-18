@@ -1,0 +1,8 @@
+*.pyc
+__pycache__/
+venv/
+.env
+*.csv  # except queries.csv
+*.json  # except config files
+models/  # downloaded models
+index/  # generated indexes
