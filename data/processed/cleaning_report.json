@@ -1,0 +1,121 @@
+{
+  "before": {
+    "total_articles": 5710,
+    "by_language": {
+      "bn": 2786,
+      "en": 2924
+    },
+    "by_source": {
+      "bangla_tribune": 207,
+      "bdnews24": 74,
+      "thedailystar": 5,
+      "daily_star": 687,
+      "daily_sun": 127,
+      "dhaka_post": 95,
+      "dhaka_tribune": 505,
+      "kaler_kantho": 4,
+      "newage": 1552,
+      "new_nation": 48,
+      "prothomalo": 5,
+      "prothom_alo": 2401
+    },
+    "by_source_language": {
+      "bangla_tribune_bn": 207,
+      "bdnews24_bn": 74,
+      "thedailystar_en": 5,
+      "daily_star_en": 687,
+      "daily_sun_en": 127,
+      "dhaka_post_bn": 95,
+      "dhaka_tribune_en": 505,
+      "kaler_kantho_bn": 4,
+      "newage_en": 1552,
+      "new_nation_en": 48,
+      "prothomalo_bn": 5,
+      "prothom_alo_bn": 2401
+    },
+    "token_stats": {
+      "total": 2259344,
+      "min": 11,
+      "max": 4505,
+      "avg": 395.6819614711033
+    },
+    "date_range": {
+      "earliest": "2025-10-10",
+      "latest": "2026-01-19T22:32:25.498000"
+    }
+  },
+  "after": {
+    "total_articles": 5062,
+    "by_language": {
+      "bn": 2537,
+      "en": 2525
+    },
+    "by_source": {
+      "bangla_tribune": 203,
+      "bdnews24": 74,
+      "thedailystar": 5,
+      "daily_star": 683,
+      "daily_sun": 126,
+      "dhaka_post": 95,
+      "dhaka_tribune": 157,
+      "kaler_kantho": 4,
+      "newage": 1511,
+      "new_nation": 43,
+      "prothomalo": 5,
+      "prothom_alo": 2156
+    },
+    "by_source_language": {
+      "bangla_tribune_bn": 203,
+      "bdnews24_bn": 74,
+      "thedailystar_en": 5,
+      "daily_star_en": 683,
+      "daily_sun_en": 126,
+      "dhaka_post_bn": 95,
+      "dhaka_tribune_en": 157,
+      "kaler_kantho_bn": 4,
+      "newage_en": 1511,
+      "new_nation_en": 43,
+      "prothomalo_bn": 5,
+      "prothom_alo_bn": 2156
+    },
+    "token_stats": {
+      "total": 2198508,
+      "min": 50,
+      "max": 4505,
+      "avg": 434.31608060055316
+    },
+    "date_range": {
+      "earliest": "2025-10-10",
+      "latest": "2026-01-19"
+    }
+  },
+  "cleaning": {
+    "articles_processed": 5074,
+    "articles_removed": 648,
+    "duplicates_removed": 12,
+    "short_articles_removed": 636,
+    "empty_articles_removed": 0
+  },
+  "metrics": {
+    "articles": {
+      "before": 5710,
+      "after": 5062,
+      "removed": 648,
+      "retention_rate": 88.65148861646234
+    },
+    "tokens": {
+      "before_total": 2259344,
+      "after_total": 2198508,
+      "before_avg": 395.6819614711033,
+      "after_avg": 434.31608060055316
+    },
+    "cleaning_details": {
+      "articles_processed": 5074,
+      "articles_removed": 648,
+      "duplicates_removed": 12,
+      "short_articles_removed": 636,
+      "empty_articles_removed": 0
+    }
+  },
+  "generated_at": "2026-01-19T22:52:13.266445"
+}

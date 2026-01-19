@@ -77,6 +77,7 @@ class BaseCrawler(ABC):
         self,
         limit: int = 250,
         categories: Optional[List[str]] = None,
+        max_pages: int = 50,
     ) -> int:
         """
         Crawl articles from this news source.
@@ -84,6 +85,7 @@ class BaseCrawler(ABC):
         Args:
             limit: Maximum number of articles to crawl
             categories: Categories to crawl (default: all)
+            max_pages: Maximum pages to crawl per category (default: 50)
         
         Returns:
             Number of articles crawled
@@ -103,7 +105,7 @@ class BaseCrawler(ABC):
             logger.info(f"[{self.SOURCE_NAME}] Crawling category: {category}")
             category_count = 0
             
-            for article_url in self.discover_article_urls(category):
+            for article_url in self.discover_article_urls(category, max_pages=max_pages):
                 if category_count >= articles_per_category or total_crawled >= limit:
                     break
                 
