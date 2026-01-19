@@ -1,1 +1,30 @@
- 
+# Web Crawling
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+
+# Cloudflare Bypass
+cloudscraper>=1.2.71
+
+# Tavily API (for heavily protected sites)
+tavily-python>=0.3.0
+python-dotenv>=1.0.0
+
+# Browser Automation (for Cloudflare-protected sites)
+selenium>=4.15.0
+webdriver-manager>=4.0.0
+
+# Progress & CLI
+tqdm>=4.66.0
+
+# Date parsing
+python-dateutil>=2.8.2
+
+# Language detection
+langdetect>=1.0.9
+
+# NLP (for tokenization & NER)
+spacy>=3.7.0
+
+# Embeddings (optional, for later modules)
+# sentence-transformers>=2.2.0

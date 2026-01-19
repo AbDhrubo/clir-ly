@@ -6,3 +6,19 @@ venv/
 *.json  # except config files
 models/  # downloaded models
 index/  # generated indexes
+crawl_20260119_001608.log
+crawl_20260119_001636.log
+crawl_20260119_002142.log
+crawl_20260119_002348.log
+crawl_20260119_003035.log
+data/raw/bangla_tribune_articles.jsonl
+data/raw/bdnews24_articles.jsonl
+data/raw/crawl_progress.json
+data/raw/crawler.log
+data/raw/daily_star_articles.jsonl
+data/raw/daily_sun_articles.jsonl
+data/raw/dhaka_post_articles.jsonl
+data/raw/dhaka_tribune_articles.jsonl
+data/raw/newage_articles.jsonl
+data/raw/new_nation_articles.jsonl
+data/raw/prothom_alo_articles.jsonl
