@@ -25,6 +25,13 @@ langdetect>=1.0.9
 
 # NLP (for tokenization & NER)
 spacy>=3.7.0
+transformers>=4.36.0
+torch>=2.0.0
+
+# Data formats
+pyarrow>=14.0.0
+pandas>=2.0.0
 
 # Embeddings (optional, for later modules)
 # sentence-transformers>=2.2.0
+
