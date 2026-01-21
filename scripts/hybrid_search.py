@@ -136,37 +136,37 @@ def search_hybrid(
     
     # === Strategy 3: Semantic ===
     semantic_scores = {}
-    query_embedding = embedding_model.encode(normalized_query, convert_to_tensor=True)
+    query_embedding = embedding_model.encode(normalized_query)
     
     if detected_lang == 'en':
         en_texts = [f"{d['title']} {d['body']}" for d in indexes['en_docs']]
         if en_texts:
-            en_embeddings = embedding_model.encode(en_texts, convert_to_tensor=True)
+            en_embeddings = embedding_model.encode(en_texts)
             similarities = cosine_similarity([query_embedding], en_embeddings)[0]
             for idx, score in enumerate(similarities):
                 semantic_scores[('en', idx)] = score * 100
         
         if translated_query:
-            query_embedding_bn = embedding_model.encode(translated_query, convert_to_tensor=True)
+            query_embedding_bn = embedding_model.encode(translated_query)
             bn_texts = [f"{d['title']} {d['body']}" for d in indexes['bn_docs']]
             if bn_texts:
-                bn_embeddings = embedding_model.encode(bn_texts, convert_to_tensor=True)
+                bn_embeddings = embedding_model.encode(bn_texts)
                 similarities = cosine_similarity([query_embedding_bn], bn_embeddings)[0]
                 for idx, score in enumerate(similarities):
                     semantic_scores[('bn', idx)] = score * 100
     else:
         bn_texts = [f"{d['title']} {d['body']}" for d in indexes['bn_docs']]
         if bn_texts:
-            bn_embeddings = embedding_model.encode(bn_texts, convert_to_tensor=True)
+            bn_embeddings = embedding_model.encode(bn_texts)
             similarities = cosine_similarity([query_embedding], bn_embeddings)[0]
             for idx, score in enumerate(similarities):
                 semantic_scores[('bn', idx)] = score * 100
         
         if translated_query:
-            query_embedding_en = embedding_model.encode(translated_query, convert_to_tensor=True)
+            query_embedding_en = embedding_model.encode(translated_query)
             en_texts = [f"{d['title']} {d['body']}" for d in indexes['en_docs']]
             if en_texts:
-                en_embeddings = embedding_model.encode(en_texts, convert_to_tensor=True)
+                en_embeddings = embedding_model.encode(en_texts)
                 similarities = cosine_similarity([query_embedding_en], en_embeddings)[0]
                 for idx, score in enumerate(similarities):
                     semantic_scores[('en', idx)] = score * 100

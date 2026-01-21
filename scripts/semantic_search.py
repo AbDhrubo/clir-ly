@@ -56,7 +56,7 @@ def search_crosslingual(docs: List[Dict], query: str, query_lang: str, model, k:
     bn_results = []
     
     # Encode query
-    query_embedding = model.encode(normalized_query, convert_to_tensor=True)
+    query_embedding = model.encode(normalized_query)
     
     # Search 1: Original language
     if detected_lang == 'en':
@@ -65,7 +65,7 @@ def search_crosslingual(docs: List[Dict], query: str, query_lang: str, model, k:
         if en_docs_list:
             # Encode English docs
             en_texts = [f"{doc['title']} {doc['body']}" for _, doc in en_docs_list]
-            en_embeddings = model.encode(en_texts, convert_to_tensor=True)
+            en_embeddings = model.encode(en_texts)
             
             # Calculate similarity
             similarities = cosine_similarity([query_embedding], en_embeddings)[0]
@@ -90,11 +90,11 @@ def search_crosslingual(docs: List[Dict], query: str, query_lang: str, model, k:
             bn_docs_list = [(i, doc) for i, doc in enumerate(docs) if doc.get('language') == 'bn']
             if bn_docs_list:
                 # Encode translated query
-                query_embedding_bn = model.encode(translated_query, convert_to_tensor=True)
+                query_embedding_bn = model.encode(translated_query)
                 
                 # Encode Bangla docs
                 bn_texts = [f"{doc['title']} {doc['body']}" for _, doc in bn_docs_list]
-                bn_embeddings = model.encode(bn_texts, convert_to_tensor=True)
+                bn_embeddings = model.encode(bn_texts)
                 
                 # Calculate similarity
                 similarities = cosine_similarity([query_embedding_bn], bn_embeddings)[0]
@@ -118,7 +118,7 @@ def search_crosslingual(docs: List[Dict], query: str, query_lang: str, model, k:
         bn_docs_list = [(i, doc) for i, doc in enumerate(docs) if doc.get('language') == 'bn']
         if bn_docs_list:
             bn_texts = [f"{doc['title']} {doc['body']}" for _, doc in bn_docs_list]
-            bn_embeddings = model.encode(bn_texts, convert_to_tensor=True)
+            bn_embeddings = model.encode(bn_texts)
             
             similarities = cosine_similarity([query_embedding], bn_embeddings)[0]
             sorted_indices = sorted(range(len(similarities)), key=lambda i: similarities[i], reverse=True)
@@ -139,10 +139,10 @@ def search_crosslingual(docs: List[Dict], query: str, query_lang: str, model, k:
         if translated_query:
             en_docs_list = [(i, doc) for i, doc in enumerate(docs) if doc.get('language') == 'en']
             if en_docs_list:
-                query_embedding_en = model.encode(translated_query, convert_to_tensor=True)
+                query_embedding_en = model.encode(translated_query)
                 
                 en_texts = [f"{doc['title']} {doc['body']}" for _, doc in en_docs_list]
-                en_embeddings = model.encode(en_texts, convert_to_tensor=True)
+                en_embeddings = model.encode(en_texts)
                 
                 similarities = cosine_similarity([query_embedding_en], en_embeddings)[0]
                 sorted_indices = sorted(range(len(similarities)), key=lambda i: similarities[i], reverse=True)
