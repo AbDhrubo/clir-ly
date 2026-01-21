@@ -1,0 +1,4247 @@
+{
+  "Bangladesh": {
+    "en": "Bangladesh",
+    "bn": "বাংলাদেশ",
+    "type": "LOC"
+  },
+  "Dhaka": {
+    "en": "Dhaka",
+    "bn": "ঢাকা",
+    "type": "LOC"
+  },
+  "বাংলাদেশ": {
+    "en": "Bangladesh",
+    "bn": "বাংলাদেশ",
+    "type": "LOC"
+  },
+  "ঢাকা": {
+    "en": "Dhaka",
+    "bn": "ঢাকা",
+    "type": "LOC"
+  },
+  "US": {
+    "en": "United States",
+    "bn": "যুক্তরাষ্ট্র",
+    "type": "LOC"
+  },
+  "BNP": {
+    "en": "Bangladesh Nationalist Party",
+    "bn": "বাংলাদেশ জাতীয়তাবাদী দল",
+    "type": "ORG"
+  },
+  "জাতীয": {
+    "en": "National",
+    "bn": "জাতীয়",
+    "type": "MISC"
+  },
+  "Tk": {
+    "en": "Taka",
+    "bn": "টাকা",
+    "type": "MISC"
+  },
+  "রহমান": {
+    "en": "Rahman",
+    "bn": "রহমান",
+    "type": "PERSON"
+  },
+  "United States": {
+    "en": "United States",
+    "bn": "যুক্তরাষ্ট্র",
+    "type": "LOC"
+  },
+  "উপজেলার": {
+    "en": "Upazila",
+    "bn": "উপজেলা",
+    "type": "NOISE"
+  },
+  "Donald Trump": {
+    "en": "Donald Trump",
+    "bn": "ডোনাল্ড ট্রাম্প",
+    "type": "PERSON"
+  },
+  "India": {
+    "en": "India",
+    "bn": "ভারত",
+    "type": "LOC"
+  },
+  "ইসলাম": {
+    "en": "Islam",
+    "bn": "ইসলাম",
+    "type": "PERSON"
+  },
+  "বাংলাদেশের": {
+    "en": "Bangladesh",
+    "bn": "বাংলাদেশ",
+    "type": "LOC"
+  },
+  "চটটগরাম": {
+    "en": "Chattogram",
+    "bn": "চট্টগ্রাম",
+    "type": "LOC"
+  },
+  "Election Commission": {
+    "en": "Election Commission",
+    "bn": "নির্বাচন কমিশন",
+    "type": "ORG"
+  },
+  "Trump": {
+    "en": "Donald Trump",
+    "bn": "ট্রাম্প",
+    "type": "PERSON"
+  },
+  "Bangladeshi": {
+    "en": "Bangladeshi",
+    "bn": "বাংলাদেশি",
+    "type": "MISC"
+  },
+  "ঢাকার": {
+    "en": "Dhaka",
+    "bn": "ঢাকা",
+    "type": "LOC"
+  },
+  "Tarique Rahman": {
+    "en": "Tarique Rahman",
+    "bn": "তারেক রহমান",
+    "type": "PERSON"
+  },
+  "তরযোদশ": {
+    "en": "Thirteenth",
+    "bn": "ত্রয়োদশ",
+    "type": "MISC"
+  },
+  "মোহামমদ": {
+    "en": "Mohammad",
+    "bn": "মোহাম্মদ",
+    "type": "PERSON"
+  },
+  "যকতরাষটর": {
+    "en": "United States",
+    "bn": "যুক্তরাষ্ট্র",
+    "type": "LOC"
+  },
+  "AFP": {
+    "en": "Agence France-Presse",
+    "bn": "এএফপি",
+    "type": "ORG"
+  },
+  "হোসেন": {
+    "en": "Hossain",
+    "bn": "হোসেন",
+    "type": "PERSON"
+  },
+  "China": {
+    "en": "China",
+    "bn": "চীন",
+    "type": "LOC"
+  },
+  "যকতরাষটরের": {
+    "en": "United States",
+    "bn": "যুক্তরাষ্ট্র",
+    "type": "LOC"
+  },
+  "ঢাকায": {
+    "en": "Dhaka",
+    "bn": "ঢাকা",
+    "type": "LOC"
+  },
+  "জেলা": {
+    "en": "District",
+    "bn": "জেলা",
+    "type": "NOISE"
+  },
+  "Chattogram": {
+    "en": "Chattogram",
+    "bn": "চট্টগ্রাম",
+    "type": "LOC"
+  },
+  "ডোনালড": {
+    "en": "Donald",
+    "bn": "ডোনাল্ড",
+    "type": "PERSON"
+  },
+  "Bangladesh Nationalist Party": {
+    "en": "Bangladesh Nationalist Party",
+    "bn": "বাংলাদেশ জাতীয়তাবাদী দল",
+    "type": "ORG"
+  },
+  "Awami League": {
+    "en": "Awami League",
+    "bn": "আওয়ামী লীগ",
+    "type": "ORG"
+  },
+  "Washington": {
+    "en": "Washington",
+    "bn": "ওয়াশিংটন",
+    "type": "LOC"
+  },
+  "ের": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "আহমেদ": {
+    "en": "Ahmed",
+    "bn": "আহমেদ",
+    "type": "PERSON"
+  },
+  "ভারত": {
+    "en": "India",
+    "bn": "ভারত",
+    "type": "LOC"
+  },
+  "ইউনিযনের": {
+    "en": "Union",
+    "bn": "ইউনিয়ন",
+    "type": "NOISE"
+  },
+  "বাংলাদেশে": {
+    "en": "Bangladesh",
+    "bn": "বাংলাদেশ",
+    "type": "LOC"
+  },
+  "National Citizen Party": {
+    "en": "National Citizen Party",
+    "bn": "জাতীয় নাগরিক কমিটি",
+    "type": "ORG"
+  },
+  "হাসান": {
+    "en": "Hasan",
+    "bn": "হাসান",
+    "type": "PERSON"
+  },
+  "The Daily Star": {
+    "en": "The Daily Star",
+    "bn": "দ্য ডেইলি স্টার",
+    "type": "ORG"
+  },
+  "নিরবাচন": {
+    "en": "Election",
+    "bn": "নির্বাচন",
+    "type": "NOISE"
+  },
+  "World Cup": {
+    "en": "World Cup",
+    "bn": "বিশ্বকাপ",
+    "type": "MISC"
+  },
+  "Indian": {
+    "en": "Indian",
+    "bn": "ভারতীয়",
+    "type": "MISC"
+  },
+  "বিশববিদযালযের": {
+    "en": "University",
+    "bn": "বিশ্ববিদ্যালয়",
+    "type": "NOISE"
+  },
+  "EC": {
+    "en": "Election Commission",
+    "bn": "নির্বাচন কমিশন",
+    "type": "ORG"
+  },
+  "Sylhet": {
+    "en": "Sylhet",
+    "bn": "সিলেট",
+    "type": "LOC"
+  },
+  "টরামপ": {
+    "en": "Trump",
+    "bn": "ট্রাম্প",
+    "type": "PERSON"
+  },
+  "Bangladesh Bank": {
+    "en": "Bangladesh Bank",
+    "bn": "বাংলাদেশ ব্যাংক",
+    "type": "ORG"
+  },
+  "NCP": {
+    "en": "Nationalist Congress Party",
+    "bn": "এনসিপি",
+    "type": "ORG"
+  },
+  "বিএনপির": {
+    "en": "Bangladesh Nationalist Party",
+    "bn": "বিএনপি",
+    "type": "ORG"
+  },
+  "মো.": {
+    "en": "Mohammad",
+    "bn": "মো.",
+    "type": "PERSON"
+  },
+  "Pakistan": {
+    "en": "Pakistan",
+    "bn": "পাকিস্তান",
+    "type": "LOC"
+  },
+  "Rangpur": {
+    "en": "Rangpur",
+    "bn": "রংপুর",
+    "type": "LOC"
+  },
+  "তারেক": {
+    "en": "Tarique",
+    "bn": "তারেক",
+    "type": "PERSON"
+  },
+  "রাজশাহী": {
+    "en": "Rajshahi",
+    "bn": "রাজশাহী",
+    "type": "LOC"
+  },
+  "ভারতের": {
+    "en": "India",
+    "bn": "ভারত",
+    "type": "LOC"
+  },
+  "ইরানে": {
+    "en": "Iran",
+    "bn": "ইরান",
+    "type": "LOC"
+  },
+  "Khaleda Zia": {
+    "en": "Khaleda Zia",
+    "bn": "খালেদা জিয়া",
+    "type": "PERSON"
+  },
+  "দকষিণ": {
+    "en": "South",
+    "bn": "দক্ষিণ",
+    "type": "LOC"
+  },
+  "খান": {
+    "en": "Khan",
+    "bn": "খান",
+    "type": "PERSON"
+  },
+  "Jamaat-e-Islami": {
+    "en": "Jamaat-e-Islami",
+    "bn": "জামায়াতে ইসলামী",
+    "type": "ORG"
+  },
+  "Venezuela": {
+    "en": "Venezuela",
+    "bn": "ভেনিজুয়েলা",
+    "type": "LOC"
+  },
+  "Tarique": {
+    "en": "Tarique",
+    "bn": "তারেক",
+    "type": "PERSON"
+  },
+  "ইরানের": {
+    "en": "Iran",
+    "bn": "ইরান",
+    "type": "LOC"
+  },
+  "Gulshan": {
+    "en": "Gulshan",
+    "bn": "গুলশান",
+    "type": "LOC"
+  },
+  "European": {
+    "en": "European",
+    "bn": "ইউরোপীয়",
+    "type": "MISC"
+  },
+  "ার": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "Jamaat": {
+    "en": "Jamaat-e-Islami",
+    "bn": "জামায়াতে ইসলামী",
+    "type": "ORG"
+  },
+  "Iran": {
+    "en": "Iran",
+    "bn": "ইরান",
+    "type": "LOC"
+  },
+  "বিডিনিউজ": {
+    "en": "bdnews24",
+    "bn": "বিডিনিউজ২৪",
+    "type": "ORG"
+  },
+  "Rajshahi": {
+    "en": "Rajshahi",
+    "bn": "রাজশাহী",
+    "type": "LOC"
+  },
+  "Dhaka University": {
+    "en": "University of Dhaka",
+    "bn": "ঢাকা বিশ্ববিদ্যালয়",
+    "type": "ORG"
+  },
+  "American": {
+    "en": "American",
+    "bn": "মার্কিন",
+    "type": "MISC"
+  },
+  "থানার": {
+    "en": "Police Station",
+    "bn": "থানা",
+    "type": "NOISE"
+  },
+  "ইরান": {
+    "en": "Iran",
+    "bn": "ইরান",
+    "type": "LOC"
+  },
+  "Sri Lanka": {
+    "en": "Sri Lanka",
+    "bn": "শ্রীলঙ্কা",
+    "type": "LOC"
+  },
+  "উপজেলা": {
+    "en": "Upazila",
+    "bn": "উপজেলা",
+    "type": "NOISE"
+  },
+  "মহামমদ": {
+    "en": "Mohammad",
+    "bn": "মোহাম্মদ",
+    "type": "PERSON"
+  },
+  "জাতীয সংসদ নিরবাচনে": {
+    "en": "National Parliament Election",
+    "bn": "জাতীয় সংসদ নির্বাচন",
+    "type": "MISC"
+  },
+  "রাজ": {
+    "en": "Raj",
+    "bn": "রাজ",
+    "type": "PERSON"
+  },
+  "আলম": {
+    "en": "Alam",
+    "bn": "আলম",
+    "type": "PERSON"
+  },
+  "দেশের": {
+    "en": "Country",
+    "bn": "দেশ",
+    "type": "NOISE"
+  },
+  "আনতরজাতিক": {
+    "en": "International",
+    "bn": "আন্তর্জাতিক",
+    "type": "MISC"
+  },
+  "Europe": {
+    "en": "Europe",
+    "bn": "ইউরোপ",
+    "type": "LOC"
+  },
+  "Russia": {
+    "en": "Russia",
+    "bn": "রাশিয়া",
+    "type": "LOC"
+  },
+  "এনপি": {
+    "en": "BNP",
+    "bn": "বিএনপি",
+    "type": "ORG"
+  },
+  "ICC": {
+    "en": "International Cricket Council",
+    "bn": "আইসিসি",
+    "type": "ORG"
+  },
+  "London": {
+    "en": "London",
+    "bn": "লন্ডন",
+    "type": "LOC"
+  },
+  "বেগম": {
+    "en": "Begum",
+    "bn": "বেগম",
+    "type": "PERSON"
+  },
+  "রংপর": {
+    "en": "Rangpur",
+    "bn": "রংপুর",
+    "type": "LOC"
+  },
+  "মারকিন": {
+    "en": "American",
+    "bn": "মার্কিন",
+    "type": "MISC"
+  },
+  "Islamic": {
+    "en": "Islamic",
+    "bn": "ইসলামী",
+    "type": "MISC"
+  },
+  "আলী": {
+    "en": "Ali",
+    "bn": "আলী",
+    "type": "PERSON"
+  },
+  "বিশববিদযালয": {
+    "en": "University",
+    "bn": "বিশ্ববিদ্যালয়",
+    "type": "NOISE"
+  },
+  "জেলার": {
+    "en": "District",
+    "bn": "জেলা",
+    "type": "NOISE"
+  },
+  "রোববার": {
+    "en": "Sunday",
+    "bn": "রবিবার",
+    "type": "MISC"
+  },
+  "Muhammad Yunus": {
+    "en": "Muhammad Yunus",
+    "bn": "মুহাম্মদ ইউনূস",
+    "type": "PERSON"
+  },
+  "New Age": {
+    "en": "New Age",
+    "bn": "নিজে এজ",
+    "type": "ORG"
+  },
+  "আবদল": {
+    "en": "Abdul",
+    "bn": "আবদুল",
+    "type": "PERSON"
+  },
+  "সিলেট": {
+    "en": "Sylhet",
+    "bn": "সিলেট",
+    "type": "LOC"
+  },
+  "Chinese": {
+    "en": "Chinese",
+    "bn": "চীনা",
+    "type": "MISC"
+  },
+  "Nicolas Maduro": {
+    "en": "Nicolas Maduro",
+    "bn": "নিকোলাস মাদুরো",
+    "type": "PERSON"
+  },
+  "France": {
+    "en": "France",
+    "bn": "ফ্রান্স",
+    "type": "LOC"
+  },
+  "European Union": {
+    "en": "European Union",
+    "bn": "ইউরোপীয় ইউনিয়ন",
+    "type": "ORG"
+  },
+  "থানা": {
+    "en": "Police Station",
+    "bn": "থানা",
+    "type": "NOISE"
+  },
+  "পর": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "শেখ": {
+    "en": "Sheikh",
+    "bn": "শেখ",
+    "type": "PERSON"
+  },
+  "Germany": {
+    "en": "Germany",
+    "bn": "জার্মানি",
+    "type": "LOC"
+  },
+  "এনসিপি": {
+    "en": "NCP",
+    "bn": "এনসিপি",
+    "type": "ORG"
+  },
+  "EU": {
+    "en": "EU",
+    "bn": "ইইউ",
+    "type": "ORG"
+  },
+  "Hasina": {
+    "en": "Hasina",
+    "bn": "হাসিনা",
+    "type": "PERSON"
+  },
+  "Nepal": {
+    "en": "Nepal",
+    "bn": "নেপাল",
+    "type": "LOC"
+  },
+  "জামাযাতে": {
+    "en": "Jamaat-e-Islami",
+    "bn": "জামায়াতে ইসলামী",
+    "type": "ORG"
+  },
+  "িএনপির": {
+    "en": "BNP",
+    "bn": "বিএনপি",
+    "type": "ORG"
+  },
+  "England": {
+    "en": "England",
+    "bn": "ইংল্যান্ড",
+    "type": "LOC"
+  },
+  "হক": {
+    "en": "Huq",
+    "bn": "হক",
+    "type": "PERSON"
+  },
+  "মিযা": {
+    "en": "Mia",
+    "bn": "মিয়া",
+    "type": "PERSON"
+  },
+  "চীন": {
+    "en": "China",
+    "bn": "চীন",
+    "type": "LOC"
+  },
+  "নাগরিক পারটির": {
+    "en": "Nagorik Party",
+    "bn": "নাগরিক পার্টি",
+    "type": "ORG"
+  },
+  "সদর": {
+    "en": "Sadar",
+    "bn": "সদর",
+    "type": "NOISE"
+  },
+  "চটটগরামের": {
+    "en": "Chittagong",
+    "bn": "চট্টগ্রাম",
+    "type": "LOC"
+  },
+  "ইসলামী": {
+    "en": "Islami",
+    "bn": "ইসলামী",
+    "type": "MISC"
+  },
+  "White House": {
+    "en": "White House",
+    "bn": "হোয়াইট হাউস",
+    "type": "LOC"
+  },
+  "Greenland": {
+    "en": "Greenland",
+    "bn": "গ্রিনল্যান্ড",
+    "type": "LOC"
+  },
+  "United Nations": {
+    "en": "United Nations",
+    "bn": "জাতিসংঘ",
+    "type": "ORG"
+  },
+  "িএনপি": {
+    "en": "BNP",
+    "bn": "বিএনপি",
+    "type": "ORG"
+  },
+  "যকতরাষটরে": {
+    "en": "USA",
+    "bn": "যুক্তরাষ্ট্র",
+    "type": "LOC"
+  },
+  "UN": {
+    "en": "UN",
+    "bn": "জাতিসংঘ",
+    "type": "ORG"
+  },
+  "আবল": {
+    "en": "Abul",
+    "bn": "আবুল",
+    "type": "PERSON"
+  },
+  "নজরল": {
+    "en": "Nazrul",
+    "bn": "নজরুল",
+    "type": "PERSON"
+  },
+  "রাজধানীর": {
+    "en": "Capital",
+    "bn": "রাজধানী",
+    "type": "NOISE"
+  },
+  "Khulna": {
+    "en": "Khulna",
+    "bn": "খুলনা",
+    "type": "LOC"
+  },
+  "Israel": {
+    "en": "Israel",
+    "bn": "ইসরায়েল",
+    "type": "LOC"
+  },
+  "বযাংকের": {
+    "en": "Bank",
+    "bn": "ব্যাংক",
+    "type": "NOISE"
+  },
+  "টোযেনটিফোর ডটকম": {
+    "en": "Twentyfour.com",
+    "bn": "টোয়েন্টিফোর ডটকম",
+    "type": "ORG"
+  },
+  "Agargaon": {
+    "en": "Agargaon",
+    "bn": "আগারগাঁও",
+    "type": "LOC"
+  },
+  "Venezuelan": {
+    "en": "Venezuelan",
+    "bn": "ভেনেজুয়েলান",
+    "type": "MISC"
+  },
+  "AI": {
+    "en": "AI",
+    "bn": "এআই",
+    "type": "MISC"
+  },
+  "Anti-Corruption Commission": {
+    "en": "Anti-Corruption Commission",
+    "bn": "দুর্নীতি দমন কমিশন",
+    "type": "ORG"
+  },
+  "Iranian": {
+    "en": "Iranian",
+    "bn": "ইরানি",
+    "type": "MISC"
+  },
+  "বিএনপি": {
+    "en": "BNP",
+    "bn": "বিএনপি",
+    "type": "ORG"
+  },
+  "উপজেলায": {
+    "en": "Upazila",
+    "bn": "উপজেলা",
+    "type": "NOISE"
+  },
+  "Bangladesh Jamaat-e-Islami": {
+    "en": "Bangladesh Jamaat-e-Islami",
+    "bn": "বাংলাদেশ জামায়াতে ইসলামী",
+    "type": "ORG"
+  },
+  "Saudi Arabia": {
+    "en": "Saudi Arabia",
+    "bn": "সৌদি আরব",
+    "type": "LOC"
+  },
+  "Bangladesh Premier League": {
+    "en": "Bangladesh Premier League",
+    "bn": "বাংলাদেশ প্রিমিয়ার লিগ",
+    "type": "ORG"
+  },
+  "Jatiya Sangsad": {
+    "en": "Jatiya Sangsad",
+    "bn": "জাতীয় সংসদ",
+    "type": "ORG"
+  },
+  "কমিশন": {
+    "en": "Commission",
+    "bn": "কমিশন",
+    "type": "NOISE"
+  },
+  "বাংলা": {
+    "en": "Bengali",
+    "bn": "বাংলা",
+    "type": "MISC"
+  },
+  "রহমানের": {
+    "en": "Rahman",
+    "bn": "রহমান",
+    "type": "PERSON"
+  },
+  "পাকিসতান": {
+    "en": "Pakistan",
+    "bn": "পাকিস্তান",
+    "type": "LOC"
+  },
+  "Kolkata": {
+    "en": "Kolkata",
+    "bn": "কলকাতা",
+    "type": "LOC"
+  },
+  "Police Station": {
+    "en": "Police Station",
+    "bn": "থানা",
+    "type": "NOISE"
+  },
+  "Premier League": {
+    "en": "Premier League",
+    "bn": "প্রিমিয়ার লিগ",
+    "type": "MISC"
+  },
+  "Maduro": {
+    "en": "Maduro",
+    "bn": "মাদুরো",
+    "type": "PERSON"
+  },
+  "ভারতে": {
+    "en": "India",
+    "bn": "ভারত",
+    "type": "LOC"
+  },
+  "এলাকা": {
+    "en": "Area",
+    "bn": "এলাকা",
+    "type": "NOISE"
+  },
+  "Bangladesh Cricket Board": {
+    "en": "Bangladesh Cricket Board",
+    "bn": "বাংলাদেশ ক্রিকেট বোর্ড",
+    "type": "ORG"
+  },
+  "Japan": {
+    "en": "Japan",
+    "bn": "জাপান",
+    "type": "LOC"
+  },
+  "যা": {
+    "en": "null",
+    "bn": "null",
+    "type": "NOISE"
+  },
+  "আবদললাহ": {
+    "en": "Abdullah",
+    "bn": "আবদুল্লাহ",
+    "type": "PERSON"
+  },
+  "এম": {
+    "en": "M",
+    "bn": "এম",
+    "type": "NOISE"
+  },
+  "চৌধরী": {
+    "en": "Chowdhury",
+    "bn": "চৌধুরী",
+    "type": "PERSON"
+  },
+  "আওযামী": {
+    "en": "Awami",
+    "bn": "আওয়ামী",
+    "type": "ORG"
+  },
+  "Shafiqur Rahman": {
+    "en": "Shafiqur Rahman",
+    "bn": "শফিকুর রহমান",
+    "type": "PERSON"
+  },
+  "Nahid Islam": {
+    "en": "Nahid Islam",
+    "bn": "নাহিদ ইসলাম",
+    "type": "PERSON"
+  },
+  "Bogura": {
+    "en": "Bogura",
+    "bn": "বগুড়া",
+    "type": "LOC"
+  },
+  "French": {
+    "en": "French",
+    "bn": "ফরাসি",
+    "type": "MISC"
+  },
+  "Australia": {
+    "en": "Australia",
+    "bn": "অস্ট্রেলিয়া",
+    "type": "LOC"
+  },
+  "Dhaka Metropolitan Police": {
+    "en": "Dhaka Metropolitan Police",
+    "bn": "ঢাকা মেট্রোপলিটন পুলিশ",
+    "type": "ORG"
+  },
+  "ACC": {
+    "en": "Anti-Corruption Commission",
+    "bn": "দুর্নীতি দমন কমিশন",
+    "type": "ORG"
+  },
+  "সৈযদ": {
+    "en": "Syed",
+    "bn": "সৈয়দ",
+    "type": "PERSON"
+  },
+  "নোযাখালী": {
+    "en": "Noakhali",
+    "bn": "নোয়াখালী",
+    "type": "LOC"
+  },
+  "িক": {
+    "en": "null",
+    "bn": "null",
+    "type": "NOISE"
+  },
+  "BCB": {
+    "en": "Bangladesh Cricket Board",
+    "bn": "বাংলাদেশ ক্রিকেট বোর্ড",
+    "type": "ORG"
+  },
+  "Kurigram": {
+    "en": "Kurigram",
+    "bn": "কুড়িগ্রাম",
+    "type": "LOC"
+  },
+  "Beijing": {
+    "en": "Beijing",
+    "bn": "বেইজিং",
+    "type": "LOC"
+  },
+  "Denmark": {
+    "en": "Denmark",
+    "bn": "ডেনমার্ক",
+    "type": "LOC"
+  },
+  "South Asia": {
+    "en": "South Asia",
+    "bn": "দক্ষিণ এশিয়া",
+    "type": "LOC"
+  },
+  "Tehran": {
+    "en": "Tehran",
+    "bn": "তেহরান",
+    "type": "LOC"
+  },
+  "ইউরোপীয": {
+    "en": "European",
+    "bn": "ইউরোপীয়",
+    "type": "MISC"
+  },
+  "াল": {
+    "en": "null",
+    "bn": "null",
+    "type": "NOISE"
+  },
+  "আসিফ": {
+    "en": "Asif",
+    "bn": "আসিফ",
+    "type": "PERSON"
+  },
+  "বযাংক": {
+    "en": "Bank",
+    "bn": "ব্যাংক",
+    "type": "NOISE"
+  },
+  "Cumilla": {
+    "en": "Cumilla",
+    "bn": "কুমিল্লা",
+    "type": "LOC"
+  },
+  "Sharif Osman Hadi": {
+    "en": "Sharif Osman Hadi",
+    "bn": "শরিফ ওসমান হাদি",
+    "type": "PERSON"
+  },
+  "Supreme Court": {
+    "en": "Supreme Court",
+    "bn": "সুপ্রিম কোর্ট",
+    "type": "ORG"
+  },
+  "New York": {
+    "en": "New York",
+    "bn": "নিউ ইয়র্ক",
+    "type": "LOC"
+  },
+  "কমিটির": {
+    "en": "Committee",
+    "bn": "কমিটি",
+    "type": "NOISE"
+  },
+  "ইউরোপের": {
+    "en": "Europe",
+    "bn": "ইউরোপ",
+    "type": "LOC"
+  },
+  "বা": {
+    "en": "null",
+    "bn": "null",
+    "type": "NOISE"
+  },
+  "নগরের": {
+    "en": "City",
+    "bn": "নগর",
+    "type": "NOISE"
+  },
+  "Mirpur": {
+    "en": "Mirpur",
+    "bn": "মিরপুর",
+    "type": "LOC"
+  },
+  "British": {
+    "en": "British",
+    "bn": "ব্রিটিশ",
+    "type": "MISC"
+  },
+  "Jashore": {
+    "en": "Jashore",
+    "bn": "যশোর",
+    "type": "LOC"
+  },
+  "বি": {
+    "en": "null",
+    "bn": "null",
+    "type": "NOISE"
+  },
+  "উদদিন": {
+    "en": "Uddin",
+    "bn": "উদ্দিন",
+    "type": "PERSON"
+  },
+  "খালেদা": {
+    "en": "Khaleda",
+    "bn": "খালেদা",
+    "type": "PERSON"
+  },
+  "Mirza Fakhrul Islam Alamgir": {
+    "en": "Mirza Fakhrul Islam Alamgir",
+    "bn": "মির্জা ফখরুল ইসলাম আলমগীর",
+    "type": "PERSON"
+  },
+  "Thailand": {
+    "en": "Thailand",
+    "bn": "থাইল্যান্ড",
+    "type": "LOC"
+  },
+  "Kushtia": {
+    "en": "Kushtia",
+    "bn": "কুষ্টিয়া",
+    "type": "LOC"
+  },
+  "Cox": {
+    "en": "Cox's Bazar",
+    "bn": "কক্সবাজার",
+    "type": "LOC"
+  },
+  "Caracas": {
+    "en": "Caracas",
+    "bn": "কারাকাস",
+    "type": "LOC"
+  },
+  "আকতার": {
+    "en": "Aktar",
+    "bn": "আকতার",
+    "type": "PERSON"
+  },
+  "English": {
+    "en": "English",
+    "bn": "ইংরেজি",
+    "type": "MISC"
+  },
+  "Bashundhara": {
+    "en": "Bashundhara",
+    "bn": "বসুন্ধরা",
+    "type": "ORG"
+  },
+  "চীনের": {
+    "en": "China",
+    "bn": "চীন",
+    "type": "LOC"
+  },
+  "ইউনিযন": {
+    "en": "Union",
+    "bn": "ইউনিয়ন",
+    "type": "ORG"
+  },
+  "মনতরণালযের": {
+    "en": "Ministry",
+    "bn": "মন্ত্রণালয়",
+    "type": "ORG"
+  },
+  "না": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "সরকারি": {
+    "en": "Government",
+    "bn": "সরকারি",
+    "type": "ORG"
+  },
+  "Dinajpur": {
+    "en": "Dinajpur",
+    "bn": "দিনাজপুর",
+    "type": "LOC"
+  },
+  "Gazipur": {
+    "en": "Gazipur",
+    "bn": "গাজীপুর",
+    "type": "LOC"
+  },
+  "Narayanganj": {
+    "en": "Narayanganj",
+    "bn": "নারায়ণগঞ্জ",
+    "type": "LOC"
+  },
+  "Mymensingh": {
+    "en": "Mymensingh",
+    "bn": "ময়মনসিংহ",
+    "type": "LOC"
+  },
+  "BNP Standing Committee": {
+    "en": "BNP Standing Committee",
+    "bn": "বিএনপি স্থায়ী কমিটি",
+    "type": "ORG"
+  },
+  "AMM Nasir Uddin": {
+    "en": "AMM Nasir Uddin",
+    "bn": "এএমএম নাসির উদ্দিন",
+    "type": "PERSON"
+  },
+  "Ukraine": {
+    "en": "Ukraine",
+    "bn": "ইউক্রেন",
+    "type": "LOC"
+  },
+  "Russian": {
+    "en": "Russian",
+    "bn": "রাশিয়ান",
+    "type": "MISC"
+  },
+  "BPL": {
+    "en": "BPL",
+    "bn": "বিপিএল",
+    "type": "ORG"
+  },
+  "Mustafizur Rahman": {
+    "en": "Mustafizur Rahman",
+    "bn": "মুস্তাফিজুর রহমান",
+    "type": "PERSON"
+  },
+  "সরকার": {
+    "en": "Government",
+    "bn": "সরকার",
+    "type": "ORG"
+  },
+  "বিভাগ": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "আব": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "এনপির": {
+    "en": "BNP",
+    "bn": "বিএনপি",
+    "type": "ORG"
+  },
+  "Bangladeshis": {
+    "en": "Bangladeshis",
+    "bn": "বাংলাদেশী",
+    "type": "MISC"
+  },
+  "Ziaur Rahman": {
+    "en": "Ziaur Rahman",
+    "bn": "জিয়াউর রহমান",
+    "type": "PERSON"
+  },
+  "Liberation War": {
+    "en": "Liberation War",
+    "bn": "মুক্তিযুদ্ধ",
+    "type": "MISC"
+  },
+  "Bengali": {
+    "en": "Bengali",
+    "bn": "বাঙালি",
+    "type": "MISC"
+  },
+  "Singapore": {
+    "en": "Singapore",
+    "bn": "সিঙ্গাপুর",
+    "type": "LOC"
+  },
+  "Israeli": {
+    "en": "Israeli",
+    "bn": "ইসরায়েলি",
+    "type": "MISC"
+  },
+  "High Court": {
+    "en": "High Court",
+    "bn": "হাইকোর্ট",
+    "type": "ORG"
+  },
+  "জিযার": {
+    "en": "Zia",
+    "bn": "জিয়া",
+    "type": "PERSON"
+  },
+  "ো": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "মিরপর": {
+    "en": "Mirpur",
+    "bn": "মিরপুর",
+    "type": "LOC"
+  },
+  "ান": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "খলনা": {
+    "en": "Khulna",
+    "bn": "খুলনা",
+    "type": "LOC"
+  },
+  "বিশববিদযালযে": {
+    "en": "University",
+    "bn": "বিশ্ববিদ্যালয়",
+    "type": "ORG"
+  },
+  "Jamuna": {
+    "en": "Jamuna",
+    "bn": "যমুনা",
+    "type": "LOC"
+  },
+  "Fakhrul": {
+    "en": "Fakhrul",
+    "bn": "ফখরুল",
+    "type": "PERSON"
+  },
+  "Hadi": {
+    "en": "Hadi",
+    "bn": "হাদি",
+    "type": "PERSON"
+  },
+  "Asia": {
+    "en": "Asia",
+    "bn": "এশিয়া",
+    "type": "LOC"
+  },
+  "Badda": {
+    "en": "Badda",
+    "bn": "বাড্ডা",
+    "type": "LOC"
+  },
+  "Myanmar": {
+    "en": "Myanmar",
+    "bn": "মিয়ানমার",
+    "type": "LOC"
+  },
+  "Britain": {
+    "en": "Britain",
+    "bn": "ব্রিটেন",
+    "type": "LOC"
+  },
+  "নপি": {
+    "en": "BNP",
+    "bn": "বিএনপি",
+    "type": "ORG"
+  },
+  "পাকিসতানের": {
+    "en": "Pakistan",
+    "bn": "পাকিস্তান",
+    "type": "LOC"
+  },
+  "নের": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "ইসরাযেলের": {
+    "en": "Israel",
+    "bn": "ইসরায়েল",
+    "type": "LOC"
+  },
+  "ইসলামের": {
+    "en": "Islam",
+    "bn": "ইসলাম",
+    "type": "MISC"
+  },
+  "লা": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "Panchagarh": {
+    "en": "Panchagarh",
+    "bn": "পঞ্চগড়",
+    "type": "LOC"
+  },
+  "Noakhali": {
+    "en": "Noakhali",
+    "bn": "নোয়াখালী",
+    "type": "LOC"
+  },
+  "Pabna": {
+    "en": "Pabna",
+    "bn": "পাবনা",
+    "type": "LOC"
+  },
+  "Danish": {
+    "en": "Danish",
+    "bn": "ড্যানিশ",
+    "type": "MISC"
+  },
+  "Netherlands": {
+    "en": "Netherlands",
+    "bn": "নেদারল্যান্ডস",
+    "type": "LOC"
+  },
+  "Real Madrid": {
+    "en": "Real Madrid",
+    "bn": "রিয়াল মাদ্রিদ",
+    "type": "ORG"
+  },
+  "Manchester United": {
+    "en": "Manchester United",
+    "bn": "ম্যানচেস্টার ইউনাইটেড",
+    "type": "ORG"
+  },
+  "UK": {
+    "en": "United Kingdom",
+    "bn": "যুক্তরাজ্য",
+    "type": "LOC"
+  },
+  "Gaza": {
+    "en": "Gaza",
+    "bn": "গাজা",
+    "type": "LOC"
+  },
+  "সংসদ": {
+    "en": "Parliament",
+    "bn": "সংসদ",
+    "type": "ORG"
+  },
+  "সংসদ নিরবাচনে": {
+    "en": "Parliamentary Election",
+    "bn": "সংসদ নির্বাচন",
+    "type": "MISC"
+  },
+  "আনদোলন": {
+    "en": "Movement",
+    "bn": "আন্দোলন",
+    "type": "NOISE"
+  },
+  "ভেনেজযেলার": {
+    "en": "Venezuela",
+    "bn": "ভেনিজুয়েলা",
+    "type": "LOC"
+  },
+  "সিটি": {
+    "en": "City",
+    "bn": "সিটি",
+    "type": "NOISE"
+  },
+  "Canada": {
+    "en": "Canada",
+    "bn": "কানাডা",
+    "type": "LOC"
+  },
+  "Malaysia": {
+    "en": "Malaysia",
+    "bn": "মালয়েশিয়া",
+    "type": "LOC"
+  },
+  "Liverpool": {
+    "en": "Liverpool",
+    "bn": "লিভারপুল",
+    "type": "ORG"
+  },
+  "Brazil": {
+    "en": "Brazil",
+    "bn": "ব্রাজিল",
+    "type": "LOC"
+  },
+  "Egypt": {
+    "en": "Egypt",
+    "bn": "মিশর",
+    "type": "LOC"
+  },
+  "BGB": {
+    "en": "Border Guard Bangladesh",
+    "bn": "বর্ডার গার্ড বাংলাদেশ",
+    "type": "ORG"
+  },
+  "মিরজা": {
+    "en": "Mirza",
+    "bn": "মির্জা",
+    "type": "PERSON"
+  },
+  "আল": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "মান": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "বিদেশি": {
+    "en": "Foreigner",
+    "bn": "বিদেশী",
+    "type": "NOISE"
+  },
+  "GMT": {
+    "en": "Greenwich Mean Time",
+    "bn": "জিএমটি",
+    "type": "MISC"
+  },
+  "Rapid Action Battalion": {
+    "en": "Rapid Action Battalion",
+    "bn": "র‍্যাপিড অ্যাকশন ব্যাটালিয়ন",
+    "type": "ORG"
+  },
+  "Facebook": {
+    "en": "Facebook",
+    "bn": "ফেসবুক",
+    "type": "ORG"
+  },
+  "German": {
+    "en": "German",
+    "bn": "জার্মান",
+    "type": "MISC"
+  },
+  "Madrid": {
+    "en": "Madrid",
+    "bn": "মাদ্রিদ",
+    "type": "LOC"
+  },
+  "Maynal Hossain Chowdhury": {
+    "en": "Maynal Hossain Chowdhury",
+    "bn": "ময়নুল হোসেন চৌধুরী",
+    "type": "PERSON"
+  },
+  "পারটির": {
+    "en": "Party",
+    "bn": "পার্টি",
+    "type": "NOISE"
+  },
+  "নাহিদ": {
+    "en": "Nahid",
+    "bn": "নাহিদ",
+    "type": "PERSON"
+  },
+  "কেনদরীয": {
+    "en": "Central",
+    "bn": "কেন্দ্রীয়",
+    "type": "NOISE"
+  },
+  "রানের": {
+    "en": "Run",
+    "bn": "রান",
+    "type": "NOISE"
+  },
+  "ইসরাযেল": {
+    "en": "Israel",
+    "bn": "ইসরায়েল",
+    "type": "LOC"
+  },
+  "মনতরণালয": {
+    "en": "Ministry",
+    "bn": "মন্ত্রণালয়",
+    "type": "ORG"
+  },
+  "রা": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "Islami Andolan Bangladesh": {
+    "en": "Islami Andolan Bangladesh",
+    "bn": "ইসলামী আন্দোলন বাংলাদেশ",
+    "type": "ORG"
+  },
+  "Barishal": {
+    "en": "Barishal",
+    "bn": "বরিশাল",
+    "type": "LOC"
+  },
+  "National Board of Revenue": {
+    "en": "National Board of Revenue",
+    "bn": "জাতীয় রাজস্ব বোর্ড",
+    "type": "ORG"
+  },
+  "Yunus": {
+    "en": "Muhammad Yunus",
+    "bn": "মুহাম্মদ ইউনুস",
+    "type": "PERSON"
+  },
+  "Barcelona": {
+    "en": "FC Barcelona",
+    "bn": "বার্সেলোনা",
+    "type": "ORG"
+  },
+  "Italy": {
+    "en": "Italy",
+    "bn": "ইতালি",
+    "type": "LOC"
+  },
+  "USA": {
+    "en": "United States of America",
+    "bn": "মার্কিন যুক্তরাষ্ট্র",
+    "type": "LOC"
+  },
+  "s Bazar": {
+    "en": "Cox's Bazar",
+    "bn": "কক্সবাজার",
+    "type": "LOC"
+  },
+  "Dhaka Medical College Hospital": {
+    "en": "Dhaka Medical College Hospital",
+    "bn": "ঢাকা মেডিকেল কলেজ হাসপাতাল",
+    "type": "ORG"
+  },
+  "Japanese": {
+    "en": "Japanese",
+    "bn": "জাপানি",
+    "type": "MISC"
+  },
+  "Baridhara": {
+    "en": "Baridhara",
+    "bn": "বারিধারা",
+    "type": "LOC"
+  },
+  "Bashundhara Multi Trading Limited": {
+    "en": "Bashundhara Multi Trading Limited",
+    "bn": "বসুন্ধরা মাল্টি ট্রেডিং লিমিটেড",
+    "type": "ORG"
+  },
+  "রাশিযা": {
+    "en": "Russia",
+    "bn": "রাশিয়া",
+    "type": "LOC"
+  },
+  "দয": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "জারমানি": {
+    "en": "Germany",
+    "bn": "জার্মানি",
+    "type": "LOC"
+  },
+  "কতরাষটর": {
+    "en": "United States",
+    "bn": "যুক্তরাষ্ট্র",
+    "type": "LOC"
+  },
+  "দেশ": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "নাজমল": {
+    "en": "Nazmul",
+    "bn": "নাজমুল",
+    "type": "PERSON"
+  },
+  "কাজী": {
+    "en": "Kazi",
+    "bn": "কাজী",
+    "type": "PERSON"
+  },
+  "সোমবার": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "আহমদ": {
+    "en": "Ahmed",
+    "bn": "আহমেদ",
+    "type": "PERSON"
+  },
+  "Bangla": {
+    "en": "Bangla",
+    "bn": "বাংলা",
+    "type": "MISC"
+  },
+  "Arsenal": {
+    "en": "Arsenal",
+    "bn": "আর্সেনাল",
+    "type": "ORG"
+  },
+  "Spain": {
+    "en": "Spain",
+    "bn": "স্পেন",
+    "type": "LOC"
+  },
+  "Border Guard Bangladesh": {
+    "en": "Border Guard Bangladesh",
+    "bn": "বর্ডার গার্ড বাংলাদেশ",
+    "type": "ORG"
+  },
+  "Khilkhet": {
+    "en": "Khilkhet",
+    "bn": "খিলক্ষেত",
+    "type": "LOC"
+  },
+  "নি": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "নাগরিক পারটি": {
+    "en": "Nagarik Party",
+    "bn": "নাগরিক পার্টি",
+    "type": "ORG"
+  },
+  "বিভাগের": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "সিলেটের": {
+    "en": "Sylhet",
+    "bn": "সিলেট",
+    "type": "LOC"
+  },
+  "সাইফল": {
+    "en": "Saiful",
+    "bn": "সাইফুল",
+    "type": "PERSON"
+  },
+  "নিরবাচন কমিশন": {
+    "en": "Election Commission",
+    "bn": "নির্বাচন কমিশন",
+    "type": "ORG"
+  },
+  "কমিললা": {
+    "en": "Cumilla",
+    "bn": "কুমিল্লা",
+    "type": "LOC"
+  },
+  "ইউনসের": {
+    "en": "Yunus",
+    "bn": "ইউনূস",
+    "type": "PERSON"
+  },
+  "করিকেট বোরড": {
+    "en": "Cricket Board",
+    "bn": "ক্রিকেট বোর্ড",
+    "type": "ORG"
+  },
+  "কলেজ": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "Mumbai": {
+    "en": "Mumbai",
+    "bn": "মুম্বাই",
+    "type": "LOC"
+  },
+  "Karwan Bazar": {
+    "en": "Karwan Bazar",
+    "bn": "কারওয়ান বাজার",
+    "type": "LOC"
+  },
+  "Manchester City": {
+    "en": "Manchester City",
+    "bn": "ম্যানচেস্টার সিটি",
+    "type": "ORG"
+  },
+  "IPL": {
+    "en": "Indian Premier League",
+    "bn": "আইপিএল",
+    "type": "ORG"
+  },
+  "Bhutan": {
+    "en": "Bhutan",
+    "bn": "ভুটান",
+    "type": "LOC"
+  },
+  "Tejgaon": {
+    "en": "Tejgaon",
+    "bn": "তেজগাঁও",
+    "type": "LOC"
+  },
+  "Uttara": {
+    "en": "Uttara",
+    "bn": "উত্তরা",
+    "type": "LOC"
+  },
+  "Celsius": {
+    "en": "Celsius",
+    "bn": "সেলসিয়াস",
+    "type": "MISC"
+  },
+  "Chuadanga": {
+    "en": "Chuadanga",
+    "bn": "চুয়াডাঙ্গা",
+    "type": "LOC"
+  },
+  "Palestinian": {
+    "en": "Palestinian",
+    "bn": "ফিলিস্তিনি",
+    "type": "MISC"
+  },
+  "New Delhi": {
+    "en": "New Delhi",
+    "bn": "নয়াদিল্লি",
+    "type": "LOC"
+  },
+  "Syria": {
+    "en": "Syria",
+    "bn": "সিরিয়া",
+    "type": "LOC"
+  },
+  "East West Media Group PLC": {
+    "en": "East West Media Group PLC",
+    "bn": "ইস্ট ওয়েস্ট মিডিয়া গ্রুপ পিএলসি",
+    "type": "ORG"
+  },
+  "NATO": {
+    "en": "NATO",
+    "bn": "ন্যাটো",
+    "type": "ORG"
+  },
+  "Marco Rubio": {
+    "en": "Marco Rubio",
+    "bn": "মার্কো রুবিও",
+    "type": "PERSON"
+  },
+  "থানায": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "নগর": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "আহমেদের": {
+    "en": "Ahmed",
+    "bn": "আহমেদ",
+    "type": "PERSON"
+  },
+  "আমির": {
+    "en": "Amir",
+    "bn": "আমির",
+    "type": "PERSON"
+  },
+  "কতরাষটরের": {
+    "en": "United States",
+    "bn": "যুক্তরাষ্ট্র",
+    "type": "LOC"
+  },
+  "বিদেশে": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "امین": {
+    "en": "Amin",
+    "bn": "আমিন",
+    "type": "PERSON"
+  },
+  "গরামের": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "United Kingdom": {
+    "en": "United Kingdom",
+    "bn": "যুক্তরাজ্য",
+    "type": "LOC"
+  },
+  "Salahuddin Ahmed": {
+    "en": "Salahuddin Ahmed",
+    "bn": "সালাহউদ্দিন আহমেদ",
+    "type": "PERSON"
+  },
+  "Rohingya": {
+    "en": "Rohingya",
+    "bn": "রোহিঙ্গা",
+    "type": "MISC"
+  },
+  "Africa Cup of Nations": {
+    "en": "Africa Cup of Nations",
+    "bn": "আফ্রিকা কাপ অফ নেশনস",
+    "type": "MISC"
+  },
+  "Rangpur Riders": {
+    "en": "Rangpur Riders",
+    "bn": "রংপুর রাইডার্স",
+    "type": "ORG"
+  },
+  "Africa": {
+    "en": "Africa",
+    "bn": "আফ্রিকা",
+    "type": "LOC"
+  },
+  "South American": {
+    "en": "South American",
+    "bn": "দক্ষিণ আমেরিকান",
+    "type": "MISC"
+  },
+  "জিযাউর": {
+    "en": "Ziaur",
+    "bn": "জিয়াউর",
+    "type": "PERSON"
+  },
+  "জামাযাতের": {
+    "en": "Jamaat-e-Islami",
+    "bn": "জামায়াত",
+    "type": "ORG"
+  },
+  "নদী": {
+    "en": "River",
+    "bn": "নদী",
+    "type": "NOISE"
+  },
+  "হমাযন": {
+    "en": "Humayun",
+    "bn": "হুমায়ুন",
+    "type": "PERSON"
+  },
+  "কবির": {
+    "en": "Kabir",
+    "bn": "কবির",
+    "type": "PERSON"
+  },
+  "হোযাইট": {
+    "en": "White",
+    "bn": "হোয়াইট",
+    "type": "PERSON"
+  },
+  "বার": {
+    "en": "Bar",
+    "bn": "বার",
+    "type": "NOISE"
+  },
+  "ভারতীয": {
+    "en": "Indian",
+    "bn": "ভারতীয়",
+    "type": "MISC"
+  },
+  "সিলেটে": {
+    "en": "Sylhet",
+    "bn": "সিলেট",
+    "type": "LOC"
+  },
+  "নরল": {
+    "en": "Nazrul",
+    "bn": "নজরুল",
+    "type": "PERSON"
+  },
+  "শাহ": {
+    "en": "Shah",
+    "bn": "শাহ",
+    "type": "PERSON"
+  },
+  "াম": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "ইসলামীর": {
+    "en": "Islami",
+    "bn": "ইসলামী",
+    "type": "ORG"
+  },
+  "সদর উপজেলার": {
+    "en": "Sadar Upazila",
+    "bn": "সদর উপজেলা",
+    "type": "LOC"
+  },
+  "Sirajganj": {
+    "en": "Sirajganj",
+    "bn": "সিরাজগঞ্জ",
+    "type": "LOC"
+  },
+  "Brahmanbaria": {
+    "en": "Brahmanbaria",
+    "bn": "ব্রাহ্মণবাড়িয়া",
+    "type": "LOC"
+  },
+  "Osman Hadi": {
+    "en": "Osman Hadi",
+    "bn": "ওসমান হাদি",
+    "type": "PERSON"
+  },
+  "Senegal": {
+    "en": "Senegal",
+    "bn": "সেনেগাল",
+    "type": "LOC"
+  },
+  "Morocco": {
+    "en": "Morocco",
+    "bn": "মরক্কো",
+    "type": "LOC"
+  },
+  "City": {
+    "en": "City",
+    "bn": "সিটি",
+    "type": "NOISE"
+  },
+  "Chattogram Royals": {
+    "en": "Chattogram Royals",
+    "bn": "চট্টগ্রাম রয়্যালস",
+    "type": "ORG"
+  },
+  "Truth Social": {
+    "en": "Truth Social",
+    "bn": "ট্রুথ সোশ্যাল",
+    "type": "ORG"
+  },
+  "Middle East": {
+    "en": "Middle East",
+    "bn": "মধ্যপ্রাচ্য",
+    "type": "LOC"
+  },
+  "িরবাচন": {
+    "en": "Election",
+    "bn": "নির্বাচন",
+    "type": "NOISE"
+  },
+  "রহল": {
+    "en": "Ruhul",
+    "bn": "রুহুল",
+    "type": "PERSON"
+  },
+  "political": {
+    "en": "Political",
+    "bn": "রাজনৈতিক",
+    "type": "NOISE"
+  },
+  "আগারগাওযে": {
+    "en": "Agargaon",
+    "bn": "আগারগাঁও",
+    "type": "LOC"
+  },
+  "েল": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "অসটরেলিযা": {
+    "en": "Australia",
+    "bn": "অস্ট্রেলিয়া",
+    "type": "LOC"
+  },
+  "শরীলঙকায": {
+    "en": "Sri Lanka",
+    "bn": "শ্রীলঙ্কা",
+    "type": "LOC"
+  },
+  "আবদর": {
+    "en": "Abdur",
+    "bn": "আবদুর",
+    "type": "PERSON"
+  },
+  "উততর": {
+    "en": "North",
+    "bn": "উত্তর",
+    "type": "LOC"
+  },
+  "নযাশনাল": {
+    "en": "National",
+    "bn": "ন্যাশনাল",
+    "type": "MISC"
+  },
+  "Lalmonirhat": {
+    "en": "Lalmonirhat",
+    "bn": "লালমনিরহাট",
+    "type": "LOC"
+  },
+  "Tokyo": {
+    "en": "Tokyo",
+    "bn": "টোকিও",
+    "type": "LOC"
+  },
+  "Bangladesh Meteorological Department": {
+    "en": "Bangladesh Meteorological Department",
+    "bn": "বাংলাদেশ আবহাওয়া অধিদপ্তর",
+    "type": "ORG"
+  },
+  "Gaibandha": {
+    "en": "Gaibandha",
+    "bn": "গাইবান্ধা",
+    "type": "LOC"
+  },
+  "Bangkok": {
+    "en": "Bangkok",
+    "bn": "ব্যাংকক",
+    "type": "LOC"
+  },
+  "Western": {
+    "en": "Western",
+    "bn": "পশ্চিমাঞ্চলীয়",
+    "type": "MISC"
+  },
+  "Humayun Kabir": {
+    "en": "Humayun Kabir",
+    "bn": "হুমায়ুন কবির",
+    "type": "PERSON"
+  },
+  "Teknaf": {
+    "en": "Teknaf",
+    "bn": "টেকনাফ",
+    "type": "LOC"
+  },
+  "Asif Nazrul": {
+    "en": "Asif Nazrul",
+    "bn": "আসিফ নজরুল",
+    "type": "PERSON"
+  },
+  "Paris": {
+    "en": "Paris",
+    "bn": "প্যারিস",
+    "type": "LOC"
+  },
+  "বরিটিশ": {
+    "en": "British",
+    "bn": "ব্রিটিশ",
+    "type": "MISC"
+  },
+  "ইউনস": {
+    "en": "Muhammad Yunus",
+    "bn": "মুহাম্মদ ইউনূস",
+    "type": "PERSON"
+  },
+  "জাতিসংঘের": {
+    "en": "United Nations",
+    "bn": "জাতিসংঘ",
+    "type": "ORG"
+  },
+  "ফরানস": {
+    "en": "France",
+    "bn": "ফ্রান্স",
+    "type": "LOC"
+  },
+  "আফরিকা": {
+    "en": "Africa",
+    "bn": "আফ্রিকা",
+    "type": "LOC"
+  },
+  "রহমান খান": {
+    "en": "Rahman Khan",
+    "bn": "রহমান খান",
+    "type": "PERSON"
+  },
+  "আনদোলনের": {
+    "en": "Movement",
+    "bn": "আন্দোলন",
+    "type": "MISC"
+  },
+  "যার": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "পলিশ": {
+    "en": "Police",
+    "bn": "পুলিশ",
+    "type": "ORG"
+  },
+  "যকতরাজয": {
+    "en": "United States",
+    "bn": "যুক্তরাষ্ট্র",
+    "type": "LOC"
+  },
+  "ামাযাতে": {
+    "en": "Jamaat-e-Islami",
+    "bn": "জামায়াতে ইসলামী",
+    "type": "ORG"
+  },
+  "দরনীতি": {
+    "en": "Corruption",
+    "bn": "দুর্নীতি",
+    "type": "MISC"
+  },
+  "মে": {
+    "en": "May",
+    "bn": "মে",
+    "type": "MISC"
+  },
+  "International Cricket Council": {
+    "en": "International Cricket Council",
+    "bn": "ইন্টারন্যাশনাল ক্রিকেট কাউন্সিল",
+    "type": "ORG"
+  },
+  "Zubaida Rahman": {
+    "en": "Zubaida Rahman",
+    "bn": "জোবায়দা রহমান",
+    "type": "PERSON"
+  },
+  "Champions League": {
+    "en": "Champions League",
+    "bn": "চ্যাম্পিয়ন্স লীগ",
+    "type": "MISC"
+  },
+  "Argentina": {
+    "en": "Argentina",
+    "bn": "আর্জেন্টিনা",
+    "type": "LOC"
+  },
+  "United": {
+    "en": "United",
+    "bn": "ইউনাইটেড",
+    "type": "ORG"
+  },
+  "Sylhet Titans": {
+    "en": "Sylhet Titans",
+    "bn": "সিলেট টাইটানস",
+    "type": "ORG"
+  },
+  "African": {
+    "en": "Africa",
+    "bn": "আফ্রিকা",
+    "type": "LOC"
+  },
+  "Delhi": {
+    "en": "Delhi",
+    "bn": "দিল্লি",
+    "type": "LOC"
+  },
+  "Dhanmondi": {
+    "en": "Dhanmondi",
+    "bn": "ধানমন্ডি",
+    "type": "LOC"
+  },
+  "Savar": {
+    "en": "Savar",
+    "bn": "সাভার",
+    "type": "LOC"
+  },
+  "Appellate Division": {
+    "en": "Appellate Division",
+    "bn": "আপিল বিভাগ",
+    "type": "ORG"
+  },
+  "Arctic": {
+    "en": "Arctic",
+    "bn": "সুমেরু",
+    "type": "LOC"
+  },
+  "Moscow": {
+    "en": "Moscow",
+    "bn": "মস্কো",
+    "type": "LOC"
+  },
+  "RAB": {
+    "en": "Rapid Action Battalion",
+    "bn": "র‍্যাব",
+    "type": "ORG"
+  },
+  "Afghanistan": {
+    "en": "Afghanistan",
+    "bn": "আফগানিস্তান",
+    "type": "LOC"
+  },
+  "জাতীয সংসদ নিরবাচন": {
+    "en": "National Parliamentary Election",
+    "bn": "জাতীয় সংসদ নির্বাচন",
+    "type": "MISC"
+  },
+  "দেশে": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "ইসলাম খান": {
+    "en": "Islam Khan",
+    "bn": "ইসলাম খান",
+    "type": "PERSON"
+  },
+  "িরবা": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "শিকষা": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "শাহজালাল": {
+    "en": "Shahjalal",
+    "bn": "শাহজালাল",
+    "type": "PERSON"
+  },
+  "আলমগীর": {
+    "en": "Alamgir",
+    "bn": "আলমগীর",
+    "type": "PERSON"
+  },
+  "জামাযাত": {
+    "en": "Jamaat-e-Islami",
+    "bn": "জামায়াত",
+    "type": "ORG"
+  },
+  "চটটগরামে": {
+    "en": "Chattogram",
+    "bn": "চট্টগ্রাম",
+    "type": "LOC"
+  },
+  "বরিশাল": {
+    "en": "Barishal",
+    "bn": "বরিশাল",
+    "type": "LOC"
+  },
+  "াজ": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "রাকিবল": {
+    "en": "Rakibul",
+    "bn": "রকিবুল",
+    "type": "PERSON"
+  },
+  "গরিনলযানড": {
+    "en": "Greenland",
+    "bn": "গ্রিনল্যান্ড",
+    "type": "LOC"
+  },
+  "কত": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "লী": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "কে": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "লি": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "মহানগর পলিশের": {
+    "en": "Metropolitan Police",
+    "bn": "মহানগর পুলিশ",
+    "type": "ORG"
+  },
+  "রান": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "নদীর": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "পথিবীর": {
+    "en": "Earth",
+    "bn": "পৃথিবী",
+    "type": "LOC"
+  },
+  "িযা": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "নিকোলা": {
+    "en": "Nicola",
+    "bn": "নিকোলা",
+    "type": "PERSON"
+  },
+  "কষটিযা": {
+    "en": "Kushtia",
+    "bn": "কুষ্টিয়া",
+    "type": "LOC"
+  },
+  "NBR": {
+    "en": "National Board of Revenue",
+    "bn": "জাতীয় রাজস্ব বোর্ড",
+    "type": "ORG"
+  },
+  "Tangail": {
+    "en": "Tangail",
+    "bn": "টাঙ্গাইল",
+    "type": "LOC"
+  },
+  "ICT": {
+    "en": "Information and Communication Technology",
+    "bn": "তথ্য ও যোগাযোগ প্রযুক্তি",
+    "type": "MISC"
+  },
+  "Sher-e-Bangla Nagar": {
+    "en": "Sher-e-Bangla Nagar",
+    "bn": "শেরেবাংলা নগর",
+    "type": "LOC"
+  },
+  "Farmgate": {
+    "en": "Farmgate",
+    "bn": "ফার্মগেট",
+    "type": "LOC"
+  },
+  "July Charter": {
+    "en": "July Charter",
+    "bn": "জুলাই চার্টার",
+    "type": "MISC"
+  },
+  "Nilphamari": {
+    "en": "Nilphamari",
+    "bn": "নীলফামারী",
+    "type": "LOC"
+  },
+  "Dhaka Capitals": {
+    "en": "Dhaka Capitals",
+    "bn": "ঢাকা ক্যাপিটালস",
+    "type": "ORG"
+  },
+  "Kolkata Knight Riders": {
+    "en": "Kolkata Knight Riders",
+    "bn": "কলকাতা নাইট রাইডার্স",
+    "type": "ORG"
+  },
+  "Maldives": {
+    "en": "Maldives",
+    "bn": "মালদ্বীপ",
+    "type": "LOC"
+  },
+  "Mostofa Sarwar Farooki": {
+    "en": "Mostofa Sarwar Farooki",
+    "bn": "মোস্তফা সরয়ার ফারুকী",
+    "type": "PERSON"
+  },
+  "Biman Bangladesh Airlines": {
+    "en": "Biman Bangladesh Airlines",
+    "bn": "বিমান বাংলাদেশ এয়ারলাইনস",
+    "type": "ORG"
+  },
+  "Qatar": {
+    "en": "Qatar",
+    "bn": "কাতার",
+    "type": "LOC"
+  },
+  "Hazrat Shahjalal International Airport": {
+    "en": "Hazrat Shahjalal International Airport",
+    "bn": "হযরত শাহজালাল আন্তর্জাতিক বিমানবন্দর",
+    "type": "LOC"
+  },
+  "DU": {
+    "en": "University of Dhaka",
+    "bn": "ঢাকা বিশ্ববিদ্যালয়",
+    "type": "ORG"
+  },
+  "Shahbagh": {
+    "en": "Shahbagh",
+    "bn": "শাহবাগ",
+    "type": "LOC"
+  },
+  "United Arab Emirates": {
+    "en": "United Arab Emirates",
+    "bn": "সংযুক্ত আরব আমিরাত",
+    "type": "LOC"
+  },
+  "BSS": {
+    "en": "Bangladesh Sangbad Sangstha",
+    "bn": "বাংলাদেশ সংবাদ সংস্থা",
+    "type": "ORG"
+  },
+  "ফখরল ইসলাম আলমগীর": {
+    "en": "Fakhrul Islam Alamgir",
+    "bn": "ফখরুল ইসলাম আলমগীর",
+    "type": "PERSON"
+  },
+  "াহ": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "সামাজিক": {
+    "en": "Social",
+    "bn": "সামাজিক",
+    "type": "NOISE"
+  },
+  "ইসলামিক": {
+    "en": "Islamic",
+    "bn": "ইসলামিক",
+    "type": "NOISE"
+  },
+  "টরামপের": {
+    "en": "Donald Trump",
+    "bn": "ডোনাল্ড ট্রাম্প",
+    "type": "PERSON"
+  },
+  "ইরা": {
+    "en": "Ira",
+    "bn": "ইরা",
+    "type": "PERSON"
+  },
+  "শরীলঙকা": {
+    "en": "Sri Lanka",
+    "bn": "শ্রীলঙ্কা",
+    "type": "LOC"
+  },
+  "সেনটার": {
+    "en": "Center",
+    "bn": "সেন্টার",
+    "type": "NOISE"
+  },
+  "ইকবাল": {
+    "en": "Iqbal",
+    "bn": "ইকবাল",
+    "type": "PERSON"
+  },
+  "বিকেলে": {
+    "en": "Afternoon",
+    "bn": "বিকেল",
+    "type": "NOISE"
+  },
+  "েক": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "অসটরেলিযায": {
+    "en": "Australia",
+    "bn": "অস্ট্রেলিয়া",
+    "type": "LOC"
+  },
+  "দল": {
+    "en": "Party",
+    "bn": "দল",
+    "type": "NOISE"
+  },
+  "ভেনেজযেলায": {
+    "en": "Venezuela",
+    "bn": "ভেনিজুয়েলা",
+    "type": "LOC"
+  },
+  "সংসদ নিরবাচনের": {
+    "en": "Parliamentary Election",
+    "bn": "সংসদ নির্বাচন",
+    "type": "MISC"
+  },
+  "Nahid": {
+    "en": "Nahid",
+    "bn": "নাহিদ",
+    "type": "PERSON"
+  },
+  "Nazrul Islam Khan": {
+    "en": "Nazrul Islam Khan",
+    "bn": "নজরুল ইসলাম খান",
+    "type": "PERSON"
+  },
+  "Coast Guard": {
+    "en": "Coast Guard",
+    "bn": "কোস্ট গার্ড",
+    "type": "ORG"
+  },
+  "Election": {
+    "en": "Election",
+    "bn": "নির্বাচন",
+    "type": "MISC"
+  },
+  "Zaima Rahman": {
+    "en": "Zaima Rahman",
+    "bn": "জাইমা রহমান",
+    "type": "PERSON"
+  },
+  "Thakurgaon": {
+    "en": "Thakurgaon",
+    "bn": "ঠাকুরগাঁও",
+    "type": "LOC"
+  },
+  "BB": {
+    "en": "Bangladesh Bank",
+    "bn": "বাংলাদেশ ব্যাংক",
+    "type": "ORG"
+  },
+  "Taiwan": {
+    "en": "Taiwan",
+    "bn": "তাইওয়ান",
+    "type": "LOC"
+  },
+  "Old Trafford": {
+    "en": "Old Trafford",
+    "bn": "ওল্ড ট্র্যাফোর্ড",
+    "type": "LOC"
+  },
+  "Hridoy": {
+    "en": "Hridoy",
+    "bn": "হৃদয়",
+    "type": "PERSON"
+  },
+  "University of Dhaka": {
+    "en": "University of Dhaka",
+    "bn": "ঢাকা বিশ্ববিদ্যালয়",
+    "type": "ORG"
+  },
+  "European Commission": {
+    "en": "European Commission",
+    "bn": "ইউরোপীয় কমিশন",
+    "type": "ORG"
+  },
+  "Detective Branch": {
+    "en": "Detective Branch",
+    "bn": "গোয়েন্দা শাখা",
+    "type": "ORG"
+  },
+  "Latin America": {
+    "en": "Latin America",
+    "bn": "লাতিন আমেরিকা",
+    "type": "LOC"
+  },
+  "Criminal Investigation Department": {
+    "en": "Criminal Investigation Department",
+    "bn": "অপরাধ তদন্ত বিভাগ",
+    "type": "ORG"
+  },
+  "CID": {
+    "en": "Criminal Investigation Department",
+    "bn": "সিআইডি",
+    "type": "ORG"
+  },
+  "DMP": {
+    "en": "Dhaka Metropolitan Police",
+    "bn": "ঢাকা মেট্রোপলিটন পুলিশ",
+    "type": "ORG"
+  },
+  "Sanae Takaichi": {
+    "en": "Sanae Takaichi",
+    "bn": "সানায়ে তাকাইচি",
+    "type": "PERSON"
+  },
+  "বারতা সংসথা": {
+    "en": "News Agency",
+    "bn": "বার্তা সংস্থা",
+    "type": "MISC"
+  },
+  "কমিশনের": {
+    "en": "Commission",
+    "bn": "কমিশন",
+    "type": "ORG"
+  },
+  "রফিকল": {
+    "en": "Rafiqul",
+    "bn": "রফিকুল",
+    "type": "PERSON"
+  },
+  "এশিযা": {
+    "en": "Asia",
+    "bn": "এশিয়া",
+    "type": "LOC"
+  },
+  "ককসবাজার": {
+    "en": "Cox's Bazar",
+    "bn": "কক্সবাজার",
+    "type": "LOC"
+  },
+  "শারমিন": {
+    "en": "Sharmin",
+    "bn": "শারমিন",
+    "type": "PERSON"
+  },
+  "মযমনসিংহ": {
+    "en": "Mymensingh",
+    "bn": "ময়মনসিংহ",
+    "type": "LOC"
+  },
+  "খাতন": {
+    "en": "Khatun",
+    "bn": "খাতুন",
+    "type": "PERSON"
+  },
+  "মাহমদ": {
+    "en": "Mahmud",
+    "bn": "মাহমুদ",
+    "type": "PERSON"
+  },
+  "মাওলানা": {
+    "en": "Maulana",
+    "bn": "মাওলানা",
+    "type": "PERSON"
+  },
+  "ডেনমারক": {
+    "en": "Denmark",
+    "bn": "ডেনমার্ক",
+    "type": "LOC"
+  },
+  "নেপাল": {
+    "en": "Nepal",
+    "bn": "নেপাল",
+    "type": "LOC"
+  },
+  "এশিযার": {
+    "en": "Asia",
+    "bn": "এশিয়া",
+    "type": "LOC"
+  },
+  "অসটরেলিযার": {
+    "en": "Australia",
+    "bn": "অস্ট্রেলিয়া",
+    "type": "LOC"
+  },
+  "রাষটর": {
+    "en": "State",
+    "bn": "রাষ্ট্র",
+    "type": "NOISE"
+  },
+  "নর": {
+    "en": "Nor",
+    "bn": "নর",
+    "type": "NOISE"
+  },
+  "লে": {
+    "en": "Le",
+    "bn": "লে",
+    "type": "NOISE"
+  },
+  "ডি": {
+    "en": "De",
+    "bn": "ডি",
+    "type": "NOISE"
+  },
+  "সিঙগাপরে": {
+    "en": "Singapore",
+    "bn": "সিঙ্গাপুর",
+    "type": "LOC"
+  },
+  "শরিফ": {
+    "en": "Sharif",
+    "bn": "শরীফ",
+    "type": "PERSON"
+  },
+  "নিরবাচনে": {
+    "en": "Election",
+    "bn": "নির্বাচন",
+    "type": "NOISE"
+  },
+  "সেলিম": {
+    "en": "Selim",
+    "bn": "সেলিম",
+    "type": "PERSON"
+  },
+  "বিশব": {
+    "en": "World",
+    "bn": "বিশ্ব",
+    "type": "NOISE"
+  },
+  "পৌরসভার": {
+    "en": "Municipality",
+    "bn": "পৌরসভা",
+    "type": "ORG"
+  },
+  "National Press Club": {
+    "en": "National Press Club",
+    "bn": "জাতীয় প্রেসক্লাব",
+    "type": "ORG"
+  },
+  "World Bank": {
+    "en": "World Bank",
+    "bn": "বিশ্বব্যাংক",
+    "type": "ORG"
+  },
+  "Ireland": {
+    "en": "Ireland",
+    "bn": "আয়ারল্যান্ড",
+    "type": "LOC"
+  },
+  "Narsingdi": {
+    "en": "Narsingdi",
+    "bn": "নরসিংদী",
+    "type": "LOC"
+  },
+  "Munshiganj": {
+    "en": "Munshiganj",
+    "bn": "মুন্সিগঞ্জ",
+    "type": "LOC"
+  },
+  "Pakistani": {
+    "en": "Pakistani",
+    "bn": "পাকিস্তানি",
+    "type": "MISC"
+  },
+  "Faridpur": {
+    "en": "Faridpur",
+    "bn": "ফরিদপুর",
+    "type": "LOC"
+  },
+  "Islamist": {
+    "en": "Islamist",
+    "bn": "ইসলামপন্থী",
+    "type": "MISC"
+  },
+  "Nazrul Islam": {
+    "en": "Nazrul Islam",
+    "bn": "নজরুল ইসলাম",
+    "type": "PERSON"
+  },
+  "Manikganj": {
+    "en": "Manikganj",
+    "bn": "মানিকগঞ্জ",
+    "type": "LOC"
+  },
+  "Moulvibazar": {
+    "en": "Moulvibazar",
+    "bn": "মৌলভীবাজার",
+    "type": "LOC"
+  },
+  "Nigeria": {
+    "en": "Nigeria",
+    "bn": "নাইজেরিয়া",
+    "type": "LOC"
+  },
+  "Melbourne": {
+    "en": "Melbourne",
+    "bn": "মেলবোর্ন",
+    "type": "LOC"
+  },
+  "Rajshahi Warriors": {
+    "en": "Rajshahi Warriors",
+    "bn": "রাজশাহী ওয়ারিয়র্স",
+    "type": "ORG"
+  },
+  "Noakhali Express": {
+    "en": "Noakhali Express",
+    "bn": "নোয়াখালী এক্সপ্রেস",
+    "type": "MISC"
+  },
+  "Litton Das": {
+    "en": "Litton Das",
+    "bn": "লিটন দাস",
+    "type": "PERSON"
+  },
+  "Championship": {
+    "en": "Championship",
+    "bn": "চ্যাম্পিয়নশিপ",
+    "type": "MISC"
+  },
+  "Turkey": {
+    "en": "Turkey",
+    "bn": "তুরস্ক",
+    "type": "LOC"
+  },
+  "Khalilur Rahman": {
+    "en": "Khalilur Rahman",
+    "bn": "খলিলুর রহমান",
+    "type": "PERSON"
+  },
+  "Muslim": {
+    "en": "Muslim",
+    "bn": "মুসলিম",
+    "type": "MISC"
+  },
+  "Rajshahi University": {
+    "en": "Rajshahi University",
+    "bn": "রাজশাহী বিশ্ববিদ্যালয়",
+    "type": "ORG"
+  },
+  "Chhatra Dal": {
+    "en": "Chhatra Dal",
+    "bn": "ছাত্রদল",
+    "type": "ORG"
+  },
+  "South": {
+    "en": "South",
+    "bn": "দক্ষিণ",
+    "type": "LOC"
+  },
+  "BSF": {
+    "en": "Border Security Force",
+    "bn": "বিএসএফ",
+    "type": "ORG"
+  },
+  "Canadian": {
+    "en": "Canadian",
+    "bn": "কানাডীয়",
+    "type": "MISC"
+  },
+  "America": {
+    "en": "America",
+    "bn": "আমেরিকা",
+    "type": "LOC"
+  },
+  "Cilia Flores": {
+    "en": "Cilia Flores",
+    "bn": "সিলিয়া ফ্লোরেস",
+    "type": "PERSON"
+  },
+  "Americans": {
+    "en": "Americans",
+    "bn": "আমেরিকান",
+    "type": "MISC"
+  },
+  "Syrian": {
+    "en": "Syrian",
+    "bn": "সিরীয়",
+    "type": "MISC"
+  },
+  "FA Cup": {
+    "en": "FA Cup",
+    "bn": "এফএ কাপ",
+    "type": "MISC"
+  },
+  "ির": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "পি": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "হাসনাত": {
+    "en": "Hasnat",
+    "bn": "হাসনাত",
+    "type": "PERSON"
+  },
+  "ায": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "সিং": {
+    "en": "Singh",
+    "bn": "সিং",
+    "type": "PERSON"
+  },
+  "গলশানে": {
+    "en": "Gulshan",
+    "bn": "গুলশান",
+    "type": "LOC"
+  },
+  "আখতার": {
+    "en": "Akhter",
+    "bn": "আখতার",
+    "type": "PERSON"
+  },
+  "বাংলার": {
+    "en": "Bengal",
+    "bn": "বাংলা",
+    "type": "LOC"
+  },
+  "নিউজ": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "যকতরাজযের": {
+    "en": "United Kingdom",
+    "bn": "যুক্তরাজ্য",
+    "type": "LOC"
+  },
+  "ডেনমারকের": {
+    "en": "Denmark",
+    "bn": "ডেনমার্ক",
+    "type": "LOC"
+  },
+  "ফেসবক": {
+    "en": "Facebook",
+    "bn": "ফেসবুক",
+    "type": "ORG"
+  },
+  "বিদেশ": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "পলিশের": {
+    "en": "Police",
+    "bn": "পুলিশ",
+    "type": "ORG"
+  },
+  "দা": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "ফযেজ": {
+    "en": "Fayez",
+    "bn": "ফয়েজ",
+    "type": "PERSON"
+  },
+  "শন": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "সংসদ নিরবাচন": {
+    "en": "Parliamentary Election",
+    "bn": "সংসদ নির্বাচন",
+    "type": "MISC"
+  },
+  "কমিটি": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "জাতীয সংসদ নিরবাচনের": {
+    "en": "National Parliamentary Election",
+    "bn": "জাতীয় সংসদ নির্বাচন",
+    "type": "MISC"
+  },
+  "গরা": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "াত": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "Bandarban": {
+    "en": "Bandarban",
+    "bn": "বান্দরবান",
+    "type": "LOC"
+  },
+  "Ansar": {
+    "en": "Ansar",
+    "bn": "আনসার",
+    "type": "ORG"
+  },
+  "Google": {
+    "en": "Google",
+    "bn": "গুগল",
+    "type": "ORG"
+  },
+  "13th National Parliamentary Election": {
+    "en": "13th National Parliamentary Election",
+    "bn": "১৩তম জাতীয় সংসদ নির্বাচন",
+    "type": "MISC"
+  },
+  "Feni": {
+    "en": "Feni",
+    "bn": "ফেনী",
+    "type": "LOC"
+  },
+  "Norway": {
+    "en": "Norway",
+    "bn": "নরওয়ে",
+    "type": "LOC"
+  },
+  "Rafiqul Islam": {
+    "en": "Rafiqul Islam",
+    "bn": "রফিকুল ইসলাম",
+    "type": "PERSON"
+  },
+  "Commission": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "Habiganj": {
+    "en": "Habiganj",
+    "bn": "হবিগঞ্জ",
+    "type": "LOC"
+  },
+  "Tasnim Jara": {
+    "en": "Tasnim Jara",
+    "bn": "তাসনিম জারা",
+    "type": "PERSON"
+  },
+  "Federal Reserve": {
+    "en": "Federal Reserve",
+    "bn": "ফেডারেল রিজার্ভ",
+    "type": "ORG"
+  },
+  "Republican": {
+    "en": "Republican Party",
+    "bn": "রিপাবলিকান পার্টি",
+    "type": "ORG"
+  },
+  "South Asian": {
+    "en": "South Asian",
+    "bn": "দক্ষিণ এশীয়",
+    "type": "MISC"
+  },
+  "Spanish Super Cup": {
+    "en": "Spanish Super Cup",
+    "bn": "স্প্যানিশ সুপার কাপ",
+    "type": "MISC"
+  },
+  "Michael Carrick": {
+    "en": "Michael Carrick",
+    "bn": "মাইকেল ক্যারিক",
+    "type": "PERSON"
+  },
+  "Cambodia": {
+    "en": "Cambodia",
+    "bn": "কম্বোডিয়া",
+    "type": "LOC"
+  },
+  "Indian Premier League": {
+    "en": "Indian Premier League",
+    "bn": "ইন্ডিয়ান প্রিমিয়ার লিগ",
+    "type": "MISC"
+  },
+  "Shariatpur": {
+    "en": "Shariatpur",
+    "bn": "শরীয়তপুর",
+    "type": "LOC"
+  },
+  "Touhid Hossain": {
+    "en": "Touhid Hossain",
+    "bn": "তৌহিদ হোসেন",
+    "type": "PERSON"
+  },
+  "Border Security Force": {
+    "en": "Border Security Force",
+    "bn": "বর্ডার সিকিউরিটি ফোর্স",
+    "type": "ORG"
+  },
+  "Evercare Hospital": {
+    "en": "Evercare Hospital",
+    "bn": "এভারকেয়ার হাসপাতাল",
+    "type": "ORG"
+  },
+  "Iraq": {
+    "en": "Iraq",
+    "bn": "ইরাক",
+    "type": "LOC"
+  },
+  "Mercosur": {
+    "en": "Mercosur",
+    "bn": "মেরকোসুর",
+    "type": "ORG"
+  },
+  "Saudi": {
+    "en": "Saudi Arabia",
+    "bn": "সৌদি আরব",
+    "type": "LOC"
+  },
+  "জাহাঙগীর": {
+    "en": "Jahangir",
+    "bn": "জাহাঙ্গীর",
+    "type": "PERSON"
+  },
+  "আওযামী লীগ": {
+    "en": "Awami League",
+    "bn": "আওয়ামী লীগ",
+    "type": "ORG"
+  },
+  "ওযাশিংটন": {
+    "en": "Washington",
+    "bn": "ওয়াশিংটন",
+    "type": "LOC"
+  },
+  "পরেসিডেনট": {
+    "en": "President",
+    "bn": "প্রেসিডেন্ট",
+    "type": "MISC"
+  },
+  "একসপরেস": {
+    "en": "Express",
+    "bn": "এক্সপ্রেস",
+    "type": "MISC"
+  },
+  "াই": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "ইংলযানড": {
+    "en": "England",
+    "bn": "ইংল্যান্ড",
+    "type": "LOC"
+  },
+  "টি": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "খসর মাহমদ চৌধরী": {
+    "en": "Khosru Mahmud Chowdhury",
+    "bn": "খসরু মাহমুদ চৌধুরী",
+    "type": "PERSON"
+  },
+  "হাসিনার": {
+    "en": "Sheikh Hasina",
+    "bn": "শেখ হাসিনা",
+    "type": "PERSON"
+  },
+  "সটক একসচেঞজে": {
+    "en": "Stock Exchange",
+    "bn": "স্টক এক্সচেঞ্জ",
+    "type": "ORG"
+  },
+  "আমেরিকা": {
+    "en": "America",
+    "bn": "আমেরিকা",
+    "type": "LOC"
+  },
+  "যে": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "বিসিবি": {
+    "en": "BCB",
+    "bn": "বিসিবি",
+    "type": "ORG"
+  },
+  "বন": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "আনদোলন বাংলাদেশ": {
+    "en": "Andolan Bangladesh",
+    "bn": "আন্দোলন বাংলাদেশ",
+    "type": "ORG"
+  },
+  "ককসবাজারের": {
+    "en": "Cox's Bazar",
+    "bn": "কক্সবাজার",
+    "type": "LOC"
+  },
+  "Mia Golam Porwar": {
+    "en": "Mia Golam Porwar",
+    "bn": "মিয়া গোলাম পরওয়ার",
+    "type": "PERSON"
+  },
+  "Scotland": {
+    "en": "Scotland",
+    "bn": "স্কটল্যান্ড",
+    "type": "LOC"
+  },
+  "North": {
+    "en": "North",
+    "bn": "উত্তর",
+    "type": "LOC"
+  },
+  "Saiful Islam": {
+    "en": "Saiful Islam",
+    "bn": "সাইফুল ইসলাম",
+    "type": "PERSON"
+  },
+  "Jatiyatabadi Chhatra Dal": {
+    "en": "Jatiyatabadi Chhatra Dal",
+    "bn": "জাতীয়তাবাদী ছাত্রদল",
+    "type": "ORG"
+  },
+  "Kotwali": {
+    "en": "Kotwali",
+    "bn": "কোতয়ালী",
+    "type": "LOC"
+  },
+  "Sadar": {
+    "en": "Sadar",
+    "bn": "সদর",
+    "type": "LOC"
+  },
+  "Jahangirnagar University": {
+    "en": "Jahangirnagar University",
+    "bn": "জাহাঙ্গীরনগর বিশ্ববিদ্যালয়",
+    "type": "ORG"
+  },
+  "Prothom Alo": {
+    "en": "Prothom Alo",
+    "bn": "প্রথম আলো",
+    "type": "ORG"
+  },
+  "Inqilab Moncho": {
+    "en": "Inqilab Moncho",
+    "bn": "ইনকিলাব মঞ্চ",
+    "type": "ORG"
+  },
+  "Sweden": {
+    "en": "Sweden",
+    "bn": "সুইডেন",
+    "type": "LOC"
+  },
+  "Department of Agricultural Extension": {
+    "en": "Department of Agricultural Extension",
+    "bn": "কৃষি সম্প্রসারণ অধিদপ্তর",
+    "type": "ORG"
+  },
+  "South Korea": {
+    "en": "South Korea",
+    "bn": "দক্ষিণ কোরিয়া",
+    "type": "LOC"
+  },
+  "La Liga": {
+    "en": "La Liga",
+    "bn": "লা লিগা",
+    "type": "MISC"
+  },
+  "Pep Guardiola": {
+    "en": "Pep Guardiola",
+    "bn": "পেপ গার্দিওলা",
+    "type": "PERSON"
+  },
+  "Nottingham Forest": {
+    "en": "Nottingham Forest",
+    "bn": "নটিংহাম ফরেস্ট",
+    "type": "ORG"
+  },
+  "Brazilian": {
+    "en": "Brazilian",
+    "bn": "ব্রাজিলিয়ান",
+    "type": "MISC"
+  },
+  "Bangladesh Army": {
+    "en": "Bangladesh Army",
+    "bn": "বাংলাদেশ সেনাবাহিনী",
+    "type": "ORG"
+  },
+  "Inquilab Mancha": {
+    "en": "Inqilab Moncho",
+    "bn": "ইনকিলাব মঞ্চ",
+    "type": "ORG"
+  },
+  "Bengal": {
+    "en": "Bengal",
+    "bn": "বাংলা",
+    "type": "LOC"
+  },
+  "Palestinians": {
+    "en": "Palestinians",
+    "bn": "ফিলিস্তিনি",
+    "type": "MISC"
+  },
+  "Ruhul Kabir Rizvi": {
+    "en": "Ruhul Kabir Rizvi",
+    "bn": "রুহুল কবির রিজভী",
+    "type": "PERSON"
+  },
+  "Australian": {
+    "en": "Australian",
+    "bn": "অস্ট্রেলিয়ান",
+    "type": "MISC"
+  },
+  "Indonesia": {
+    "en": "Indonesia",
+    "bn": "ইন্দোনেশিয়া",
+    "type": "LOC"
+  },
+  "Gulf": {
+    "en": "Gulf",
+    "bn": "উপসাগরীয়",
+    "type": "LOC"
+  },
+  "Asian": {
+    "en": "Asian",
+    "bn": "এশীয়",
+    "type": "MISC"
+  },
+  "Victory Day": {
+    "en": "Victory Day",
+    "bn": "বিজয় দিবস",
+    "type": "MISC"
+  },
+  "Aleppo": {
+    "en": "Aleppo",
+    "bn": "আলেপ্পো",
+    "type": "LOC"
+  },
+  "Islamic State": {
+    "en": "Islamic State",
+    "bn": "ইসলামিক স্টেট",
+    "type": "ORG"
+  },
+  "Kurdish": {
+    "en": "Kurdish",
+    "bn": "কুর্দি",
+    "type": "MISC"
+  },
+  "Delcy Rodriguez": {
+    "en": "Delcy Rodríguez",
+    "bn": "ডেলসি রদ্রিগেজ",
+    "type": "PERSON"
+  },
+  "Takaichi": {
+    "en": "Sanae Takaichi",
+    "bn": "সানায়ে তাকাইচি",
+    "type": "PERSON"
+  },
+  "ামাযাতের": {
+    "en": "Jamaat-e-Islami",
+    "bn": "জামায়াত-ই-ইসলামী",
+    "type": "ORG"
+  },
+  "রীযাজ": {
+    "en": "Riaz",
+    "bn": "রিয়াজ",
+    "type": "PERSON"
+  },
+  "যের": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "নপির": {
+    "en": "BNP",
+    "bn": "বিএনপি",
+    "type": "ORG"
+  },
+  "িন": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "সপেনের": {
+    "en": "Spain",
+    "bn": "স্পেন",
+    "type": "LOC"
+  },
+  "বিদেশের": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "সইডেন": {
+    "en": "Sweden",
+    "bn": "সুইডেন",
+    "type": "LOC"
+  },
+  "নেদারলযানডস": {
+    "en": "Netherlands",
+    "bn": "নেদারল্যান্ডস",
+    "type": "LOC"
+  },
+  "সালেহউদদিন": {
+    "en": "Salehuddin",
+    "bn": "সালেহউদ্দিন",
+    "type": "PERSON"
+  },
+  "রযযালস": {
+    "en": "Royals",
+    "bn": "রয়্যালস",
+    "type": "ORG"
+  },
+  "দাস": {
+    "en": "Das",
+    "bn": "দাস",
+    "type": "PERSON"
+  },
+  "আযারলযানড": {
+    "en": "Ireland",
+    "bn": "আয়ারল্যান্ড",
+    "type": "LOC"
+  },
+  "ইউনিভারসিটি": {
+    "en": "University",
+    "bn": "ইউনিভার্সিটি",
+    "type": "ORG"
+  },
+  "গাজী": {
+    "en": "Gazi",
+    "bn": "গাজী",
+    "type": "PERSON"
+  },
+  "মোসতাফিজর": {
+    "en": "Mostafizur",
+    "bn": "মোস্তাফিজুর",
+    "type": "PERSON"
+  },
+  "পারটি": {
+    "en": "Party",
+    "bn": "পার্টি",
+    "type": "ORG"
+  },
+  "জাতীয সংসদ নিরবাচ": {
+    "en": "National Parliament Election",
+    "bn": "জাতীয় সংসদ নির্বাচন",
+    "type": "MISC"
+  },
+  "বগডা": {
+    "en": "Bogura",
+    "bn": "বগুড়া",
+    "type": "LOC"
+  },
+  "হাসিনা": {
+    "en": "Hasina",
+    "bn": "হাসিনা",
+    "type": "PERSON"
+  },
+  "সরকারের": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "োযা": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "সলামী": {
+    "en": "Islami",
+    "bn": "ইসলামী",
+    "type": "ORG"
+  },
+  "পারভেজ": {
+    "en": "Parvez",
+    "bn": "পারভেজ",
+    "type": "PERSON"
+  },
+  "মেহেদী": {
+    "en": "Mehedi",
+    "bn": "মেহেদী",
+    "type": "PERSON"
+  },
+  "হোসেনের": {
+    "en": "Hossain",
+    "bn": "হোসেন",
+    "type": "PERSON"
+  },
+  "নিউইযরক": {
+    "en": "New York",
+    "bn": "নিউ ইয়র্ক",
+    "type": "LOC"
+  },
+  "আমীর": {
+    "en": "Amir",
+    "bn": "আমীর",
+    "type": "PERSON"
+  },
+  "একসপরেসের": {
+    "en": "Express",
+    "bn": "এক্সপ্রেস",
+    "type": "ORG"
+  },
+  "ইসলামি": {
+    "en": "Islami",
+    "bn": "ইসলামি",
+    "type": "ORG"
+  },
+  "এলাকায": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "মঙগলবার": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "Islami Andolan": {
+    "en": "Islami Andolan",
+    "bn": "ইসলামী আন্দোলন",
+    "type": "ORG"
+  },
+  "Hasnat Abdullah": {
+    "en": "Hasnat Abdullah",
+    "bn": "হাসনাত আবদুল্লাহ",
+    "type": "PERSON"
+  },
+  "Nasiruddin Patwary": {
+    "en": "Nasiruddin Patwary",
+    "bn": "নাসিরুদ্দিন পাটোয়ারী",
+    "type": "PERSON"
+  },
+  "Natore": {
+    "en": "Natore",
+    "bn": "নাটোর",
+    "type": "LOC"
+  },
+  "Xi Jinping": {
+    "en": "Xi Jinping",
+    "bn": "শি জিনপিং",
+    "type": "PERSON"
+  },
+  "Liberal Democratic Party": {
+    "en": "Liberal Democratic Party",
+    "bn": "লিবারেল ডেমোক্রেটিক পার্টি",
+    "type": "ORG"
+  },
+  "bKash": {
+    "en": "bKash",
+    "bn": "বিকাশ",
+    "type": "ORG"
+  },
+  "Oman": {
+    "en": "Oman",
+    "bn": "ওমান",
+    "type": "LOC"
+  },
+  "Islami Chhatra Shibir": {
+    "en": "Islami Chhatra Shibir",
+    "bn": "ইসলামী ছাত্র শিবির",
+    "type": "ORG"
+  },
+  "Rahman": {
+    "en": "Rahman",
+    "bn": "রহমান",
+    "type": "PERSON"
+  },
+  "Khan": {
+    "en": "Khan",
+    "bn": "খান",
+    "type": "PERSON"
+  },
+  "Australian Open": {
+    "en": "Australian Open",
+    "bn": "অস্ট্রেলিয়ান ওপেন",
+    "type": "MISC"
+  },
+  "Xabi Alonso": {
+    "en": "Xabi Alonso",
+    "bn": "জাবি আলোনসো",
+    "type": "PERSON"
+  },
+  "Barca": {
+    "en": "Barca",
+    "bn": "বার্সা",
+    "type": "ORG"
+  },
+  "Ruben Amorim": {
+    "en": "Ruben Amorim",
+    "bn": "রুবেন আমোরিম",
+    "type": "PERSON"
+  },
+  "New Zealand": {
+    "en": "New Zealand",
+    "bn": "নিউজিল্যান্ড",
+    "type": "LOC"
+  },
+  "Spanish": {
+    "en": "Spanish",
+    "bn": "স্প্যানিশ",
+    "type": "MISC"
+  },
+  "Philippines": {
+    "en": "Philippines",
+    "bn": "ফিলিপাইন",
+    "type": "LOC"
+  },
+  "Copenhagen": {
+    "en": "Copenhagen",
+    "bn": "কোপেনহেগেন",
+    "type": "LOC"
+  },
+  "Chattogram Medical College Hospital": {
+    "en": "Chattogram Medical College Hospital",
+    "bn": "চট্টগ্রাম মেডিকেল কলেজ হাসপাতাল",
+    "type": "ORG"
+  },
+  "Khilgaon": {
+    "en": "Khilgaon",
+    "bn": "খিলগাঁও",
+    "type": "LOC"
+  },
+  "Communist Party of Bangladesh": {
+    "en": "Communist Party of Bangladesh",
+    "bn": "বাংলাদেশের কমিউনিস্ট পার্টি",
+    "type": "ORG"
+  },
+  "Brussels": {
+    "en": "Brussels",
+    "bn": "ব্রাসেলস",
+    "type": "LOC"
+  },
+  "Greenlandic": {
+    "en": "Greenlandic",
+    "bn": "গ্রিনল্যান্ডীয়",
+    "type": "MISC"
+  },
+  "Cuba": {
+    "en": "Cuba",
+    "bn": "কিউবা",
+    "type": "LOC"
+  },
+  "Manik Mia Avenue": {
+    "en": "Manik Mia Avenue",
+    "bn": "মানিক মিয়া এভিনিউ",
+    "type": "LOC"
+  },
+  "Hamas": {
+    "en": "Hamas",
+    "bn": "হামাস",
+    "type": "ORG"
+  },
+  "Yemen": {
+    "en": "Yemen",
+    "bn": "ইয়েমেন",
+    "type": "LOC"
+  },
+  "BMD": {
+    "en": "Bangladesh Meteorological Department",
+    "bn": "বাংলাদেশ আবহাওয়া অধিদপ্তর",
+    "type": "ORG"
+  },
+  "Iran Human Rights": {
+    "en": "Iran Human Rights",
+    "bn": "ইরান হিউম্যান রাইটস",
+    "type": "ORG"
+  },
+  "Iranians": {
+    "en": "Iranians",
+    "bn": "ইরানি",
+    "type": "MISC"
+  },
+  "Nobel Peace Prize": {
+    "en": "Nobel Peace Prize",
+    "bn": "নোবেল শান্তি পুরস্কার",
+    "type": "MISC"
+  },
+  "Mette Frederiksen": {
+    "en": "Mette Frederiksen",
+    "bn": "মেটে ফ্রেডেরিকসেন",
+    "type": "PERSON"
+  },
+  "Congress": {
+    "en": "Congress",
+    "bn": "কংগ্রেস",
+    "type": "ORG"
+  },
+  "Hindu": {
+    "en": "Hindu",
+    "bn": "হিন্দু",
+    "type": "MISC"
+  },
+  "Rohingyas": {
+    "en": "Rohingya",
+    "bn": "রোহিঙ্গা",
+    "type": "MISC"
+  },
+  "জিযা": {
+    "en": "Zia",
+    "bn": "জিয়া",
+    "type": "PERSON"
+  },
+  "নিরবা": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "মামন": {
+    "en": "Mamun",
+    "bn": "মামুন",
+    "type": "PERSON"
+  },
+  "নিরবাচ": {
+    "en": "Election",
+    "bn": "নির্বাচন",
+    "type": "MISC"
+  },
+  "ইউনিযন পরিষদের": {
+    "en": "Union Parishad",
+    "bn": "ইউনিয়ন পরিষদ",
+    "type": "ORG"
+  },
+  "যশোর": {
+    "en": "Jashore",
+    "bn": "যশোর",
+    "type": "LOC"
+  },
+  "আববাস": {
+    "en": "Abbas",
+    "bn": "আব্বাস",
+    "type": "PERSON"
+  },
+  "মাহমদ সজীব ভইযা": {
+    "en": "Mahmud Sajib Bhuiyan",
+    "bn": "মাহমুদ সজীব ভূঁইয়া",
+    "type": "PERSON"
+  },
+  "আনদো": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "পঞচগড": {
+    "en": "Panchagarh",
+    "bn": "পঞ্চগড়",
+    "type": "LOC"
+  },
+  "মা": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "োনালড": {
+    "en": "Donald",
+    "bn": "ডোনাল্ড",
+    "type": "PERSON"
+  },
+  "আযাতললাহ": {
+    "en": "Ayatollah",
+    "bn": "আয়াতুল্লাহ",
+    "type": "MISC"
+  },
+  "নিউজিলযানড": {
+    "en": "New Zealand",
+    "bn": "নিউজিল্যান্ড",
+    "type": "LOC"
+  },
+  "লিটন": {
+    "en": "Liton",
+    "bn": "লিটন",
+    "type": "PERSON"
+  },
+  "রাজশাহীর": {
+    "en": "Rajshahi",
+    "bn": "রাজশাহী",
+    "type": "LOC"
+  },
+  "ফারহান": {
+    "en": "Farhan",
+    "bn": "ফারহান",
+    "type": "PERSON"
+  },
+  "কমার": {
+    "en": "Kumar",
+    "bn": "কুমার",
+    "type": "PERSON"
+  },
+  "গর": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "নিউইযরকে": {
+    "en": "New York",
+    "bn": "নিউ ইয়র্ক",
+    "type": "LOC"
+  },
+  "শামীম": {
+    "en": "Shamim",
+    "bn": "শামীম",
+    "type": "PERSON"
+  },
+  "সোহেল": {
+    "en": "Sohel",
+    "bn": "সোহেল",
+    "type": "PERSON"
+  },
+  "আনোযার": {
+    "en": "Anwar",
+    "bn": "আনোয়ার",
+    "type": "PERSON"
+  },
+  "রাজসব বোরডের": {
+    "en": "National Board of Revenue",
+    "bn": "জাতীয় রাজস্ব বোর্ড",
+    "type": "ORG"
+  },
+  "এনসিপির": {
+    "en": "Nationalist Congress Party",
+    "bn": "এনসিপি",
+    "type": "ORG"
+  },
+  "োববার": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "মো. শফিউল": {
+    "en": "Md. Shafiul",
+    "bn": "মো. শফিউল",
+    "type": "PERSON"
+  },
+  "আলম মাহমদ": {
+    "en": "Alam Mahmud",
+    "bn": "আলম মাহমুদ",
+    "type": "PERSON"
+  },
+  "মো. মোহিতল": {
+    "en": "Md. Mohitul",
+    "bn": "মো. মোহিতুল",
+    "type": "PERSON"
+  },
+  "হক এনাম চৌধরী": {
+    "en": "Hoque Enam Chowdhury",
+    "bn": "হক এনাম চৌধুরী",
+    "type": "PERSON"
+  },
+  "ফারক": {
+    "en": "Faruk",
+    "bn": "ফারুক",
+    "type": "PERSON"
+  },
+  "জাইমা": {
+    "en": "Zaima",
+    "bn": "জাইমা",
+    "type": "PERSON"
+  },
+  "মেডিকেল কলেজ হাসপাতালে": {
+    "en": "Medical College Hospital",
+    "bn": "মেডিকেল কলেজ হাসপাতাল",
+    "type": "ORG"
+  },
+  "যকত": {
+    "en": "United",
+    "bn": "সংযুক্ত",
+    "type": "MISC"
+  },
+  "জেলায": {
+    "en": "District",
+    "bn": "জেলা",
+    "type": "LOC"
+  },
+  "কলকাতা": {
+    "en": "Kolkata",
+    "bn": "কলকাতা",
+    "type": "LOC"
+  },
+  "সংযকত": {
+    "en": "United",
+    "bn": "সংযুক্ত",
+    "type": "MISC"
+  },
+  "এস": {
+    "en": "S",
+    "bn": "এস",
+    "type": "NOISE"
+  },
+  "বর": {
+    "en": "Board",
+    "bn": "বোর্ড",
+    "type": "NOISE"
+  },
+  "বোরড": {
+    "en": "Board",
+    "bn": "বোর্ড",
+    "type": "ORG"
+  },
+  "সৌদি": {
+    "en": "Saudi",
+    "bn": "সৌদি",
+    "type": "LOC"
+  },
+  "কলেজের": {
+    "en": "College",
+    "bn": "কলেজ",
+    "type": "ORG"
+  },
+  "সেনটরাল ইউনিভারসিটির": {
+    "en": "Central University",
+    "bn": "সেন্ট্রাল ইউনিভার্সিটি",
+    "type": "ORG"
+  },
+  "পরথম আলো": {
+    "en": "Prothom Alo",
+    "bn": "প্রথম আলো",
+    "type": "ORG"
+  },
+  "Shahjalal University of Science and Technology": {
+    "en": "Shahjalal University of Science and Technology",
+    "bn": "শাহজালাল বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়",
+    "type": "ORG"
+  },
+  "Ministry of Home Affairs": {
+    "en": "Ministry of Home Affairs",
+    "bn": "স্বরাষ্ট্র মন্ত্রণালয়",
+    "type": "ORG"
+  },
+  "Bangladesh Coast Guard": {
+    "en": "Bangladesh Coast Guard",
+    "bn": "বাংলাদেশ কোস্ট গার্ড",
+    "type": "ORG"
+  },
+  "Paltan": {
+    "en": "Paltan",
+    "bn": "পল্টন",
+    "type": "LOC"
+  },
+  "Asif": {
+    "en": "Asif",
+    "bn": "আসিফ",
+    "type": "PERSON"
+  },
+  "LDP": {
+    "en": "LDP",
+    "bn": "এলডিপি",
+    "type": "ORG"
+  },
+  "Salahuddin": {
+    "en": "Salahuddin",
+    "bn": "সালাহউদ্দিন",
+    "type": "PERSON"
+  },
+  "Azizur Rahman Musabbir": {
+    "en": "Azizur Rahman Musabbir",
+    "bn": "আজিজুর রহমান মুসাব্বির",
+    "type": "PERSON"
+  },
+  "Banani": {
+    "en": "Banani",
+    "bn": "বনানী",
+    "type": "LOC"
+  },
+  "Dhaka North City Corporation": {
+    "en": "Dhaka North City Corporation",
+    "bn": "ঢাকা উত্তর সিটি কর্পোরেশন",
+    "type": "ORG"
+  },
+  "Emmanuel Macron": {
+    "en": "Emmanuel Macron",
+    "bn": "ইমানুয়েল ম্যাক্রোঁ",
+    "type": "PERSON"
+  },
+  "Seoul": {
+    "en": "Seoul",
+    "bn": "সিউল",
+    "type": "LOC"
+  },
+  "BGMEA": {
+    "en": "BGMEA",
+    "bn": "বিজিএমইএ",
+    "type": "ORG"
+  },
+  "Ahsan H Mansur": {
+    "en": "Ahsan H Mansur",
+    "bn": "আহসান এইচ মনসুর",
+    "type": "PERSON"
+  },
+  "Salehuddin Ahmed": {
+    "en": "Salehuddin Ahmed",
+    "bn": "সালেহউদ্দিন আহমেদ",
+    "type": "PERSON"
+  },
+  "UAE": {
+    "en": "UAE",
+    "bn": "সংযুক্ত আরব আমিরাত",
+    "type": "LOC"
+  },
+  "Moroccan": {
+    "en": "Moroccan",
+    "bn": "মরক্কান",
+    "type": "MISC"
+  },
+  "Saif Hassan": {
+    "en": "Saif Hassan",
+    "bn": "সাইফ হাসান",
+    "type": "PERSON"
+  },
+  "Mexico": {
+    "en": "Mexico",
+    "bn": "মেক্সিকো",
+    "type": "LOC"
+  },
+  "AFCON": {
+    "en": "AFCON",
+    "bn": "আফকন",
+    "type": "MISC"
+  },
+  "Naogaon": {
+    "en": "Naogaon",
+    "bn": "নওগাঁ",
+    "type": "LOC"
+  },
+  "Bangladesh Energy Regulatory Commission": {
+    "en": "Bangladesh Energy Regulatory Commission",
+    "bn": "বাংলাদেশ এনার্জি রেগুলেটরি কমিশন",
+    "type": "ORG"
+  },
+  "Reuters": {
+    "en": "Reuters",
+    "bn": "রয়টার্স",
+    "type": "ORG"
+  },
+  "Shafiqul Alam": {
+    "en": "Shafiqul Alam",
+    "bn": "শফিকুল আলম",
+    "type": "PERSON"
+  },
+  "Somalia": {
+    "en": "Somalia",
+    "bn": "সোমালিয়া",
+    "type": "LOC"
+  },
+  "DB": {
+    "en": "DB",
+    "bn": "ডিবি",
+    "type": "ORG"
+  },
+  "Tetulia": {
+    "en": "Tetulia",
+    "bn": "তেঁতুলিয়া",
+    "type": "LOC"
+  },
+  "DMCH": {
+    "en": "DMCH",
+    "bn": "ঢাকা মেডিকেল কলেজ হাসপাতাল",
+    "type": "ORG"
+  },
+  "Purbachal": {
+    "en": "Purbachal",
+    "bn": "পূর্বাচল",
+    "type": "LOC"
+  },
+  "Jatiya Party": {
+    "en": "Jatiya Party",
+    "bn": "জাতীয় পার্টি",
+    "type": "ORG"
+  },
+  "Nazrul": {
+    "en": "Nazrul",
+    "bn": "নজরুল",
+    "type": "PERSON"
+  },
+  "New Year": {
+    "en": "New Year",
+    "bn": "নতুন বছর",
+    "type": "MISC"
+  },
+  "Colombia": {
+    "en": "Colombia",
+    "bn": "কলম্বিয়া",
+    "type": "LOC"
+  },
+  "Mohammadpur": {
+    "en": "Mohammadpur",
+    "bn": "মোহাম্মদপুর",
+    "type": "LOC"
+  },
+  "Bangladesh Shilpakala Academy": {
+    "en": "Bangladesh Shilpakala Academy",
+    "bn": "বাংলাদেশ শিল্পকলা একাডেমি",
+    "type": "ORG"
+  },
+  "Abul Kalam Azad": {
+    "en": "Abul Kalam Azad",
+    "bn": "আবুল কালাম আজাদ",
+    "type": "PERSON"
+  },
+  "Board": {
+    "en": "Board",
+    "bn": "বোর্ড",
+    "type": "ORG"
+  },
+  "US-based": {
+    "en": "US-based",
+    "bn": "মার্কিন যুক্তরাষ্ট্র ভিত্তিক",
+    "type": "MISC"
+  },
+  "Uruguay": {
+    "en": "Uruguay",
+    "bn": "উরুগুয়ে",
+    "type": "LOC"
+  },
+  "Norway-based": {
+    "en": "Norway-based",
+    "bn": "নরওয়ে ভিত্তিক",
+    "type": "MISC"
+  },
+  "Keir Starmer": {
+    "en": "Keir Starmer",
+    "bn": "কিয়ার স্টারমার",
+    "type": "PERSON"
+  },
+  "Ukrainian": {
+    "en": "Ukrainian",
+    "bn": "ইউক্রেনীয়",
+    "type": "MISC"
+  },
+  "Fox News": {
+    "en": "Fox News",
+    "bn": "ফক্স নিউজ",
+    "type": "ORG"
+  },
+  "Aminul Islam": {
+    "en": "Aminul Islam",
+    "bn": "আমিনুল ইসলাম",
+    "type": "PERSON"
+  },
+  "Rodriguez": {
+    "en": "Rodriguez",
+    "bn": "রদ্রিগেজ",
+    "type": "PERSON"
+  },
+  "Abdus Salam": {
+    "en": "Abdus Salam",
+    "bn": "আবদুস সালাম",
+    "type": "PERSON"
+  },
+  "Sylhet International Stadium": {
+    "en": "Sylhet International Stadium",
+    "bn": "সিলেট আন্তর্জাতিক স্টেডিয়াম",
+    "type": "LOC"
+  },
+  "ল ইসলাম": {
+    "en": "Aminul Islam",
+    "bn": "আমিনুল ইসলাম",
+    "type": "PERSON"
+  },
+  "মনির": {
+    "en": "Monir",
+    "bn": "মনির",
+    "type": "PERSON"
+  },
+  "হাযদার": {
+    "en": "Haider",
+    "bn": "হায়দার",
+    "type": "PERSON"
+  },
+  "খাগডাছডি": {
+    "en": "Khagrachari",
+    "bn": "খাগড়াছড়ি",
+    "type": "LOC"
+  },
+  "সৈযদা": {
+    "en": "Syeda",
+    "bn": "সৈয়দা",
+    "type": "PERSON"
+  },
+  "নরওযে": {
+    "en": "Norway",
+    "bn": "নরওয়ে",
+    "type": "LOC"
+  },
+  "সাঈদ": {
+    "en": "Sayeed",
+    "bn": "সাঈদ",
+    "type": "PERSON"
+  },
+  "আশগঞজ": {
+    "en": "Ashuganj",
+    "bn": "আশুগঞ্জ",
+    "type": "LOC"
+  },
+  "আওযামী ল": {
+    "en": "Awami League",
+    "bn": "আওয়ামী লীগ",
+    "type": "ORG"
+  },
+  "আরাফাত": {
+    "en": "Arafat",
+    "bn": "আরাফাত",
+    "type": "PERSON"
+  },
+  "হাসপাতাল": {
+    "en": "Hospital",
+    "bn": "হাসপাতাল",
+    "type": "ORG"
+  },
+  "খলনার": {
+    "en": "Khulna",
+    "bn": "খুলনা",
+    "type": "LOC"
+  },
+  "মেডিকযাল কলেজ হাসপাতালে": {
+    "en": "Medical College Hospital",
+    "bn": "মেডিকেল কলেজ হাসপাতাল",
+    "type": "ORG"
+  },
+  "ইসলাম রাকিব": {
+    "en": "Islam Rakib",
+    "bn": "ইসলাম রাকিব",
+    "type": "PERSON"
+  },
+  "ীয": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "দিনাজপর": {
+    "en": "Dinajpur",
+    "bn": "দিনাজপুর",
+    "type": "LOC"
+  },
+  "পে": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "আফগানিসতান": {
+    "en": "Afghanistan",
+    "bn": "আফগানিস্তান",
+    "type": "LOC"
+  },
+  "সংবাদমাধযম": {
+    "en": "News Media",
+    "bn": "সংবাদমাধ্যম",
+    "type": "ORG"
+  },
+  "রাজসব বোরড": {
+    "en": "National Board of Revenue",
+    "bn": "জাতীয় রাজস্ব বোর্ড",
+    "type": "ORG"
+  },
+  "টির": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "মাদরো": {
+    "en": "Maduro",
+    "bn": "মাদুরো",
+    "type": "PERSON"
+  },
+  "ওযারিযরস": {
+    "en": "Warriors",
+    "bn": "ওয়ারিয়র্স",
+    "type": "ORG"
+  },
+  "রংপরের": {
+    "en": "Rangpur",
+    "bn": "রংপুর",
+    "type": "LOC"
+  },
+  "ইতালি": {
+    "en": "Italy",
+    "bn": "ইতালি",
+    "type": "LOC"
+  },
+  "আফরিকার": {
+    "en": "Africa",
+    "bn": "আফ্রিকা",
+    "type": "LOC"
+  },
+  "শহীদ": {
+    "en": "Shahid",
+    "bn": "শহীদ",
+    "type": "PERSON"
+  },
+  "টেলিভিশন": {
+    "en": "Television",
+    "bn": "টেলিভিশন",
+    "type": "ORG"
+  },
+  "কামরল": {
+    "en": "Kamrul",
+    "bn": "কামরুল",
+    "type": "PERSON"
+  },
+  "এলাকার": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "সা": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "রিযাজ": {
+    "en": "Riaz",
+    "bn": "রিয়াজ",
+    "type": "PERSON"
+  },
+  "কবীর": {
+    "en": "Kabir",
+    "bn": "কবীর",
+    "type": "PERSON"
+  },
+  "মোসতফা": {
+    "en": "Mostafa",
+    "bn": "মোস্তফা",
+    "type": "PERSON"
+  },
+  "কমি": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  },
+  "ডেভিড": {
+    "en": "David",
+    "bn": "ডেভিড",
+    "type": "PERSON"
+  },
+  "নারাযণগঞজ": {
+    "en": "Narayanganj",
+    "bn": "নারায়ণগঞ্জ",
+    "type": "LOC"
+  },
+  "মরতজা মজমদারের": {
+    "en": "Murtaza Mazumdar",
+    "bn": "মরতজা মজুমদার",
+    "type": "PERSON"
+  },
+  "নট": {
+    "en": null,
+    "bn": null,
+    "type": "NOISE"
+  }
+}

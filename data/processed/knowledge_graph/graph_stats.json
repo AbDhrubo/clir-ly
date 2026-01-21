@@ -1,0 +1,177 @@
+{
+  "num_nodes": 25586,
+  "num_edges": 66267,
+  "avg_degree": 5.18,
+  "max_degree": 2534,
+  "num_components": 18259,
+  "largest_component_size": 7292,
+  "entity_types": {
+    "PERSON": 9120,
+    "ORG": 8715,
+    "LOC": 5118,
+    "MISC": 2080,
+    "UNKNOWN": 553
+  },
+  "top_entities": [
+    {
+      "entity_id": "E09913",
+      "label_en": "Bangladesh",
+      "label_bn": "বাংলাদেশ",
+      "type": "LOC",
+      "degree": 2534,
+      "centrality": 0.099
+    },
+    {
+      "entity_id": "E10358",
+      "label_en": "Dhaka-8",
+      "label_bn": "ঢাকা",
+      "type": "LOC",
+      "degree": 2463,
+      "centrality": 0.0963
+    },
+    {
+      "entity_id": "E09914",
+      "label_en": "US",
+      "label_bn": "আমেরিকার",
+      "type": "LOC",
+      "degree": 780,
+      "centrality": 0.0305
+    },
+    {
+      "entity_id": "E22481",
+      "label_en": null,
+      "label_bn": null,
+      "type": null,
+      "degree": 729,
+      "centrality": 0.0285
+    },
+    {
+      "entity_id": "E09915",
+      "label_en": "India",
+      "label_bn": "ভারত",
+      "type": "LOC",
+      "degree": 671,
+      "centrality": 0.0262
+    },
+    {
+      "entity_id": "E14502",
+      "label_en": null,
+      "label_bn": "জাতীয",
+      "type": "ORG",
+      "degree": 664,
+      "centrality": 0.026
+    },
+    {
+      "entity_id": "E22479",
+      "label_en": null,
+      "label_bn": "রহমান",
+      "type": "PERSON",
+      "degree": 657,
+      "centrality": 0.0257
+    },
+    {
+      "entity_id": "E22482",
+      "label_en": null,
+      "label_bn": null,
+      "type": null,
+      "degree": 649,
+      "centrality": 0.0254
+    },
+    {
+      "entity_id": "E22480",
+      "label_en": null,
+      "label_bn": "ইসলাম",
+      "type": "PERSON",
+      "degree": 608,
+      "centrality": 0.0238
+    },
+    {
+      "entity_id": "E19573",
+      "label_en": null,
+      "label_bn": "উপজেলার",
+      "type": "LOC",
+      "degree": 594,
+      "centrality": 0.0232
+    },
+    {
+      "entity_id": "E00001",
+      "label_en": "BNP",
+      "label_bn": "বিএনপি",
+      "type": "ORG",
+      "degree": 556,
+      "centrality": 0.0217
+    },
+    {
+      "entity_id": "E19574",
+      "label_en": null,
+      "label_bn": "চটটগরাম",
+      "type": "LOC",
+      "degree": 455,
+      "centrality": 0.0178
+    },
+    {
+      "entity_id": "E12574",
+      "label_en": "TK",
+      "label_bn": null,
+      "type": "MISC",
+      "degree": 430,
+      "centrality": 0.0168
+    },
+    {
+      "entity_id": "E03923",
+      "label_en": "Donald Trump",
+      "label_bn": null,
+      "type": "PERSON",
+      "degree": 417,
+      "centrality": 0.0163
+    },
+    {
+      "entity_id": "E14507",
+      "label_en": null,
+      "label_bn": "বিএনপির",
+      "type": "ORG",
+      "degree": 408,
+      "centrality": 0.0159
+    },
+    {
+      "entity_id": "E00007",
+      "label_en": "Sylhet",
+      "label_bn": "সিলেট",
+      "type": "ORG",
+      "degree": 354,
+      "centrality": 0.0138
+    },
+    {
+      "entity_id": "E00003",
+      "label_en": "AFP",
+      "label_bn": "এএফপিকে",
+      "type": "ORG",
+      "degree": 338,
+      "centrality": 0.0132
+    },
+    {
+      "entity_id": "E09923",
+      "label_en": "Rajshahi",
+      "label_bn": "রাজশাহী",
+      "type": "LOC",
+      "degree": 336,
+      "centrality": 0.0131
+    },
+    {
+      "entity_id": "E03924",
+      "label_en": "Trump",
+      "label_bn": "টরামপ",
+      "type": "PERSON",
+      "degree": 328,
+      "centrality": 0.0128
+    },
+    {
+      "entity_id": "E00002",
+      "label_en": "Election Commission",
+      "label_bn": "নির্বাচন কমিশন",
+      "type": "ORG",
+      "degree": 314,
+      "centrality": 0.0123
+    }
+  ]
+}

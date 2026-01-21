@@ -63,18 +63,50 @@ class EntityNormalizer:
         "buet": "bangladesh university of engineering and technology",
     }
     
+    # Load LLM Map if available
+    LLM_MAP = {}
+    try:
+        with open("data/processed/id_map.json", "r", encoding="utf-8") as f:
+            LLM_MAP = json.load(f)
+    except Exception:
+        pass
+
     @classmethod
     def normalize(cls, text: str, entity_type: str = None) -> str:
         """Normalize entity text to canonical form."""
         if not text:
             return ""
         
+        # 1. LLM Look-ahead (Fast path)
+        # Check raw text directly
+        if text in cls.LLM_MAP:
+            mapping = cls.LLM_MAP[text]
+            if isinstance(mapping, dict):
+                # Return English canonical if available, else Bangla
+                return mapping.get("en") or mapping.get("bn") or text
+
         # Basic cleanup
         normalized = text.strip()
         normalized = re.sub(r'\s+', ' ', normalized)  # Collapse whitespace
         
         # Remove quotes
         normalized = normalized.strip('"\'""''')
+        
+        # 2. LLM Look-ahead (Normalized path)
+        if normalized in cls.LLM_MAP:
+             mapping = cls.LLM_MAP[normalized]
+             if isinstance(mapping, dict):
+                return mapping.get("en") or mapping.get("bn") or normalized
+        
+        # FILTER: Skip single characters (noise)
+        if len(normalized) <= 1:
+            return ""
+            
+        # FILTER: Skip entities starting/ending with known garbage chars
+        if normalized in ["এর", "কে", "যে", "ও"]: # Common particles
+            return ""
+
+
         
         # Strip common prefixes (for ORG)
         if entity_type == "ORG":
