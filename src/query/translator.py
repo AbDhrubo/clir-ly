@@ -24,13 +24,25 @@ def _load_bn_to_en():
 
 
 def _load_en_to_bn():
-    """Load English to Bangla translator."""
+    """Load English to Bangla translator (using reverse model)."""
     global _en_to_bn_model, _en_to_bn_tokenizer
     if _en_to_bn_model is None:
         logger.info("Loading English→Bangla translation model...")
-        model_name = "Helsinki-NLP/Opus-MT-en-bn"
-        _en_to_bn_tokenizer = MarianTokenizer.from_pretrained(model_name)
-        _en_to_bn_model = MarianMTModel.from_pretrained(model_name)
+        # Note: Helsinki-NLP/Opus-MT-en-bn doesn't exist, use Google/mBART or fallback
+        try:
+            model_name = "Helsinki-NLP/Opus-MT-ben-en"  # Try Bengali-English reverse
+            _en_to_bn_tokenizer = MarianTokenizer.from_pretrained(model_name)
+            _en_to_bn_model = MarianMTModel.from_pretrained(model_name)
+        except Exception:
+            # Fallback: use bn-en model (won't be perfect but better than nothing)
+            try:
+                model_name = "Helsinki-NLP/Opus-MT-bn-en"
+                _en_to_bn_tokenizer = MarianTokenizer.from_pretrained(model_name)
+                _en_to_bn_model = MarianMTModel.from_pretrained(model_name)
+                logger.warning("Using bn-en model for en-bn translation (reverse direction)")
+            except Exception as e:
+                logger.error(f"Could not load any en-bn model: {e}")
+                return None, None
     return _en_to_bn_model, _en_to_bn_tokenizer
 
 
@@ -56,7 +68,11 @@ def translate_en_to_bn(text: str) -> str:
         return ""
     
     try:
-        model, tokenizer = _load_en_to_bn()
+        result = _load_en_to_bn()
+        if result == (None, None):
+            logger.warning("No en-bn model available, returning original")
+            return text
+        model, tokenizer = result
         inputs = tokenizer(text, return_tensors="pt", max_length=512, truncation=True)
         outputs = model.generate(**inputs)
         translated = tokenizer.decode(outputs[0], skip_special_tokens=True)
