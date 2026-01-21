@@ -42,15 +42,15 @@ MODELS = {
         'description': 'Language-agnostic BERT - multilingual, good for many languages',
     },
     'xlmr': {
-        'name': 'sentence-transformers/xlm-r-base',
+        'name': 'FacebookAI/xlm-roberta-base',
         'description': 'XLM-RoBERTa - state-of-the-art, supports 100+ languages',
     },
     'mbert': {
-        'name': 'sentence-transformers/bert-base-multilingual-cased',
+        'name': 'bert-base-multilingual-cased',
         'description': 'Multilingual BERT - older but stable',
     },
     'mt5': {
-        'name': 'sentence-transformers/sentence-t5-base',
+        'name': 'google/mt5-base',
         'description': 'mT5 - older but stable',
     },
 }
