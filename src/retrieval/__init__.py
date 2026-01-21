@@ -23,8 +23,20 @@ Example Usage:
 """
 
 from .bm25 import BM25Search
-from .fuzzy import FuzzySearch
-from .semantic import SemanticSearch
-from .hybrid import HybridSearch
+
+try:
+    from .fuzzy import FuzzySearch
+except ImportError:
+    FuzzySearch = None
+
+try:
+    from .semantic import SemanticSearch
+except ImportError:
+    SemanticSearch = None
+
+try:
+    from .hybrid import HybridSearch
+except ImportError:
+    HybridSearch = None
 
 __all__ = ['BM25Search', 'FuzzySearch', 'SemanticSearch', 'HybridSearch']
