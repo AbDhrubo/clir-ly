@@ -1,0 +1,11 @@
+query,doc_url,relevant
+"Bangladesh politics","https://thedailystar.net/politics",yes
+"Bangladesh politics","https://prothomalo.com/bangladesh",yes
+"Bangladesh politics","https://bdnews24.com/sports",no
+"Bangladesh politics","https://kalerkantho.com/politics",yes
+"cricket","https://example.com/cricket-news",yes
+"cricket","https://example.com/sports-general",yes
+"cricket","https://example.com/finance",no
+"ঢাকায় শিক্ষা","https://bangla.bdnews24.com/education",yes
+"ঢাকায় শিক্ষা","https://prothomalo.com/dhaka",yes
+"ঢাকায় শিক্ষা","https://example.com/politics",no
