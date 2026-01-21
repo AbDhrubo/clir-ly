@@ -3,12 +3,21 @@
 Module C - Semantic Search
 Multilingual embedding-based search using sentence-transformers
 Single script: query → Module B → semantic cross-lingual search → JSON/CSV results
+
+Usage:
+    python semantic_search.py                           # Default: distiluse (fastest)
+    python semantic_search.py --model labse             # LaBSE (multilingual, slower)
+    python semantic_search.py --model xlmr              # XLM-RoBERTa (state-of-the-art)
+    python semantic_search.py --model mbert             # mBERT (stable)
+    python semantic_search.py --model mt5               # mT5 (good quality)
+    python semantic_search.py --model sbert-mini        # Sentence-BERT MiniLM (fast)
 """
 
 import sys
 import json
 import csv
 import time
+import argparse
 from pathlib import Path
 from typing import List, Dict
 
@@ -23,6 +32,41 @@ except ImportError:
     print("[ERROR] sentence-transformers or scikit-learn not installed")
     print("Install with: pip install sentence-transformers scikit-learn")
     sys.exit(1)
+
+
+# Model configurations
+MODELS = {
+    'distiluse': {
+        'name': 'distiluse-base-multilingual-cased-v2',
+        'description': 'Distilled Universal Sentence Encoder (fastest, 250MB)',
+        'speed': 'fastest',
+    },
+    'sbert-mini': {
+        'name': 'sentence-transformers/multilingual-MiniLM-L12-v2',
+        'description': 'Sentence-BERT MiniLM (fast, good quality, 400MB)',
+        'speed': 'fast',
+    },
+    'labse': {
+        'name': 'sentence-transformers/LaBSE',
+        'description': 'Language-agnostic BERT (multilingual, slower, 500MB)',
+        'speed': 'slow',
+    },
+    'xlmr': {
+        'name': 'sentence-transformers/xlm-r-base',
+        'description': 'XLM-RoBERTa (state-of-the-art, supports 100+ languages, slower)',
+        'speed': 'slow',
+    },
+    'mbert': {
+        'name': 'bert-base-multilingual-cased',
+        'description': 'Multilingual BERT (stable, slower, 500MB)',
+        'speed': 'slow',
+    },
+    'mt5': {
+        'name': 'sentence-transformers/sentence-t5-base',
+        'description': 'mT5 encoder (good quality, slower)',
+        'speed': 'slow',
+    },
+}
 
 
 def load_documents(filepath="notebooks/data/articles_with_ner.jsonl"):
@@ -198,6 +242,18 @@ def search_crosslingual(docs: List[Dict], query: str, query_lang: str, model, k:
 
 
 def main():
+    parser = argparse.ArgumentParser(description='Semantic search with configurable embedding models')
+    parser.add_argument(
+        '--model',
+        choices=MODELS.keys(),
+        default='distiluse',
+        help=f'Embedding model to use (default: distiluse - fastest)\nOptions: {", ".join(MODELS.keys())}'
+    )
+    args = parser.parse_args()
+    
+    model_config = MODELS[args.model]
+    model_name = model_config['name']
+    
     print("\n[*] Loading documents...")
     docs = load_documents()
     if not docs:
@@ -208,9 +264,10 @@ def main():
     bn_count = sum(1 for d in docs if d.get('language') == 'bn')
     print(f"[OK] {len(docs)} documents ({en_count} EN, {bn_count} BN)\n")
     
-    print("[*] Loading multilingual embedding model (LaBSE)...")
+    print(f"[*] Loading embedding model: {args.model}")
+    print(f"    {model_config['description']}")
     try:
-        model = SentenceTransformer('sentence-transformers/LaBSE')
+        model = SentenceTransformer(model_name)
         print("[OK] Model loaded\n")
     except Exception as e:
         print(f"[ERROR] Could not load model: {e}")
@@ -285,7 +342,7 @@ def main():
     
     # Print summary
     print("="*70)
-    print("SEMANTIC SEARCH RESULTS SUMMARY (LaBSE)")
+    print(f"SEMANTIC SEARCH RESULTS SUMMARY ({args.model.upper()})")
     print("="*70 + "\n")
     
     for r in results_list:

@@ -3,12 +3,21 @@
 Module C - Hybrid Ranking
 Combines BM25 + Fuzzy + Semantic with weighted scoring
 Single script: query → Module B → all three strategies → weighted combination → JSON/CSV results
+
+Usage:
+    python hybrid_search.py                            # Default: distiluse (fastest)
+    python hybrid_search.py --model labse              # LaBSE (multilingual, slower)
+    python hybrid_search.py --model xlmr               # XLM-RoBERTa (state-of-the-art)
+    python hybrid_search.py --model mbert              # mBERT (stable)
+    python hybrid_search.py --model mt5                # mT5 (good quality)
+    python hybrid_search.py --model sbert-mini         # Sentence-BERT MiniLM (fast)
 """
 
 import sys
 import json
 import csv
 import time
+import argparse
 from pathlib import Path
 from typing import List, Dict, Tuple
 
@@ -25,6 +34,41 @@ except ImportError:
     print("[ERROR] Dependencies not installed")
     print("Install with: pip install rank-bm25 fuzzywuzzy sentence-transformers scikit-learn")
     sys.exit(1)
+
+
+# Model configurations
+MODELS = {
+    'distiluse': {
+        'name': 'distiluse-base-multilingual-cased-v2',
+        'description': 'Distilled Universal Sentence Encoder (fastest, 250MB)',
+        'speed': 'fastest',
+    },
+    'sbert-mini': {
+        'name': 'sentence-transformers/multilingual-MiniLM-L12-v2',
+        'description': 'Sentence-BERT MiniLM (fast, good quality, 400MB)',
+        'speed': 'fast',
+    },
+    'labse': {
+        'name': 'sentence-transformers/LaBSE',
+        'description': 'Language-agnostic BERT (multilingual, slower, 500MB)',
+        'speed': 'slow',
+    },
+    'xlmr': {
+        'name': 'sentence-transformers/xlm-r-base',
+        'description': 'XLM-RoBERTa (state-of-the-art, supports 100+ languages, slower)',
+        'speed': 'slow',
+    },
+    'mbert': {
+        'name': 'bert-base-multilingual-cased',
+        'description': 'Multilingual BERT (stable, slower, 500MB)',
+        'speed': 'slow',
+    },
+    'mt5': {
+        'name': 'sentence-transformers/sentence-t5-base',
+        'description': 'mT5 encoder (good quality, slower)',
+        'speed': 'slow',
+    },
+}
 
 
 def load_documents(filepath="notebooks/data/articles_with_ner.jsonl"):
@@ -224,6 +268,18 @@ def search_hybrid(
 
 
 def main():
+    parser = argparse.ArgumentParser(description='Hybrid search with configurable embedding models')
+    parser.add_argument(
+        '--model',
+        choices=MODELS.keys(),
+        default='distiluse',
+        help=f'Embedding model to use (default: distiluse - fastest)\nOptions: {", ".join(MODELS.keys())}'
+    )
+    args = parser.parse_args()
+    
+    model_config = MODELS[args.model]
+    model_name = model_config['name']
+    
     print("\n[*] Loading documents...")
     docs = load_documents()
     if not docs:
@@ -238,9 +294,10 @@ def main():
     indexes = build_indexes(docs)
     print("[OK] Indexes ready\n")
     
-    print("[*] Loading embedding model (LaBSE)...")
+    print(f"[*] Loading embedding model: {args.model}")
+    print(f"    {model_config['description']}")
     try:
-        embedding_model = SentenceTransformer('sentence-transformers/LaBSE')
+        embedding_model = SentenceTransformer(model_name)
         print("[OK] Model loaded\n")
     except Exception as e:
         print(f"[ERROR] Could not load model: {e}")
@@ -313,7 +370,7 @@ def main():
     
     # Print summary
     print("="*90)
-    print("HYBRID SEARCH RESULTS SUMMARY (BM25 + Fuzzy + Semantic)")
+    print(f"HYBRID SEARCH RESULTS SUMMARY (BM25 + Fuzzy + Semantic - {args.model.upper()})")
     print("="*90 + "\n")
     
     for r in results_list:
