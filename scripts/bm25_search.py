@@ -61,9 +61,10 @@ def search_crosslingual(bm25: BM25Search, processor: QueryProcessor, raw_query: 
     if detected_lang == 'en':
         # English query on English docs
         en_search = bm25.search(normalized_query, k=20)
-        for doc_id, score, doc in en_search:
+        for rank, (doc_id, score, doc) in enumerate(en_search, 1):
             if doc.get('language') == 'en':
                 en_results.append({
+                    'rank': rank,
                     'title': doc.get('title', '')[:80],
                     'body': doc.get('body', '')[:150],
                     'language': 'en',
@@ -72,11 +73,12 @@ def search_crosslingual(bm25: BM25Search, processor: QueryProcessor, raw_query: 
                 })
         
         # Bangla translation on Bangla docs
-        if translated_query and translated_query != normalized_query:
+        if translated_query:
             bn_search = bm25.search(translated_query, k=20)
-            for doc_id, score, doc in bn_search:
+            for rank, (doc_id, score, doc) in enumerate(bn_search, 1):
                 if doc.get('language') == 'bn':
                     bn_results.append({
+                        'rank': rank,
                         'title': doc.get('title', '')[:80],
                         'body': doc.get('body', '')[:150],
                         'language': 'bn',
@@ -86,9 +88,10 @@ def search_crosslingual(bm25: BM25Search, processor: QueryProcessor, raw_query: 
     else:
         # Bangla query on Bangla docs
         bn_search = bm25.search(normalized_query, k=20)
-        for doc_id, score, doc in bn_search:
+        for rank, (doc_id, score, doc) in enumerate(bn_search, 1):
             if doc.get('language') == 'bn':
                 bn_results.append({
+                    'rank': rank,
                     'title': doc.get('title', '')[:80],
                     'body': doc.get('body', '')[:150],
                     'language': 'bn',
@@ -97,11 +100,12 @@ def search_crosslingual(bm25: BM25Search, processor: QueryProcessor, raw_query: 
                 })
         
         # English translation on English docs
-        if translated_query and translated_query != normalized_query:
+        if translated_query:
             en_search = bm25.search(translated_query, k=20)
-            for doc_id, score, doc in en_search:
+            for rank, (doc_id, score, doc) in enumerate(en_search, 1):
                 if doc.get('language') == 'en':
                     en_results.append({
+                        'rank': rank,
                         'title': doc.get('title', '')[:80],
                         'body': doc.get('body', '')[:150],
                         'language': 'en',
@@ -116,16 +120,24 @@ def search_crosslingual(bm25: BM25Search, processor: QueryProcessor, raw_query: 
     while len(combined) < 10 and (en_idx < len(en_results) or bn_idx < len(bn_results)):
         if en_idx < len(en_results) and bn_idx < len(bn_results):
             if en_results[en_idx]['score'] >= bn_results[bn_idx]['score']:
-                combined.append(en_results[en_idx])
+                result = en_results[en_idx].copy()
+                result['rank'] = len(combined) + 1
+                combined.append(result)
                 en_idx += 1
             else:
-                combined.append(bn_results[bn_idx])
+                result = bn_results[bn_idx].copy()
+                result['rank'] = len(combined) + 1
+                combined.append(result)
                 bn_idx += 1
         elif en_idx < len(en_results):
-            combined.append(en_results[en_idx])
+            result = en_results[en_idx].copy()
+            result['rank'] = len(combined) + 1
+            combined.append(result)
             en_idx += 1
         else:
-            combined.append(bn_results[bn_idx])
+            result = bn_results[bn_idx].copy()
+            result['rank'] = len(combined) + 1
+            combined.append(result)
             bn_idx += 1
     
     return {
@@ -200,7 +212,7 @@ def main():
     csv_path = "results/bm25_results.csv"
     with open(csv_path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
-        writer.writerow(['Query', 'Language', 'Normalized', 'Translated', 'Top Result (EN)', 'Score', 'Top Result (BN)', 'Score', 'Time(ms)'])
+        writer.writerow(['Query', 'Lang', 'Translated', 'Rank-1 EN', 'Score EN', 'Rank-1 BN', 'Score BN', 'Time(ms)'])
         
         for r in results_list:
             top_en = r['en_results'][0]['title'] if r['en_results'] else '-'
@@ -211,7 +223,6 @@ def main():
             writer.writerow([
                 r['raw_query'],
                 r['language'],
-                r['normalized'],
                 r['translated'] or '-',
                 top_en,
                 f"{score_en:.3f}",
@@ -230,11 +241,12 @@ def main():
     for r in results_list:
         print(f"Query: {r['raw_query']} ({r['language'].upper()})")
         if r['translated']:
-            print(f"  Module B Translation: {r['translated']}")
+            print(f"  Translation: {r['translated']}")
         print(f"  Time: {r['execution_time_ms']:.1f}ms")
         print(f"  Top 10 Results:")
         
-        for rank, res in enumerate(r['combined_top10'][:5], 1):
+        for res in r['combined_top10'][:5]:
+            rank = res.get('rank', '?')
             print(f"    {rank}. [{res['score']:.3f}] {res['title']} ({res['language']})")
         
         print()
