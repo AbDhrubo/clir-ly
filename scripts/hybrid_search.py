@@ -5,12 +5,11 @@ Combines BM25 + Fuzzy + Semantic with weighted scoring
 Single script: query → Module B → all three strategies → weighted combination → JSON/CSV results
 
 Usage:
-    python hybrid_search.py                            # Default: distiluse (fastest)
-    python hybrid_search.py --model labse              # LaBSE (multilingual, slower)
-    python hybrid_search.py --model xlmr               # XLM-RoBERTa (state-of-the-art)
-    python hybrid_search.py --model mbert              # mBERT (stable)
-    python hybrid_search.py --model mt5                # mT5 (good quality)
-    python hybrid_search.py --model sbert-mini         # Sentence-BERT MiniLM (fast)
+    python hybrid_search.py                            # Default: LaBSE
+    python hybrid_search.py --model labse              # LaBSE (multilingual, good for many languages)
+    python hybrid_search.py --model xlmr               # XLM-R (state-of-the-art, 100+ languages)
+    python hybrid_search.py --model mbert              # mBERT (older but stable)
+    python hybrid_search.py --model mt5                # mT5 (older but stable)
 """
 
 import sys
@@ -38,35 +37,21 @@ except ImportError:
 
 # Model configurations
 MODELS = {
-    'distiluse': {
-        'name': 'distiluse-base-multilingual-cased-v2',
-        'description': 'Distilled Universal Sentence Encoder (fastest, 250MB)',
-        'speed': 'fastest',
-    },
-    'sbert-mini': {
-        'name': 'sentence-transformers/multilingual-MiniLM-L12-v2',
-        'description': 'Sentence-BERT MiniLM (fast, good quality, 400MB)',
-        'speed': 'fast',
-    },
     'labse': {
         'name': 'sentence-transformers/LaBSE',
-        'description': 'Language-agnostic BERT (multilingual, slower, 500MB)',
-        'speed': 'slow',
+        'description': 'Language-agnostic BERT - multilingual, good for many languages',
     },
     'xlmr': {
         'name': 'sentence-transformers/xlm-r-base',
-        'description': 'XLM-RoBERTa (state-of-the-art, supports 100+ languages, slower)',
-        'speed': 'slow',
+        'description': 'XLM-RoBERTa - state-of-the-art, supports 100+ languages',
     },
     'mbert': {
-        'name': 'bert-base-multilingual-cased',
-        'description': 'Multilingual BERT (stable, slower, 500MB)',
-        'speed': 'slow',
+        'name': 'sentence-transformers/bert-base-multilingual-cased',
+        'description': 'Multilingual BERT - older but stable',
     },
     'mt5': {
         'name': 'sentence-transformers/sentence-t5-base',
-        'description': 'mT5 encoder (good quality, slower)',
-        'speed': 'slow',
+        'description': 'mT5 - older but stable',
     },
 }
 
@@ -272,8 +257,8 @@ def main():
     parser.add_argument(
         '--model',
         choices=MODELS.keys(),
-        default='distiluse',
-        help=f'Embedding model to use (default: distiluse - fastest)\nOptions: {", ".join(MODELS.keys())}'
+        default='labse',
+        help=f'Embedding model to use (default: labse)\nOptions: {", ".join(MODELS.keys())}'
     )
     args = parser.parse_args()
     
@@ -339,14 +324,14 @@ def main():
         print(f"{elapsed:.1f}ms")
     
     # Output to JSON
-    json_path = "results/hybrid_results.json"
+    json_path = f"results/hybrid_results_{args.model}.json"
     Path(json_path).parent.mkdir(parents=True, exist_ok=True)
     with open(json_path, 'w', encoding='utf-8') as f:
         json.dump(results_list, f, indent=2, ensure_ascii=False)
     print(f"\n[OK] JSON saved to {json_path}")
     
     # Output to CSV
-    csv_path = "results/hybrid_results.csv"
+    csv_path = f"results/hybrid_results_{args.model}.csv"
     with open(csv_path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerow(['Query', 'Lang', 'Translated', 'Rank-1 Title', 'Hybrid', 'BM25', 'Fuzzy', 'Semantic', 'Time(ms)'])
