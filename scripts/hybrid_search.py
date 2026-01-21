@@ -292,19 +292,17 @@ def main():
     processor = QueryProcessor()
     print("[OK] Module B ready\n")
     
-    # Test queries
-    test_queries = [
-        "Bangladesh politics",
-        "cricket news",
-        "education system",
-        "dhaka economy",
-        "energy crisis",
-        "বাংলাদেশের রাজনীতি",
-        "ক্রিকেট সংবাদ",
-        "শিক্ষা ব্যবস্থা",
-        "ঢাকার অর্থনীতি",
-        "শক্তি সংকট",
-    ]
+    # Load queries from CSV
+    test_queries = []
+    try:
+        with open('data/test_queries.csv', 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                test_queries.append(row['query'])
+        print(f"[*] Loaded {len(test_queries)} queries from data/test_queries.csv\n")
+    except Exception as e:
+        print(f"[ERROR] Could not load test_queries.csv: {e}")
+        return 1
     
     weights = {'bm25': 0.2, 'fuzzy': 0.1, 'semantic': 0.7}
     print(f"[*] Weights: BM25={weights['bm25']}, Fuzzy={weights['fuzzy']}, Semantic={weights['semantic']}\n")
@@ -312,7 +310,7 @@ def main():
     
     results_list = []
     for i, query in enumerate(test_queries, 1):
-        print(f"[{i:2d}/10] {query[:40]:40s} ...", end=" ", flush=True)
+        print(f"[{i:2d}/{len(test_queries)}] {query[:40]:40s} ...", end=" ", flush=True)
         
         start = time.time()
         result = search_hybrid(docs, indexes, query, embedding_model, weights=weights, k=10)
