@@ -1,5 +1,16 @@
 # What's Done vs What's Left
 
+## 📊 Quick Status
+
+| Module | Status | Progress |
+|--------|--------|----------|
+| Module A - Data Collection | ✅ COMPLETE | 100% |
+| Module B - Query Processing | ✅ COMPLETE | 100% |
+| Module C - Retrieval | ✅ COMPLETE | 100% |
+| Module D - Ranking & Evaluation | 🔧 IN PROGRESS | 60% |
+
+**Current Focus:** Module D - Need to complete evaluation and comparison tasks
+
 ## ✅ DONE
 
 ### Module A - Data Collection (COMPLETE)
@@ -24,16 +35,20 @@
 - ✅ Cross-lingual retrieval working
 - ✅ Test scripts: `scripts/test_*.py`, `scripts/hybrid_search.py`
 
-### Module D - Ranking & Scoring (PARTIAL) ⚠️
+### Module D - Ranking & Scoring (60% COMPLETE) 🔧
 - ✅ Ranking function outputs sorted top-K documents
 - ✅ Matching score normalization [0-1] implemented
 - ✅ Query execution time tracking (total time in ms) - implemented in `scripts/hybrid_search.py`
-- ✅ Evaluation metrics code: Precision@10, Recall@50, nDCG@10, MRR (`scripts/accuracy_metrics.py`)
-- ✅ **Low-confidence warning implemented** (threshold + warning message in `src/retrieval/hybrid.py`)
 - ✅ **Query time breakdown implemented** (BM25, Fuzzy, Semantic, Ranking times tracked)
-- ❌ **Comparison with classical search engines NOT done** (Google, Bing, DuckDuckGo)
-- ❌ Test queries NOT labeled yet (need 5-10 queries minimum)
-- ❌ Evaluation NOT run yet
+- ✅ **Low-confidence warning implemented** (threshold + warning message in `src/retrieval/hybrid.py`)
+- ✅ **Evaluation metrics code ready**: Precision@10, Recall@50, nDCG@10, MRR (`scripts/accuracy_metrics.py`)
+- ✅ **Evaluation runner script**: `scripts/run_evaluation.py`
+- ✅ **Search engine comparison guide**: `docs/SEARCH_ENGINE_COMPARISON_GUIDE.md`
+- ✅ **Module D notebook updated** with evaluation sections
+- 🔧 **Search engine comparison IN PROGRESS** (guide ready, need to execute)
+- 🔧 **IR metrics evaluation IN PROGRESS** (tools ready, need labeled queries)
+- ❌ **Test queries NOT labeled yet** (need 5-10 queries minimum with relevance labels)
+- ❌ **Evaluation NOT run yet** (waiting for labeled queries)
 - ❌ **Detailed error analysis NOT done** (5 categories with case studies)
 
 ---
@@ -58,17 +73,27 @@
 - [x] Test script created: `test_timing_breakdown.py`
 - [ ] Report breakdown for each query in output/CSV (optional enhancement)
 
-### 3. Comparison with Classical Search Engines - 3 hours
+### 3. Comparison with Classical Search Engines - 3 hours - 🔧 IN PROGRESS
+- [x] Guide created: `docs/SEARCH_ENGINE_COMPARISON_GUIDE.md`
 - [ ] Select 5-10 test queries (same as evaluation queries)
 - [ ] Manually search on:
   - Google Search
   - Bing Search
   - DuckDuckGo
   - Optional: AI-powered search (Perplexity, Bing Chat, etc.)
-- [ ] Document top-10 results from each engine
+- [ ] Document top-10 results from each engine in: `results/search_engine_comparison.csv`
 - [ ] Compare with your system's results
+- [ ] Create comparison report: `results/search_engine_comparison_report.md`
 
-**Total Remaining: ~17.5 documents per query
+### 4. Accuracy Evaluation with IR Metrics - 3 hours - 🔧 IN PROGRESS
+- [x] Evaluation script created: `scripts/run_evaluation.py`
+- [x] Template queries available: `data/labeled_queries_template.csv`
+- [x] AccuracyMetrics code ready: `scripts/accuracy_metrics.py`
+- [x] Module D notebook updated with evaluation section
+- [ ] Create real labeled queries file: `data/labeled_queries.csv`
+  - At least 5-10 test queries
+  - Mix of English and Bangla queries
+  - Label top 50 results per query as relevant/irrelevant
   - Format: query, doc_url, language, relevant (yes/no), annotator
 - [ ] Run evaluation script on all 4 methods (BM25, Fuzzy, Semantic, Hybrid)
 - [ ] Generate results: Precision@10, Recall@50, nDCG@10, MRR
@@ -77,7 +102,7 @@
   - Recall@50 ≥ 0.5
   - nDCG@10 ≥ 0.5
   - MRR ≥ 0.4
-- [ ] Save results to: `results/evaluation_metrics.csv`
+- [ ] Review results: `results/evaluation_metrics.csv` and `results/evaluation_report.md`
 
 ### 5. Detailed Error Analysis - 4 hours
 **Must include at least ONE detailed case study per category:**
@@ -104,8 +129,43 @@
 
 **For each case:**
 - [ ] Screenshot or text output
-- [ ] Querysearch_engine_comparison.csv` - Need to create
-- `results/evaluation_metrics.csv` - Need to create
+- [ ] Query## 📁 Key Files & Scripts
+
+### Documentation
+- `README.md` - Main project documentation
+- `QUICK_START.md` - Quick start guide  
+- `TODO.md` - This file (progress tracking)
+- `TESTING_GUIDE.md` - Testing guide
+- `docs/SEARCH_ENGINE_COMPARISON_GUIDE.md` - Guide for comparing with Google/Bing/DDG
+
+### Notebooks
+- `notebooks/Module_B_QueryProcessing_Colab.ipynb` - Query processing demo
+- `notebooks/Module_C_Retrieval_Colab.ipynb` - Retrieval methods demo
+- `notebooks/Module_D_LowConfidence_Colab.ipynb` - Low confidence + timing + evaluation demo
+
+### Scripts
+- `scripts/accuracy_metrics.py` - IR metrics calculator (Precision, Recall, nDCG, MRR)
+- `scripts/run_evaluation.py` - Full evaluation runner for all 4 methods
+- `scripts/hybrid_search.py` - Hybrid search script
+- `scripts/bm25_search.py` - BM25 only
+- `scripts/semantic_search.py` - Semantic only
+- `scripts/fuzzy_search.py` - Fuzzy only
+
+### Test Scripts
+- `test_low_confidence_warning.py` - Test low confidence warnings
+- `test_timing_breakdown.py` - Test timing breakdown feature
+- `test_hybrid_fix.py` - Test hybrid search
+
+### Data Files
+- `data/labeled_queries_template.csv` - Template for labeling queries
+- `data/labeled_queries.csv` - Need to create with real labels
+- `data/processed/articles_all.jsonl` - All articles (5,062 total)
+
+### Results (To Be Generated)
+- `results/search_engine_comparison.csv` - Need to create
+- `results/search_engine_comparison_report.md` - Need to create
+- `results/evaluation_metrics.csv` - Will be generated by run_evaluation.py
+- `results/evaluation_report.md` - Will be generated by run_evaluation.py
 - `results/error_analysis.json` - Need to create
 - `results/error_analysis_report.md` - Need to create
 - `results/query_execution_time_breakdown.csvs
