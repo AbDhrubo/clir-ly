@@ -29,7 +29,7 @@
 - ✅ Matching score normalization [0-1] implemented
 - ✅ Query execution time tracking (total time in ms) - implemented in `scripts/hybrid_search.py`
 - ✅ Evaluation metrics code: Precision@10, Recall@50, nDCG@10, MRR (`scripts/accuracy_metrics.py`)
-- ❌ **Low-confidence warning NOT implemented** (threshold + warning message)
+- ✅ **Low-confidence warning implemented** (threshold + warning message in `src/retrieval/hybrid.py`)
 - ❌ **Query time breakdown NOT implemented** (translation time, embedding time, ranking time)
 - ❌ **Comparison with classical search engines NOT done** (Google, Bing, DuckDuckGo)
 - ❌ Test queries NOT labeled yet (need 5-10 queries minimum)
@@ -40,11 +40,12 @@
 
 ## ❌ TODO (Priority Order)
 
-### 1. Complete Module D - Low Confidence Warning - 1 hour
-- [ ] Add confidence threshold check (e.g., top_score < 0.20)
-- [ ] Display warning message when confidence is low: ⚠️ Warning: Retrieved results may not be relevant. Matching confidence is low (score: 0.15). Consider rephrasing your query or checking translation quality.
-- [ ] Implement in: `src/retrieval/hybrid.py` or create wrapper function
-- [ ] Test with low-quality queries
+### 1. Complete Module D - Low Confidence Warning - ✅ DONE
+- [x] Add confidence threshold check (e.g., top_score < 0.20)
+- [x] Display warning message when confidence is low: ⚠️ Warning: Retrieved results may not be relevant. Matching confidence is low (score: 0.15). Consider rephrasing your query or checking translation quality.
+- [x] Implement in: `src/retrieval/hybrid.py` - added to search() method
+- [x] Test with low-quality queries - test script: `test_low_confidence_warning.py`
+- [x] Create Google Colab notebook: `notebooks/Module_D_LowConfidence_Colab.ipynb`
 
 ### 2. Query Execution Time Breakdown - 1.5 hours
 - [ ] Add time tracking for:

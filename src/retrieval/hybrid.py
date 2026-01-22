@@ -130,7 +130,7 @@ class HybridSearch:
         return normalized
     
     
-    def search(self, query, k=10, verbose=False):
+    def search(self, query, k=10, verbose=False, confidence_threshold=0.20):
         """
         Search using hybrid approach (combines all three methods)
         
@@ -139,11 +139,13 @@ class HybridSearch:
         2. Normalize all scores to 0-1 range
         3. Combine scores using weighted average
         4. Sort by combined score and return top k
+        5. Check confidence and display warning if needed
         
         Args:
             query: Search query string
             k: Number of top results to return
             verbose: If True, print detailed scoring information
+            confidence_threshold: Minimum score threshold for confidence warning (default: 0.20)
             
         Returns:
             List of tuples: [(doc_id, combined_score, document, score_breakdown), ...]
@@ -215,6 +217,16 @@ class HybridSearch:
         # 5. Return top k results
         top_results = combined_results[:k]
         
+        # 6. Check confidence and display warning if needed
+        if top_results:
+            top_score = top_results[0][1]  # Get the score of the top result
+            if top_score < confidence_threshold:
+                print(f"\n{'⚠️ '*20}")
+                print(f"⚠️  WARNING: Retrieved results may not be relevant.")
+                print(f"⚠️  Matching confidence is low (score: {top_score:.2f}).")
+                print(f"⚠️  Consider rephrasing your query or checking translation quality.")
+                print(f"{'⚠️ '*20}\n")
+        
         # Print verbose output if requested
         if verbose:
             print(f"\n{'='*60}")
@@ -233,7 +245,7 @@ class HybridSearch:
         return top_results
     
     
-    def search_with_method(self, query, method='hybrid', k=10):
+    def search_with_method(self, query, method='hybrid', k=10, confidence_threshold=0.20):
         """
         Search using a specific method or hybrid
         
@@ -243,6 +255,7 @@ class HybridSearch:
             query: Search query
             method: 'bm25', 'fuzzy', 'semantic', or 'hybrid'
             k: Number of results
+            confidence_threshold: Minimum score threshold for confidence warning (only for hybrid)
             
         Returns:
             Search results from the specified method
@@ -254,7 +267,7 @@ class HybridSearch:
         elif method == 'semantic':
             return self.semantic.search(query, k)
         elif method == 'hybrid':
-            return self.search(query, k)
+            return self.search(query, k, confidence_threshold=confidence_threshold)
         else:
             raise ValueError(f"Unknown method: {method}. Use 'bm25', 'fuzzy', 'semantic', or 'hybrid'")
 
