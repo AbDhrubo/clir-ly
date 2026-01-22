@@ -25,6 +25,7 @@ How it works:
 4. Return top results
 """
 
+import time
 from .bm25 import BM25Search
 from .fuzzy import FuzzySearch
 from .semantic import SemanticSearch
@@ -130,7 +131,7 @@ class HybridSearch:
         return normalized
     
     
-    def search(self, query, k=10, verbose=False):
+    def search(self, query, k=10, verbose=False, confidence_threshold=0.20, return_timing=False):
         """
         Search using hybrid approach (combines all three methods)
         
@@ -139,38 +140,58 @@ class HybridSearch:
         2. Normalize all scores to 0-1 range
         3. Combine scores using weighted average
         4. Sort by combined score and return top k
+        5. Check confidence and display warning if needed
         
         Args:
             query: Search query string
             k: Number of top results to return
             verbose: If True, print detailed scoring information
+            confidence_threshold: Minimum score threshold for confidence warning (default: 0.20)
+            return_timing: If True, return timing breakdown in results
             
         Returns:
             List of tuples: [(doc_id, combined_score, document, score_breakdown), ...]
             score_breakdown = {'bm25': x, 'fuzzy': y, 'semantic': z}
+            If return_timing=True, also returns timing dict as second element
         """
+        # Track total time
+        start_time = time.time()
+        timing = {}
+        
         if verbose:
             print(f"\n{'='*60}")
             print(f"🔍 Hybrid Search Query: '{query}'")
             print(f"{'='*60}\n")
         
-        # 1. Get results from each method
+        # 1. Get results from each method (with timing)
         if verbose:
             print("Running BM25 search...")
+        bm25_start = time.time()
         bm25_results = self.bm25.search(query, k=len(self.documents))
+        timing['bm25_ms'] = (time.time() - bm25_start) * 1000
         
         if verbose:
             print("Running Fuzzy search...")
+        fuzzy_start = time.time()
         fuzzy_results = self.fuzzy.search(query, k=len(self.documents))
+        timing['fuzzy_ms'] = (time.time() - fuzzy_start) * 1000
         
         if verbose:
             print("Running Semantic search...")
+        semantic_start = time.time()
         semantic_results = self.semantic.search(query, k=len(self.documents))
+        timing['semantic_ms'] = (time.time() - semantic_start) * 1000
         
-        # 2. Normalize scores from each method
+        # 2. Normalize scores from BM25 and Fuzzy
+        if verbose:
+            print("Combining results...")
+        ranking_start = time.time()
         bm25_scores = self._normalize_scores(bm25_results)
         fuzzy_scores = self._normalize_scores(fuzzy_results)
-        semantic_scores = self._normalize_scores(semantic_results)
+        
+        # For semantic: DON'T normalize - use raw cosine similarity (already 0-1)
+        # This prevents inflating poor matches when all results are bad
+        semantic_scores = {doc_id: score for doc_id, score, _ in semantic_results}
         
         # 3. Combine scores
         # Get all unique document IDs that appeared in any result
@@ -211,9 +232,20 @@ class HybridSearch:
         
         # 4. Sort by combined score (highest first)
         combined_results.sort(key=lambda x: x[1], reverse=True)
+        timing['ranking_ms'] = (time.time() - ranking_start) * 1000
         
         # 5. Return top k results
         top_results = combined_results[:k]
+        
+        # 6. Check confidence and display warning if needed
+        if top_results:
+            top_score = top_results[0][1]  # Get the score of the top result
+            if top_score < confidence_threshold:
+                print(f"\n{'⚠️ '*20}")
+                print(f"⚠️  WARNING: Retrieved results may not be relevant.")
+                print(f"⚠️  Matching confidence is low (score: {top_score:.2f}).")
+                print(f"⚠️  Consider rephrasing your query or checking translation quality.")
+                print(f"{'⚠️ '*20}\n")
         
         # Print verbose output if requested
         if verbose:
@@ -230,10 +262,30 @@ class HybridSearch:
                 print(f"     • Semantic: {breakdown['semantic']:.3f} (×{self.beta:.1%} = {breakdown['semantic']*self.beta:.3f})")
                 print()
         
-        return top_results
+        # Calculate total time
+        timing['total_ms'] = (time.time() - start_time) * 1000
+        
+        # Print timing if verbose
+        if verbose and return_timing:
+            print(f"\n{'='*60}")
+            print(f"⏱️  Execution Time Breakdown:")
+            print(f"{'='*60}")
+            print(f"  BM25 Search:     {timing['bm25_ms']:>8.2f} ms")
+            print(f"  Fuzzy Search:    {timing['fuzzy_ms']:>8.2f} ms")
+            print(f"  Semantic Search: {timing['semantic_ms']:>8.2f} ms")
+            print(f"  Ranking/Combine: {timing['ranking_ms']:>8.2f} ms")
+            print(f"  {'─'*60}")
+            print(f"  Total Time:      {timing['total_ms']:>8.2f} ms")
+            print(f"{'='*60}\n")
+        
+        # Return results with or without timing
+        if return_timing:
+            return top_results, timing
+        else:
+            return top_results
     
     
-    def search_with_method(self, query, method='hybrid', k=10):
+    def search_with_method(self, query, method='hybrid', k=10, confidence_threshold=0.20, return_timing=False):
         """
         Search using a specific method or hybrid
         
@@ -243,6 +295,8 @@ class HybridSearch:
             query: Search query
             method: 'bm25', 'fuzzy', 'semantic', or 'hybrid'
             k: Number of results
+            confidence_threshold: Minimum score threshold for confidence warning (only for hybrid)
+            return_timing: If True, return timing information
             
         Returns:
             Search results from the specified method
@@ -254,7 +308,7 @@ class HybridSearch:
         elif method == 'semantic':
             return self.semantic.search(query, k)
         elif method == 'hybrid':
-            return self.search(query, k)
+            return self.search(query, k, confidence_threshold=confidence_threshold, return_timing=return_timing)
         else:
             raise ValueError(f"Unknown method: {method}. Use 'bm25', 'fuzzy', 'semantic', or 'hybrid'")
 
