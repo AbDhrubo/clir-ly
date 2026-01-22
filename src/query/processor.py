@@ -3,6 +3,7 @@
 from .detector import detect_language, is_mixed_language
 from .translator import translate_query
 import logging
+import json
 
 logger = logging.getLogger(__name__)
 
@@ -10,12 +11,38 @@ logger = logging.getLogger(__name__)
 class QueryProcessor:
     """Process queries for cross-lingual search."""
     
-    def __init__(self):
-        """Initialize processor."""
+    def __init__(self, index_path: str = "data/processed/entity_index_linked.json"):
+        """
+        Initialize processor.
+        
+        Args:
+            index_path: Path to the entity index JSON
+        """
         self.lang_detected = None
         self.normalized = None
         self.original = None
         self.translated = None
+        
+        # Load entity index for EBQE
+        self.entity_index = {}
+        try:
+            with open(index_path, 'r', encoding='utf-8') as f:
+                self.entity_index = json.load(f)
+            logger.info(f"Loaded {len(self.entity_index)} entities for EBQE.")
+            
+            # Create a lookup map for faster entity identification
+            self.name_to_eid = {}
+            for eid, data in self.entity_index.items():
+                if data.get('canonical_en'):
+                    self.name_to_eid[data['canonical_en'].lower().strip()] = eid
+                if data.get('canonical_bn'):
+                    self.name_to_eid[data['canonical_bn'].strip()] = eid
+                for alias in data.get('aliases', []):
+                    self.name_to_eid[alias.lower().strip()] = eid
+                for alias in data.get('aliases_bn', []):
+                    self.name_to_eid[alias.strip()] = eid
+        except Exception as e:
+            logger.error(f"Failed to load entity index: {e}")
     
     def process(self, query: str):
         """
@@ -40,13 +67,20 @@ class QueryProcessor:
         # Step 2: Detect language
         self.lang_detected = detect_language(self.normalized)
         
-        # Step 3: Translate to other language
+        # Step 3: Translate to other language with "Pinned" entities
         target_lang = 'en' if self.lang_detected == 'bn' else 'bn'
+        pinned_map = self.get_pinned_map(self.normalized, self.lang_detected, target_lang)
+        
         self.translated = translate_query(
             self.normalized, 
             self.lang_detected, 
-            target_lang
+            target_lang,
+            pinned_map=pinned_map
         )
+        
+        # Step 4: Expand query with entities (EBQE)
+        self.expanded_en = self.expand_query(self.normalized if self.lang_detected == 'en' else self.translated, 'en')
+        self.expanded_bn = self.expand_query(self.normalized if self.lang_detected == 'bn' else self.translated, 'bn')
         
         # Return result
         result = {
@@ -54,7 +88,9 @@ class QueryProcessor:
             'language': self.lang_detected,
             'normalized': self.normalized,
             'translated': self.translated,
-            'both_versions': [self.normalized, self.translated],
+            'expanded_en': self.expanded_en,
+            'expanded_bn': self.expanded_bn,
+            'both_versions': [self.expanded_en, self.expanded_bn],
             'is_mixed': is_mixed_language(self.normalized),
         }
         
@@ -75,6 +111,70 @@ class QueryProcessor:
         text = ' '.join(text.split())
         
         return text
+
+    def expand_query(self, query: str, lang: str) -> str:
+        """
+        Expand query using Knowledge Graph entities.
+        
+        Args:
+            query: Normalized query string
+            lang: Language of the query ('en' or 'bn')
+            
+        Returns:
+            Expanded query string
+        """
+        if not query or not self.entity_index:
+            return query
+            
+        expansion_terms = set(query.split())
+        words = query.split()
+        
+        # Check for multi-word entities (sliding window)
+        # We'll check windows of size 1 to 4
+        for window_size in range(4, 0, -1):
+            for i in range(len(words) - window_size + 1):
+                phrase = " ".join(words[i:i+window_size])
+                lookup_phrase = phrase.lower().strip() if lang == 'en' else phrase.strip()
+                
+                if lookup_phrase in self.name_to_eid:
+                    eid = self.name_to_eid[lookup_phrase]
+                    entity = self.entity_index[eid]
+                    
+                    # Add canonical names
+                    if entity.get('canonical_en'):
+                        expansion_terms.add(entity['canonical_en'])
+                    if entity.get('canonical_bn'):
+                        expansion_terms.add(entity['canonical_bn'])
+                        
+                    # Add top aliases (limit to 2 to avoid bloating)
+                    aliases = entity.get('aliases', []) if lang == 'en' else entity.get('aliases_bn', [])
+                    for alias in aliases[:2]:
+                        expansion_terms.update(alias.split())
+        
+        return " ".join(sorted(list(expansion_terms)))
+
+    def get_pinned_map(self, query: str, source_lang: str, target_lang: str) -> dict:
+        """
+        Identify entities and their target-language equivalents for pinning.
+        """
+        pinned = {}
+        if not query or not self.entity_index:
+            return pinned
+            
+        words = query.split()
+        for window_size in range(4, 0, -1):
+            for i in range(len(words) - window_size + 1):
+                phrase = " ".join(words[i:i+window_size])
+                lookup_phrase = phrase.lower().strip() if source_lang == 'en' else phrase.strip()
+                
+                if lookup_phrase in self.name_to_eid:
+                    eid = self.name_to_eid[lookup_phrase]
+                    entity = self.entity_index[eid]
+                    
+                    target_name = entity.get('canonical_en') if target_lang == 'en' else entity.get('canonical_bn')
+                    if target_name:
+                        pinned[phrase] = target_name
+        return pinned
 
 
 def process_query(query: str) -> dict:

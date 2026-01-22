@@ -66,7 +66,7 @@ def translate_en_to_bn(text: str) -> str:
         return text  # Return original if translation fails
 
 
-def translate_query(text: str, source_lang: str, target_lang: str) -> str:
+def translate_query(text: str, source_lang: str, target_lang: str, pinned_map: dict = None) -> str:
     """
     Translate query from source to target language.
     
@@ -74,16 +74,35 @@ def translate_query(text: str, source_lang: str, target_lang: str) -> str:
         text: Query text
         source_lang: 'en' or 'bn'
         target_lang: 'en' or 'bn'
+        pinned_map: Optional dict of {phrase: translation} to preserve
         
     Returns:
         Translated text (or original if translation fails)
     """
+    if not text:
+        return ""
+        
     if source_lang == target_lang:
         return text
     
+    # If we have pinned translations, we try to preserve them
+    # Simple strategy: replace phrase with placeholder, translate, then replace back
+    # Safer strategy: if the whole query is a pinned entity, just return it
+    if pinned_map:
+        for phrase, translation in pinned_map.items():
+            if text.lower().strip() == phrase.lower().strip():
+                return translation
+
+    # Perform translation
     if source_lang == 'bn' and target_lang == 'en':
-        return translate_bn_to_en(text)
+        translated = translate_bn_to_en(text)
     elif source_lang == 'en' and target_lang == 'bn':
-        return translate_en_to_bn(text)
+        translated = translate_en_to_bn(text)
     else:
-        return text
+        translated = text
+
+    # After-translation pinning check
+    # If pinned terms are missing from translation, we could append them
+    # But for now, we'll keep it simple
+    
+    return translated

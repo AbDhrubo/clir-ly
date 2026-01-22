@@ -23,3 +23,5 @@ data/raw/newage_articles.jsonl
 data/raw/new_nation_articles.jsonl
 data/raw/prothom_alo_articles.jsonl
 env/
+data/raw/kaler_kantho_articles.jsonl
+src/crawler.rar
