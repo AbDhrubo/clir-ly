@@ -172,7 +172,10 @@ class HybridSearch:
         # 2. Normalize scores from each method
         bm25_scores = self._normalize_scores(bm25_results)
         fuzzy_scores = self._normalize_scores(fuzzy_results)
-        semantic_scores = self._normalize_scores(semantic_results)
+        
+        # For semantic: DON'T normalize - use raw cosine similarity (already 0-1)
+        # This prevents inflating poor matches when all results are bad
+        semantic_scores = {doc_id: score for doc_id, score, _ in semantic_results}
         
         # 3. Combine scores
         # Get all unique document IDs that appeared in any result
