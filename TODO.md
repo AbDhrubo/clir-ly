@@ -30,7 +30,7 @@
 - ✅ Query execution time tracking (total time in ms) - implemented in `scripts/hybrid_search.py`
 - ✅ Evaluation metrics code: Precision@10, Recall@50, nDCG@10, MRR (`scripts/accuracy_metrics.py`)
 - ✅ **Low-confidence warning implemented** (threshold + warning message in `src/retrieval/hybrid.py`)
-- ❌ **Query time breakdown NOT implemented** (translation time, embedding time, ranking time)
+- ✅ **Query time breakdown implemented** (BM25, Fuzzy, Semantic, Ranking times tracked)
 - ❌ **Comparison with classical search engines NOT done** (Google, Bing, DuckDuckGo)
 - ❌ Test queries NOT labeled yet (need 5-10 queries minimum)
 - ❌ Evaluation NOT run yet
@@ -47,14 +47,16 @@
 - [x] Test with low-quality queries - test script: `test_low_confidence_warning.py`
 - [x] Create Google Colab notebook: `notebooks/Module_D_LowConfidence_Colab.ipynb`
 
-### 2. Query Execution Time Breakdown - 1.5 hours
-- [ ] Add time tracking for:
-  - Translation time (ms)
-  - Embedding computation time (ms)
-  - Ranking time (ms)
-  - Total retrieval time (ms) - already implemented
-- [ ] Implement in: `src/retrieval/hybrid.py` or wrapper
-- [ ] Report breakdown for each query in output/CSV
+### 2. Query Execution Time Breakdown - ✅ DONE
+- [x] Add time tracking for:
+  - BM25 search time (ms)
+  - Fuzzy search time (ms)  
+  - Semantic embedding computation time (ms)
+  - Ranking/combination time (ms)
+  - Total retrieval time (ms)
+- [x] Implement in: `src/retrieval/hybrid.py` - added `return_timing` parameter
+- [x] Test script created: `test_timing_breakdown.py`
+- [ ] Report breakdown for each query in output/CSV (optional enhancement)
 
 ### 3. Comparison with Classical Search Engines - 3 hours
 - [ ] Select 5-10 test queries (same as evaluation queries)
