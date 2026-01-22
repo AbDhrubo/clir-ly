@@ -61,7 +61,7 @@ class KnowledgeGraph:
         logger.info("Building co-occurrence matrix...")
         
         for article_idx, article in enumerate(articles):
-            entities = article.get("named_entities", [])
+            entities = article.get("entities", [])
             
             # Get unique entity IDs in this article
             entity_ids = set()
