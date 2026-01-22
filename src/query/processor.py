@@ -5,6 +5,12 @@ from .translator import translate_query
 import logging
 import json
 
+try:
+    import networkx as nx
+    NETWORKX_AVAILABLE = True
+except ImportError:
+    NETWORKX_AVAILABLE = False
+
 logger = logging.getLogger(__name__)
 
 
@@ -43,6 +49,16 @@ class QueryProcessor:
                     self.name_to_eid[alias.strip()] = eid
         except Exception as e:
             logger.error(f"Failed to load entity index: {e}")
+        
+        # Load Knowledge Graph for neighbor-based expansion
+        self.graph = None
+        if NETWORKX_AVAILABLE:
+            try:
+                graph_path = "data/processed/knowledge_graph/knowledge_graph.gexf"
+                self.graph = nx.read_gexf(graph_path)
+                logger.info(f"Loaded Knowledge Graph: {self.graph.number_of_nodes()} nodes, {self.graph.number_of_edges()} edges")
+            except Exception as e:
+                logger.warning(f"Could not load Knowledge Graph: {e}")
     
     def process(self, query: str):
         """
@@ -150,6 +166,22 @@ class QueryProcessor:
                     aliases = entity.get('aliases', []) if lang == 'en' else entity.get('aliases_bn', [])
                     for alias in aliases[:2]:
                         expansion_terms.update(alias.split())
+                    
+                    # Graph-based expansion: add top neighbors
+                    if self.graph and eid in self.graph:
+                        neighbors = list(self.graph.neighbors(eid))
+                        # Sort by edge weight (co-occurrence strength)
+                        neighbor_weights = [(n, self.graph[eid][n].get('weight', 1)) for n in neighbors]
+                        neighbor_weights.sort(key=lambda x: -x[1])
+                        
+                        # Add top 3 neighbors
+                        for neighbor_id, weight in neighbor_weights[:3]:
+                            if neighbor_id in self.entity_index:
+                                neighbor_entity = self.entity_index[neighbor_id]
+                                if neighbor_entity.get('canonical_en'):
+                                    expansion_terms.add(neighbor_entity['canonical_en'])
+                                if neighbor_entity.get('canonical_bn'):
+                                    expansion_terms.add(neighbor_entity['canonical_bn'])
         
         return " ".join(sorted(list(expansion_terms)))
 
