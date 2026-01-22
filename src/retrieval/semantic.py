@@ -86,7 +86,12 @@ class SemanticSearch:
         if os.path.exists(embeddings_file):
             print(f"📂 Loading pre-computed embeddings from {embeddings_file}")
             with open(embeddings_file, 'rb') as f:
-                return pickle.load(f)
+                cached = pickle.load(f)
+                # Validate cache: check if number of embeddings matches documents
+                if len(cached) == len(self.documents):
+                    return cached
+                else:
+                    print(f"⚠️ Cache mismatch ({len(cached)} embeddings vs {len(self.documents)} docs). Recomputing...")
         
         print("🔄 Computing embeddings for all documents...")
         print("   (This will take some time but only happens once)")
