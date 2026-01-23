@@ -1,13 +1,24 @@
 Query,Lang,Translated,Rank-1 EN,Score EN,Rank-1 BN,Score BN,Time(ms)
-Bangladesh politics,en,বাংলাদেশ রাজনীতি,Politics turns into profit-driven business: Sujan,10.162,"‘ছাত্ররাজনীতি যদি বন্ধ হয়, এই মেডিক্যাল কলেজ বন্ধ হয়ে যাবে’",10.375,3996.5
-Cricket news,en,ক্রিকেট সংবাদ,"PCB backs Bangladesh, may rethink T20 World Cup participation",13.194,নাজমুল পদত্যাগ না করলে সব ধরনের খেলা বয়কট: ক্রিকেটারদের আলটিমেটাম,11.888,341.4
-Education system,en,শিক্ষা ব্যবস্থা,Campaign to be launched in educational institutions to promote 'Yes' vote,11.939,নির্বাচনি দায়িত্ব পালনে অনীহা ও শৈথিল্য দেখালে ব্যবস্থা,11.350,287.8
-Dhaka economy,en,ঢাকা অর্থনীতি,DU holds symposium on renewable energy conversion,9.697,নির্বাচন কমিশনের ওপর আস্থা রয়েছে বিএনপির : মির্জা ফখরুল,9.106,441.2
-Energy crisis,en,শক্তি সংকট,Running on empty,12.329,আরেকবার চেষ্টা করে দেখি: মাহফুজ আলম,10.122,416.1
-Healthcare Bangladesh,en,স্বাস্থ্যসেবা বাংলাদেশ,Healthcare must be a priority,12.104,আত্মহত্যা বাড়ছে ইসরায়েলি সেনাদের,8.695,385.8
-বাংলাদেশের রাজনীতি,bn,Bangladesh politics,Politics turns into profit-driven business: Sujan,10.162,বাংলাদেশের রাজনৈতিক অর্থায়ন এবং গণতন্ত্রের সংকট,10.175,3953.4
-ক্রিকেট সংবাদ,bn,Cricket News,"PCB backs Bangladesh, may rethink T20 World Cup participation",13.194,নাজমুল পদত্যাগ না করলে সব ধরনের খেলা বয়কট: ক্রিকেটারদের আলটিমেটাম,11.888,189.2
-শিক্ষা ব্যবস্থা,bn,Education,"Qawmi, non-formal edn included in draft policy",8.479,নির্বাচনি দায়িত্ব পালনে অনীহা ও শৈথিল্য দেখালে ব্যবস্থা,11.350,199.0
-ঢাকার অর্থনীতি,bn,Dhaka Economics,Why every startup founder must master Unit Economics,10.434,‘তৈরি পোশাকশিল্পের পথচলা সহজ করে দিয়েছিলেন খালেদা জিয়া’,8.276,299.5
-শক্তি সংকট,bn,The power crisis.,Bangladesh’s diplomatic dilemma,8.917,আরেকবার চেষ্টা করে দেখি: মাহফুজ আলম,10.122,434.7
-স্বাস্থ্যসেবা,bn,Health care,Healthcare must be a priority,13.632,আত্মহত্যা বাড়ছে ইসরায়েলি সেনাদের,8.695,242.4
+শিক্ষা ব্যবস্থা বাংলাদেশ,bn,The Education System Bangladesh,RUET VC Abdur Razzak elected BUC president,15.570,নির্বাচনি দায়িত্ব পালনে অনীহা ও শৈথিল্য দেখালে ব্যবস্থা,11.350,5521.3
+বাংলাদেশ অর্থনীতি,bn,Bangladesh Economics,Why every startup founder must master Unit Economics,10.434,মূল্যস্ফীতি কমাতে সবার সহযোগিতা চাইলেন অর্থ উপদেষ্টা,9.918,103.1
+বাংলাদেশ ব্যাংক,bn,Bangladesh Bank,"NCC Bank, BB sign deal on start-up refinance fund",9.823,আমানতকারীদের দুই বছরের মুনাফার ‘হেয়ারকাট’ করল বাংলাদেশ ব্যাংক,11.645,103.0
+ঢাকা যানজট,bn,Dhaka Traffic,"Protests bring Dhaka to a standstill as students block Farmgate, Science Lab",12.324,ঢাকা ও শহরতলির বাসে চালু হচ্ছে ই-টিকিট ব্যবস্থা,14.344,77.6
+চেয়ার,bn,Chair,Tarique seeks private sector cooperation to address economic challenges,8.574,ফরিদপুর মেডিক্যাল কলেজ ‘বন্ধ করে দেওয়া’ সংক্রান্ত বক্তব্যের ব্যাখ্যা দিলেন বিএনপ,7.302,33.8
+বাংলাদেশ কৃষি সমস্যা,bn,Bangladesh is a agricultural problem,Data gap starves farming promise,15.710,বিশ্ব খাদ্য কর্মসূচির মাধ্যমে ৩০ হাজার টন সার পেল বাংলাদেশ,13.474,146.5
+বেকারত্ব বাংলাদেশ,bn,Unemployment Bangladesh,"Global unemployment ‘stable’ in 2026, but decent jobs lacking",11.058,ব্যাটারিচালিত রিকশা কঠোরভাবে নিয়ন্ত্রণের পক্ষে ৫৬% যাত্রী: গবেষণা,7.113,130.8
+বাংলাদেশ ২০২৬ নির্বাচনের আলোচনা,bn,Bangladesh is discussing 2026 elections.,"Savor, BGMEA sign deal for BCGTX 2026",11.386,নিরাপত্তার প্রশ্নে মানুষের আস্থা নষ্ট হলে রাষ্ট্র দুর্বল হয়ে পড়ে,15.192,185.6
+কক্সবাজার শরণার্থী শিবির আগুন,bn,Coxbazar Refugee Camp Fire,BSF detains Bangladeshi youth,13.803,"মহেশখালীতে মা ও শিশুপুত্রের লাশ উদ্ধার, মায়ের মাথা-গলায় আঘাতের চিহ্ন",12.137,135.1
+নর্সিংদি ভূমিকম্প,bn,Norsingadi Earthquake,Mild earthquake jolts Sylhet early Monday,14.134,ঢাকায় ফোর্ট্রেসের আবাসন মেলা শুরু,10.391,89.4
+বাংলাদেশে মুদ্রাস্ফীতি,bn,inflation in Bangladesh,Inflation rises for 2nd month in Dec,14.963,বাড়িভাড়ায় ভোগান্তি,8.353,180.9
+আরএমজি শিল্পে শ্রমাধিকারের ঝুঁকি,bn,The risk of labor in RMG industry,"US December hiring misses expectations, capping weak 2025",18.883,যুক্তরাষ্ট্র থেকে সরে চীনের দিকে ঝোঁকার ইঙ্গিত কানাডার,8.205,194.3
+উন্নয়ন,bn,Development,Political commitment stressed for planned development,6.129,বাংলাদেশ ব্যাংকে স্টার্টআপ ফান্ডের চেক হস্তান্তর করল আইএফআইসি ব্যাংক,8.510,33.1
+climate change impact in Bangladesh,en,বাংলাদেশে জলবায়ু পরিবর্তনের প্রভাব,"‘Climate finance needs to be demand-driven, not designed in donor capitals’",20.355,জলবায়ু ঝুঁকি মোকাবিলায় জাতীয় পর্যায়ে অগ্রাধিকার জরুরি,14.369,3019.0
+Bangladesh economy growth,en,বাংলাদেশ অর্থনীতি বৃদ্ধি,Economy faces five major risks,15.935,দক্ষিণ এশিয়ায় বাংলাদেশের মূল্যস্ফীতি সবচেয়ে বেশি,13.639,123.4
+Dhaka traffic congestion,en,ঢাকা যানজট,Students block Dhaka roads for 2nd day demanding central university ordinance,19.368,ঢাকা ও শহরতলির বাসে চালু হচ্ছে ই-টিকিট ব্যবস্থা,14.344,230.3
+unemployment in Bangladesh,en,বাংলাদেশে বেকারত্ব,"Global unemployment ‘stable’ in 2026, but decent jobs lacking",12.627,তারেক রহমানের ‘লন্ডন অভিজ্ঞতা’ ও বাংলাদেশের বাস্তবতা,7.099,178.1
+Bangladesh interim government reforms,en,বাংলাদেশ ইন্টারিম সরকার সংস্কার,Government clarifies Professor Yunus’ support for ‘Yes’ vote,20.670,অন্তর্বর্তী সরকার কেন ‘হ্যাঁ’ ভোটের জয় চায়,13.587,250.0
+Rohingya refugee crisis in Bangladesh,en,রোহিঙ্গা শরণার্থী সঙ্কট বাংলাদেশে,Continued international support key to strengthening Bangladesh’s Rohingya respo,22.674,টেকনাফ সীমান্ত দিয়ে অনুপ্রবেশের সময় গ্রেপ্তার ৫৩ জনের সবাই আশ্রয়শিবিরের শরণার্থী,18.410,200.9
+Bangladesh earthquake preparedness,en,বাংলাদেশ ভূমিকম্প প্রস্তুতি,Mild earthquake jolts Sylhet early Monday,16.308,ঢাকায় ফোর্ট্রেসের আবাসন মেলা শুরু,10.391,155.0
+Bangladesh garment worker heat stress,en,বাংলাদেশ কাপড় শ্রমিক তাপ চাপ,Garment worker raped in Bhola,14.168,নিয়মিত ল্যাপটপ বন্ধ না করলে যেসব ঝুঁকি তৈরি হয়,15.644,167.3
+Bangladesh T20 World Cup security concerns,en,বাংলাদেশ টি২০ বিশ্বকাপ নিরাপত্তা উদ্বেগ,ICC willing to address concerns about playing T20 World Cup in India: BCB,33.924,টি-টোয়েন্টি বিশ্বকাপ বয়কট করছে না পাকিস্তান,21.543,235.3
+Bangladesh quantum computing research,en,বাংলাদেশ কোয়ান্টাম কম্পিউটিং গবেষণা,Remembering Satyendra Nath Bose,17.747,"বাংলাদেশ সুগারক্রপ গবেষণা ইনস্টিটিউটে চাকরি, ৬ষ্ঠ ও ৯ম গ্রেডে নেবে ১৭ জন",11.489,201.8
