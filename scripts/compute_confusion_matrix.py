@@ -112,8 +112,8 @@ def compute_confusion_matrix(results, ground_truth, k=10):
     }
 
 def main():
-    base_dir = Path('/home/user/clir-ly')
-    results_dir = base_dir / 'results'
+    base_dir = Path.cwd()  # Uses current working directory
+    results_dir = Path('results')
 
     # Load ground truth
     ground_truth = load_ground_truth(base_dir / 'data' / 'search_results.csv')

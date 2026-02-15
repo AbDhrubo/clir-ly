@@ -210,8 +210,8 @@ def compute_confusion_matrix_at_k(results, k=10):
     }
 
 def main():
-    base_dir = Path('/home/user/clir-ly')
-    results_dir = base_dir / 'results'
+    # base_dir = Path('/home/user/clir-ly')
+    results_dir = Path('results')
 
     methods = {
         'BM25': 'bm25_results.json',
@@ -228,7 +228,7 @@ def main():
     print()
 
     for method_name, filename in methods.items():
-        with open(results_dir / filename) as f:
+        with open(results_dir / filename, encoding='utf-8') as f:
             results = json.load(f)
 
         # Compute confusion matrix
