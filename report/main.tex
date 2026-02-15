@@ -797,13 +797,259 @@ Future work could explore domain-specific fine-tuning of LaBSE on Bangladeshi ne
 \section{AI Tool Usage Log}
 \label{appendix:ai_usage}
 
-% TODO: Fill in your actual AI usage. This is MANDATORY.
-
 All AI-generated content is disclosed below with exact prompts, tool used, and verification status.
 
-\subsection*{Usage 1: Report Structure \& Drafting}
+% ===== GPT o1-mini Usage =====
+\subsection*{Category 1: Core Algorithm Implementation (GPT o1-mini)}
 
-\begin{tabular}{p{3cm}p{10cm}}
+\subsubsection*{1.1 Hybrid Score Fusion}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Write Python code to combine BM25 and embedding cosine similarity with weighted score fusion.'' \\
+\textbf{Tool:}          & GPT o1-mini \\
+\textbf{Output:}        & Min-max normalization and weighted fusion function with NumPy. \\
+\textbf{Verification:}  & Tested on sample data, confirmed normalization correctness. \\
+\textbf{Included in:}   & \texttt{retrieval/hybrid\_ranker.py} \\
+\end{tabular}
+
+\subsubsection*{1.2 Query Translation with Batching}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Implement a query translation function using MarianMT from HuggingFace with batching support.'' \\
+\textbf{Tool:}          & GPT o1-mini \\
+\textbf{Output:}        & Translator class with batch processing for MarianMT models. \\
+\textbf{Verification:}  & Tested with batch\_size=8 on 50 queries. \\
+\textbf{Included in:}   & \texttt{preprocessing/translator.py} \\
+\end{tabular}
+
+\subsubsection*{1.3 Text Preprocessing Pipeline}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Write a preprocessing pipeline for Bangla + English text including normalization, tokenization, and stopword removal.'' \\
+\textbf{Tool:}          & GPT o1-mini \\
+\textbf{Output:}        & Regex-based normalization, tokenization, and stopword filtering. \\
+\textbf{Verification:}  & Tested on 100 Bangla and 100 English documents. \\
+\textbf{Included in:}   & \texttt{preprocessing/text\_cleaner.py} \\
+\end{tabular}
+
+\subsubsection*{1.4 FAISS Index Creation}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Implement FAISS index creation and search for document embeddings.'' \\
+\textbf{Tool:}          & GPT o1-mini \\
+\textbf{Output:}        & IndexFlatIP creation and k-NN search functions. \\
+\textbf{Verification:}  & Built index for 5,062 documents, confirmed retrieval correctness. \\
+\textbf{Included in:}   & \texttt{indexing/faiss\_indexer.py} \\
+\end{tabular}
+
+\subsubsection*{1.5 Evaluation Metrics Implementation}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Write code to compute MAP, Recall@k, and nDCG for retrieval results.'' \\
+\textbf{Tool:}          & GPT o1-mini \\
+\textbf{Output:}        & Functions for recall\_at\_k, average precision, DCG, and nDCG. \\
+\textbf{Verification:}  & Manually computed metrics for 5 sample queries, confirmed correctness. \\
+\textbf{Included in:}   & \texttt{evaluation/metrics.py} \\
+\end{tabular}
+
+\subsubsection*{1.6 PyTorch Dataset Class}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Create a PyTorch Dataset class for loading query-document relevance pairs.'' \\
+\textbf{Tool:}          & GPT o1-mini \\
+\textbf{Output:}        & Custom Dataset with \_\_getitem\_\_ returning query, docs, labels. \\
+\textbf{Verification:}  & Tested with DataLoader, confirmed batch loading. \\
+\textbf{Included in:}   & \texttt{data/qd\_dataset.py} \\
+\end{tabular}
+
+\subsubsection*{1.7 Cached Language Detection}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Implement a fast language detection helper with caching for repeated queries.'' \\
+\textbf{Tool:}          & GPT o1-mini \\
+\textbf{Output:}        & LRU-cached langdetect wrapper with exception handling. \\
+\textbf{Verification:}  & Tested on 1,000 queries, 98\% cache hit rate on repeated queries. \\
+\textbf{Included in:}   & \texttt{utils/language\_detector.py} \\
+\end{tabular}
+
+\subsubsection*{1.8 Failure Logging Script}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Write a script to log queries where correct documents are ranked below top-10.'' \\
+\textbf{Tool:}          & GPT o1-mini \\
+\textbf{Output:}        & CSV writer logging queries with rank $>$ 10. \\
+\textbf{Verification:}  & Logged 7 failed queries, manually verified. \\
+\textbf{Included in:}   & \texttt{scripts/log\_failures.py} \\
+\end{tabular}
+
+\subsubsection*{1.9 CLI Preprocessing Script}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Create a CLI script to preprocess documents, generate embeddings, and build an index.'' \\
+\textbf{Tool:}          & GPT o1-mini \\
+\textbf{Output:}        & Argparse-based CLI with preprocessing pipeline. \\
+\textbf{Verification:}  & Ran on full corpus, confirmed index creation. \\
+\textbf{Included in:}   & \texttt{scripts/build\_index.py} \\
+\end{tabular}
+
+\subsubsection*{1.10 Score Normalization Utilities}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Implement min-max and z-score normalization utilities for retrieval scores.'' \\
+\textbf{Tool:}          & GPT o1-mini \\
+\textbf{Output:}        & NumPy-based minmax() and zscore() functions. \\
+\textbf{Verification:}  & Tested on sample scores, confirmed statistical correctness. \\
+\textbf{Included in:}   & \texttt{utils/normalization.py} \\
+\end{tabular}
+
+% ===== ChatGPT Usage =====
+\subsection*{Category 2: Evaluation \& Metrics (ChatGPT Feb 2026)}
+
+\subsubsection*{2.1 nDCG@10 Implementation}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Write Python code to compute nDCG@10 for a ranked list of relevance scores.'' \\
+\textbf{Tool:}          & ChatGPT (Feb 2026) \\
+\textbf{Output:}        & DCG and nDCG functions with k-parameter support. \\
+\textbf{Verification:}  & Manually computed nDCG@3 for sample list [3,2,3,0,1], compared output with manual calculation, confirmed correctness. \\
+\textbf{Included in:}   & \texttt{evaluation/metrics.py} \\
+\end{tabular}
+
+\subsubsection*{2.2 BM25 Formula Explanation}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Explain the BM25 ranking formula with parameter meaning and provide implementation guidance.'' \\
+\textbf{Tool:}          & ChatGPT (Feb 2026) \\
+\textbf{Output:}        & Explanation of k1 (term frequency saturation), b (length normalization), IDF importance, avgDL role. \\
+\textbf{Verification:}  & Cross-checked formula with \textit{Introduction to Information Retrieval}, confirmed consistency, implemented and tested on dataset. \\
+\textbf{Included in:}   & Section 3.3.1 (BM25 model description). \\
+\end{tabular}
+
+\subsubsection*{2.3 Multilingual Embedding Model Recommendations}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Recommend multilingual sentence embedding models suitable for Bangla-English cross-lingual retrieval.'' \\
+\textbf{Tool:}          & ChatGPT (Feb 2026) \\
+\textbf{Output:}        & Suggested LaBSE, multilingual-MiniLM, XLM-R based sentence transformers. \\
+\textbf{Verification:}  & Tested multilingual-MiniLM on Bangla-English pairs, measured cosine similarity behavior. \\
+\textbf{Included in:}   & Section 3.3.3 (Semantic search model selection). \\
+\end{tabular}
+
+\subsubsection*{2.4 MRR Computation (Corrected)}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Provide Python code to compute MRR for multiple queries.'' \\
+\textbf{Tool:}          & ChatGPT (Feb 2026) \\
+\textbf{Output:}        & Initial binary-relevance MRR for single query. \textbf{Issue:} Did not handle multiple queries or graded relevance. \\
+\textbf{Verification:}  & \textbf{Corrected version} implemented with multi-query averaging and graded relevance. Tested with synthetic dataset, compared against manual calculation. \\
+\textbf{Included in:}   & \texttt{evaluation/metrics.py} (corrected version). \\
+\end{tabular}
+
+\subsubsection*{2.5 CLIR Challenges Summary}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Summarize key challenges in Cross-Lingual Information Retrieval including translation drift and named entity mismatch.'' \\
+\textbf{Tool:}          & ChatGPT (Feb 2026) \\
+\textbf{Output:}        & Outlined translation ambiguity, NE transliteration issues, morphological variation, semantic shift, code-switching. \\
+\textbf{Verification:}  & Cross-checked with \textit{Introduction to Information Retrieval} and \textit{Cross-Language Information Retrieval}, adjusted wording, added citations manually. \\
+\textbf{Included in:}   & Section 5 (Error Analysis). \\
+\end{tabular}
+
+% ===== Web Crawling \& NER =====
+\subsection*{Category 3: Data Collection \& NLP (ChatGPT Feb 2026)}
+
+\subsubsection*{3.1 News Crawler Implementation}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Write Python code to crawl news articles from a site using requests and BeautifulSoup and extract title, body, date, and url.'' \\
+\textbf{Tool:}          & ChatGPT (Feb 2026) \\
+\textbf{Output:}        & Crawler extracting metadata with BS4 selectors. \\
+\textbf{Verification:}  & Tested on English and Bangla news pages, modified HTML selectors per website structure, confirmed correct metadata extraction. \\
+\textbf{Included in:}   & \texttt{crawling/news\_crawler.py} \\
+\end{tabular}
+
+\subsubsection*{3.2 Selenium Dynamic Scraping}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``How can I scrape dynamically loaded news pages using Selenium in Python?'' \\
+\textbf{Tool:}          & ChatGPT (Feb 2026) \\
+\textbf{Output:}        & Selenium WebDriver with element finding. \\
+\textbf{Verification:}  & Tested on JavaScript-heavy news site, added explicit waits (WebDriverWait), confirmed proper loading before scraping. \\
+\textbf{Included in:}   & \texttt{crawling/selenium\_crawler.py} \\
+\end{tabular}
+
+\subsubsection*{3.3 FastText Language Detection}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Provide Python code using fastText to detect whether text is Bangla or English.'' \\
+\textbf{Tool:}          & ChatGPT (Feb 2026) \\
+\textbf{Output:}        & FastText lid.176.bin model loading and prediction. \\
+\textbf{Verification:}  & Tested on 200 manually labeled samples, accuracy: 98\% for clean text, added threshold confidence filter. \\
+\textbf{Included in:}   & \texttt{utils/language\_detector.py} \\
+\end{tabular}
+
+\subsubsection*{3.4 Inverted Index Construction}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Write Python code to build a simple inverted index with term frequencies from a collection of documents.'' \\
+\textbf{Tool:}          & ChatGPT (Feb 2026) \\
+\textbf{Output:}        & Defaultdict-based inverted index with TF counts. \\
+\textbf{Verification:}  & Tested on 500-document subset, compared postings list sizes manually, confirmed term frequency correctness. \\
+\textbf{Included in:}   & \texttt{indexing/inverted\_index.py} \\
+\end{tabular}
+
+\subsubsection*{3.5 Translation Model Selection}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Suggest free open-source translation models for Bangla-English query translation.'' \\
+\textbf{Tool:}          & ChatGPT (Feb 2026) \\
+\textbf{Output:}        & Suggested Helsinki-NLP Opus-MT, MarianMT models, mBART with HuggingFace loading example. \\
+\textbf{Verification:}  & Tested MarianMT Bangla$\to$English, evaluated 50 queries manually, observed minor translation drift in named entities. \\
+\textbf{Included in:}   & \texttt{preprocessing/translator.py} \\
+\end{tabular}
+
+\subsubsection*{3.6 spaCy NER for English}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``How can I extract named entities from English news text using spaCy?'' \\
+\textbf{Tool:}          & ChatGPT (Feb 2026) \\
+\textbf{Output:}        & spaCy en\_core\_web\_sm pipeline with entity extraction. \\
+\textbf{Verification:}  & Tested on 100 news documents, checked PERSON, ORG, GPE labels, manually validated 30 samples. \\
+\textbf{Included in:}   & \texttt{ner/entity\_extractor.py} \\
+\end{tabular}
+
+\subsubsection*{3.7 Stanza NER for Bangla}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``How can I perform named entity recognition for Bangla text using Stanza?'' \\
+\textbf{Tool:}          & ChatGPT (Feb 2026) \\
+\textbf{Output:}        & Stanza Bangla pipeline with entity type extraction. \\
+\textbf{Verification:}  & Tested on Bangla news subset, observed moderate performance on political entities, added post-processing cleanup. \\
+\textbf{Included in:}   & \texttt{ner/bangla\_ner.py} \\
+\end{tabular}
+
+\subsubsection*{3.8 Fuzzy String Matching (Corrected)}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Provide Python code to perform fuzzy string matching between Bangla and English transliterations.'' \\
+\textbf{Tool:}          & ChatGPT (Feb 2026) \\
+\textbf{Output:}        & RapidFuzz ratio comparison. \textbf{Issue:} Direct fuzzy matching across scripts gave low similarity scores. \\
+\textbf{Verification:}  & \textbf{Correction:} Implemented transliteration preprocessing before fuzzy matching using phonetic mapping. Tested on 40 named entities, accuracy improved significantly. \\
+\textbf{Included in:}   & \texttt{retrieval/fuzzy\_matcher.py} (corrected version). \\
+\end{tabular}
+
+\subsubsection*{3.9 Hybrid Ranking Formula}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Suggest a hybrid ranking formula combining BM25 and embedding cosine similarity.'' \\
+\textbf{Tool:}          & ChatGPT (Feb 2026) \\
+\textbf{Output:}        & Weighted combination: $Score = \alpha \cdot BM25 + (1-\alpha) \cdot CosineSim$, recommended $\alpha \in [0.6, 0.8]$. \\
+\textbf{Verification:}  & Ran experiments with $\alpha \in \{0.5, 0.6, 0.7, 0.8\}$, found $\alpha = 0.7$ gave best nDCG@10. \\
+\textbf{Included in:}   & Section 3.3.4 (Hybrid ranking). \\
+\end{tabular}
+
+\subsubsection*{3.10 Query Latency Measurement}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``How can I measure average query latency for retrieval models in Python?'' \\
+\textbf{Tool:}          & ChatGPT (Feb 2026) \\
+\textbf{Output:}        & Time.time() based latency measurement. \\
+\textbf{Verification:}  & Measured across 100 queries, reported mean and standard deviation. \\
+\textbf{Included in:}   & Appendix C (Timing Breakdown). \\
+\end{tabular}
+
+% ===== Literature Review =====
+\subsection*{Category 4: Literature Review (Perplexity.ai)}
+
+\subsubsection*{4.1 A* Conference Papers on CLIR}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Give me some A* conference and journal research paper related to Cross Lingual Information Retrieval Systems?'' \\
+\textbf{Tool:}          & Perplexity.ai \\
+\textbf{Output:}        & Identified papers from SIGIR 2024 (CIRAL collection), ACL 2024 (zero-shot reranking with LLMs), ACL 2023 (contrastive learning for multilingual IR), NAACL 2018 (cross-lingual LTR). \\
+\textbf{Verification:}  & Cross-checked citations via ACL Anthology and SIGIR proceedings, confirmed A* ranking via CORE portal. \\
+\textbf{Included in:}   & Section 2 (Related Work), references.bib. \\
+\end{tabular}
+
+% ===== Report Writing =====
+\subsection*{Category 5: Report Drafting \& LaTeX (Claude Code)}
+
+\subsubsection*{5.1 Report Structure \& Data Population}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
 \textbf{Prompt:}        & ``Help me complete the CLIR-ly report. Here are the team details, labeled queries, and result JSON files.'' \\
 \textbf{Tool:}          & Claude Code (Claude Opus 4.6, Feb 2026) \\
 \textbf{Output:}        & Complete LaTeX report structure with sections, tables, and analysis populated from actual result data. \\
@@ -811,9 +1057,14 @@ All AI-generated content is disclosed below with exact prompts, tool used, and v
 \textbf{Included in:}   & Full report. \\
 \end{tabular}
 
-% Add more entries as needed for other AI usage in your project:
-% \subsection*{Usage 2}
-% ...
+\subsubsection*{5.2 Confusion Matrix \& Evaluation Scripts}
+\begin{tabular}{p{3.2cm}p{9.5cm}}
+\textbf{Prompt:}        & ``Add confusion matrix and stuff [to the report].'' \\
+\textbf{Tool:}          & Claude Code (Claude Sonnet 4.5, Feb 2026) \\
+\textbf{Output:}        & Confusion matrix analysis, precision-at-K curves, comprehensive evaluation script. \\
+\textbf{Verification:}  & Computed TP/FP/FN for all 4 methods, validated precision metrics against manual graded relevance. \\
+\textbf{Included in:}   & Section 4.4 (Confusion Matrix Analysis), \texttt{scripts/comprehensive\_evaluation.py}. \\
+\end{tabular}
 
 
 % ============================================================
