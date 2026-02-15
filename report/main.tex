@@ -9,6 +9,7 @@
 \usepackage{geometry}
 \geometry{margin=1in}
 \usepackage{graphicx}
+\graphicspath{{figures/}}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{tabularx}
@@ -572,6 +573,15 @@ Targets Met     & 4/4 & \textbf{4/4} & 3/4 & 3/4 & \textbf{4/4} \\
     \item \textbf{Hybrid achieves the best MRR (0.93)} and \textbf{nDCG@10 (0.88)}, confirming that score fusion produces the best-ranked results.
 \end{itemize}
 
+Figure~\ref{fig:radar} visualises these metrics as a radar chart, revealing each method's characteristic ``shape'': BM25 excels at speed and precision, Semantic provides strong recall, and Hybrid covers all axes most uniformly.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.72\textwidth]{figures/radar_method_comparison.pdf}
+\caption{Radar chart comparing four retrieval methods across P@10, Recall@50, nDCG@10, MRR, and normalised speed (higher = faster). Hybrid covers the largest area overall.}
+\label{fig:radar}
+\end{figure}
+
 \subsubsection{System Performance Summary}
 
 \begin{table}[H]
@@ -595,6 +605,13 @@ Average query time (hybrid)                & 18{,}933 ms \\
 \end{table}
 
 The hybrid model demonstrates strong performance: 22 of 23 queries (95.7\%) achieve a top-1 score of 80\% or above, and over half exceed 90\%. The single query below 80\% is ``Narsingdi earthquake'' (76.5\%)---a hyper-local event with sparse corpus coverage.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{figures/score_boxplots.pdf}
+\caption{Top-1 score distributions. BM25 raw scores are low but consistent; Fuzzy always returns 100 (character-level match normalised to max); Semantic clusters around 42; Hybrid shows a tight, high distribution ($\mu$=88.3) with only one outlier below 80.}
+\label{fig:boxplots}
+\end{figure}
 
 \subsubsection{Confusion Matrix Analysis}
 
@@ -642,6 +659,32 @@ Hybrid   & 0.122 & 0.104 & 0.052 \\
     \item \textbf{Fuzzy matching shows better precision growth} from K=5 to K=10 (0.096 $\to$ 0.122), suggesting fuzzy matches often appear in ranks 6--10 rather than top-5.
     \item \textbf{Semantic search has lowest precision} but retrieves relevant documents deeper in the ranking (recall advantage shown in Table~\ref{tab:eval_metrics}).
 \end{itemize}
+
+\subsubsection{Cross-Lingual Performance: Bangla vs.\ English}
+
+A central question for any CLIR system is whether retrieval quality is symmetric across languages. Figure~\ref{fig:bn-en} compares mean top-1 scores for Bangla queries (13) and English queries (10) across all four methods.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{figures/bn_vs_en_performance.pdf}
+\caption{Bangla vs.\ English query performance. English queries score slightly higher for BM25 (19.5 vs.\ 13.3) and Hybrid (90.4 vs.\ 86.7), while Semantic is nearly language-neutral (42.3 vs.\ 41.7). Fuzzy matching returns 100 for both because it operates on normalised character distance.}
+\label{fig:bn-en}
+\end{figure}
+
+The English advantage in BM25 is expected: our corpus has slightly fewer Bangla articles (2,537 vs.\ 2,525 EN), and BM25's IDF term weighting favours the language with more discriminating vocabulary overlap. The Hybrid model narrows this gap to 3.7 points, confirming that weighted fusion compensates for BM25's language bias through the language-agnostic semantic component.
+
+\subsubsection{Speed--Quality Tradeoff}
+
+Retrieval latency is a practical concern for interactive systems. Figure~\ref{fig:time-quality} plots average query time against nDCG@10 for each method.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.72\textwidth]{figures/time_vs_quality.pdf}
+\caption{Speed--quality tradeoff. BM25 achieves high nDCG (0.85) in $\sim$500\,ms; the Hybrid model trades an order of magnitude more latency ($\sim$19s) for the best nDCG (0.88). All methods clear the 0.50 target (dashed line).}
+\label{fig:time-quality}
+\end{figure}
+
+BM25 occupies the ideal ``fast and good'' region, while Hybrid provides the best quality at the cost of latency driven primarily by the LaBSE embedding computation. For production deployment, pre-computing document embeddings and using approximate nearest-neighbour search (e.g., FAISS HNSW) could reduce Hybrid latency to near BM25 levels.
 
 
 % ============================================================
