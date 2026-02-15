@@ -1,0 +1,1906 @@
+{
+  "BM25": {
+    "confusion_matrix": {
+      "confusion_matrix": {
+        "TP": 39,
+        "FP": 191,
+        "FN": 0,
+        "TN": 116196
+      },
+      "precision": 0.16956521739130434,
+      "recall": 1.0,
+      "f1_score": 0.2899628252788104,
+      "accuracy": 0.9983594729699552
+    },
+    "precision_at_k": {
+      "শিক্ষা ব্যবস্থা বাংলাদেশ": {
+        "5": {
+          "precision": 0.6,
+          "recall": 0.42857142857142855,
+          "f1": 0.5,
+          "relevant_retrieved": 3
+        },
+        "10": {
+          "precision": 0.7,
+          "recall": 1.0,
+          "f1": 0.8235294117647058,
+          "relevant_retrieved": 7
+        },
+        "20": {
+          "precision": 0.35,
+          "recall": 1.0,
+          "f1": 0.5185185185185185,
+          "relevant_retrieved": 7
+        }
+      },
+      "বাংলাদেশ অর্থনীতি": {
+        "5": {
+          "precision": 0.2,
+          "recall": 0.5,
+          "f1": 0.28571428571428575,
+          "relevant_retrieved": 1
+        },
+        "10": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1": 0.33333333333333337,
+          "relevant_retrieved": 2
+        },
+        "20": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "f1": 0.18181818181818182,
+          "relevant_retrieved": 2
+        }
+      },
+      "বাংলাদেশ ব্যাংক": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "ঢাকা যানজট": {
+        "5": {
+          "precision": 0.2,
+          "recall": 0.25,
+          "f1": 0.22222222222222224,
+          "relevant_retrieved": 1
+        },
+        "10": {
+          "precision": 0.4,
+          "recall": 1.0,
+          "f1": 0.5714285714285715,
+          "relevant_retrieved": 4
+        },
+        "20": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1": 0.33333333333333337,
+          "relevant_retrieved": 4
+        }
+      },
+      "চেয়ার": {
+        "5": {
+          "precision": 0.6,
+          "recall": 0.5,
+          "f1": 0.5454545454545454,
+          "relevant_retrieved": 3
+        },
+        "10": {
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1": 0.7499999999999999,
+          "relevant_retrieved": 6
+        },
+        "20": {
+          "precision": 0.3,
+          "recall": 1.0,
+          "f1": 0.4615384615384615,
+          "relevant_retrieved": 6
+        }
+      },
+      "বাংলাদেশ কৃষি সমস্যা": {
+        "5": {
+          "precision": 0.6,
+          "recall": 0.6,
+          "f1": 0.6,
+          "relevant_retrieved": 3
+        },
+        "10": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "relevant_retrieved": 5
+        },
+        "20": {
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1": 0.4,
+          "relevant_retrieved": 5
+        }
+      },
+      "বেকারত্ব বাংলাদেশ": {
+        "5": {
+          "precision": 0.4,
+          "recall": 1.0,
+          "f1": 0.5714285714285715,
+          "relevant_retrieved": 2
+        },
+        "10": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1": 0.33333333333333337,
+          "relevant_retrieved": 2
+        },
+        "20": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "f1": 0.18181818181818182,
+          "relevant_retrieved": 2
+        }
+      },
+      "বাংলাদেশ ২০২৬ নির্বাচনের আলোচনা": {
+        "5": {
+          "precision": 0.8,
+          "recall": 0.5714285714285714,
+          "f1": 0.6666666666666666,
+          "relevant_retrieved": 4
+        },
+        "10": {
+          "precision": 0.7,
+          "recall": 1.0,
+          "f1": 0.8235294117647058,
+          "relevant_retrieved": 7
+        },
+        "20": {
+          "precision": 0.35,
+          "recall": 1.0,
+          "f1": 0.5185185185185185,
+          "relevant_retrieved": 7
+        }
+      },
+      "কক্সবাজার শরণার্থী শিবির আগুন": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "নর্সিংদি ভূমিকম্প": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "বাংলাদেশে মুদ্রাস্ফীতি": {
+        "5": {
+          "precision": 0.4,
+          "recall": 0.3333333333333333,
+          "f1": 0.3636363636363636,
+          "relevant_retrieved": 2
+        },
+        "10": {
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1": 0.7499999999999999,
+          "relevant_retrieved": 6
+        },
+        "20": {
+          "precision": 0.3,
+          "recall": 1.0,
+          "f1": 0.4615384615384615,
+          "relevant_retrieved": 6
+        }
+      },
+      "আরএমজি শিল্পে শ্রমাধিকারের ঝুঁকি": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "উন্নয়ন": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "climate change impact in Bangladesh": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh economy growth": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Dhaka traffic congestion": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "unemployment in Bangladesh": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh interim government reforms": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Rohingya refugee crisis in Bangladesh": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh earthquake preparedness": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh garment worker heat stress": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh T20 World Cup security concerns": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh quantum computing research": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      }
+    }
+  },
+  "Fuzzy": {
+    "confusion_matrix": {
+      "confusion_matrix": {
+        "TP": 28,
+        "FP": 202,
+        "FN": 0,
+        "TN": 116196
+      },
+      "precision": 0.12173913043478261,
+      "recall": 1.0,
+      "f1_score": 0.2170542635658915,
+      "accuracy": 0.9982649923556594
+    },
+    "precision_at_k": {
+      "শিক্ষা ব্যবস্থা বাংলাদেশ": {
+        "5": {
+          "precision": 0.2,
+          "recall": 0.5,
+          "f1": 0.28571428571428575,
+          "relevant_retrieved": 1
+        },
+        "10": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1": 0.33333333333333337,
+          "relevant_retrieved": 2
+        },
+        "20": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "f1": 0.18181818181818182,
+          "relevant_retrieved": 2
+        }
+      },
+      "বাংলাদেশ অর্থনীতি": {
+        "5": {
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4000000000000001,
+          "relevant_retrieved": 2
+        },
+        "10": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "relevant_retrieved": 5
+        },
+        "20": {
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1": 0.4,
+          "relevant_retrieved": 5
+        }
+      },
+      "বাংলাদেশ ব্যাংক": {
+        "5": {
+          "precision": 0.4,
+          "recall": 0.5,
+          "f1": 0.4444444444444445,
+          "relevant_retrieved": 2
+        },
+        "10": {
+          "precision": 0.4,
+          "recall": 1.0,
+          "f1": 0.5714285714285715,
+          "relevant_retrieved": 4
+        },
+        "20": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1": 0.33333333333333337,
+          "relevant_retrieved": 4
+        }
+      },
+      "ঢাকা যানজট": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.3,
+          "recall": 1.0,
+          "f1": 0.4615384615384615,
+          "relevant_retrieved": 3
+        },
+        "20": {
+          "precision": 0.15,
+          "recall": 1.0,
+          "f1": 0.2608695652173913,
+          "relevant_retrieved": 3
+        }
+      },
+      "চেয়ার": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.3,
+          "recall": 1.0,
+          "f1": 0.4615384615384615,
+          "relevant_retrieved": 3
+        },
+        "20": {
+          "precision": 0.15,
+          "recall": 1.0,
+          "f1": 0.2608695652173913,
+          "relevant_retrieved": 3
+        }
+      },
+      "বাংলাদেশ কৃষি সমস্যা": {
+        "5": {
+          "precision": 0.4,
+          "recall": 1.0,
+          "f1": 0.5714285714285715,
+          "relevant_retrieved": 2
+        },
+        "10": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1": 0.33333333333333337,
+          "relevant_retrieved": 2
+        },
+        "20": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "f1": 0.18181818181818182,
+          "relevant_retrieved": 2
+        }
+      },
+      "বেকারত্ব বাংলাদেশ": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "f1": 0.18181818181818182,
+          "relevant_retrieved": 1
+        },
+        "20": {
+          "precision": 0.05,
+          "recall": 1.0,
+          "f1": 0.09523809523809523,
+          "relevant_retrieved": 1
+        }
+      },
+      "বাংলাদেশ ২০২৬ নির্বাচনের আলোচনা": {
+        "5": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1": 0.33333333333333337,
+          "relevant_retrieved": 1
+        },
+        "10": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "f1": 0.18181818181818182,
+          "relevant_retrieved": 1
+        },
+        "20": {
+          "precision": 0.05,
+          "recall": 1.0,
+          "f1": 0.09523809523809523,
+          "relevant_retrieved": 1
+        }
+      },
+      "কক্সবাজার শরণার্থী শিবির আগুন": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "নর্সিংদি ভূমিকম্প": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "বাংলাদেশে মুদ্রাস্ফীতি": {
+        "5": {
+          "precision": 0.6,
+          "recall": 0.42857142857142855,
+          "f1": 0.5,
+          "relevant_retrieved": 3
+        },
+        "10": {
+          "precision": 0.7,
+          "recall": 1.0,
+          "f1": 0.8235294117647058,
+          "relevant_retrieved": 7
+        },
+        "20": {
+          "precision": 0.35,
+          "recall": 1.0,
+          "f1": 0.5185185185185185,
+          "relevant_retrieved": 7
+        }
+      },
+      "আরএমজি শিল্পে শ্রমাধিকারের ঝুঁকি": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "উন্নয়ন": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "climate change impact in Bangladesh": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh economy growth": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Dhaka traffic congestion": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "unemployment in Bangladesh": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh interim government reforms": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Rohingya refugee crisis in Bangladesh": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh earthquake preparedness": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh garment worker heat stress": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh T20 World Cup security concerns": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh quantum computing research": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      }
+    }
+  },
+  "Semantic": {
+    "confusion_matrix": {
+      "confusion_matrix": {
+        "TP": 16,
+        "FP": 214,
+        "FN": 0,
+        "TN": 116196
+      },
+      "precision": 0.06956521739130435,
+      "recall": 1.0,
+      "f1_score": 0.13008130081300812,
+      "accuracy": 0.9981619225946095
+    },
+    "precision_at_k": {
+      "শিক্ষা ব্যবস্থা বাংলাদেশ": {
+        "5": {
+          "precision": 0.6,
+          "recall": 0.6,
+          "f1": 0.6,
+          "relevant_retrieved": 3
+        },
+        "10": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "relevant_retrieved": 5
+        },
+        "20": {
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1": 0.4,
+          "relevant_retrieved": 5
+        }
+      },
+      "বাংলাদেশ অর্থনীতি": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "বাংলাদেশ ব্যাংক": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "ঢাকা যানজট": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "f1": 0.18181818181818182,
+          "relevant_retrieved": 1
+        },
+        "20": {
+          "precision": 0.05,
+          "recall": 1.0,
+          "f1": 0.09523809523809523,
+          "relevant_retrieved": 1
+        }
+      },
+      "চেয়ার": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "বাংলাদেশ কৃষি সমস্যা": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1": 0.33333333333333337,
+          "relevant_retrieved": 2
+        },
+        "20": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "f1": 0.18181818181818182,
+          "relevant_retrieved": 2
+        }
+      },
+      "বেকারত্ব বাংলাদেশ": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "f1": 0.18181818181818182,
+          "relevant_retrieved": 1
+        },
+        "20": {
+          "precision": 0.05,
+          "recall": 1.0,
+          "f1": 0.09523809523809523,
+          "relevant_retrieved": 1
+        }
+      },
+      "বাংলাদেশ ২০২৬ নির্বাচনের আলোচনা": {
+        "5": {
+          "precision": 0.8,
+          "recall": 0.5714285714285714,
+          "f1": 0.6666666666666666,
+          "relevant_retrieved": 4
+        },
+        "10": {
+          "precision": 0.7,
+          "recall": 1.0,
+          "f1": 0.8235294117647058,
+          "relevant_retrieved": 7
+        },
+        "20": {
+          "precision": 0.35,
+          "recall": 1.0,
+          "f1": 0.5185185185185185,
+          "relevant_retrieved": 7
+        }
+      },
+      "কক্সবাজার শরণার্থী শিবির আগুন": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "নর্সিংদি ভূমিকম্প": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "বাংলাদেশে মুদ্রাস্ফীতি": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "আরএমজি শিল্পে শ্রমাধিকারের ঝুঁকি": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "উন্নয়ন": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "climate change impact in Bangladesh": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh economy growth": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Dhaka traffic congestion": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "unemployment in Bangladesh": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh interim government reforms": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Rohingya refugee crisis in Bangladesh": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh earthquake preparedness": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh garment worker heat stress": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh T20 World Cup security concerns": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh quantum computing research": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      }
+    }
+  },
+  "Hybrid": {
+    "confusion_matrix": {
+      "confusion_matrix": {
+        "TP": 24,
+        "FP": 206,
+        "FN": 0,
+        "TN": 116196
+      },
+      "precision": 0.10434782608695652,
+      "recall": 1.0,
+      "f1_score": 0.18897637795275588,
+      "accuracy": 0.9982306357686428
+    },
+    "precision_at_k": {
+      "শিক্ষা ব্যবস্থা বাংলাদেশ": {
+        "5": {
+          "precision": 0.8,
+          "recall": 0.6666666666666666,
+          "f1": 0.7272727272727272,
+          "relevant_retrieved": 4
+        },
+        "10": {
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1": 0.7499999999999999,
+          "relevant_retrieved": 6
+        },
+        "20": {
+          "precision": 0.3,
+          "recall": 1.0,
+          "f1": 0.4615384615384615,
+          "relevant_retrieved": 6
+        }
+      },
+      "বাংলাদেশ অর্থনীতি": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "f1": 0.18181818181818182,
+          "relevant_retrieved": 1
+        },
+        "20": {
+          "precision": 0.05,
+          "recall": 1.0,
+          "f1": 0.09523809523809523,
+          "relevant_retrieved": 1
+        }
+      },
+      "বাংলাদেশ ব্যাংক": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "ঢাকা যানজট": {
+        "5": {
+          "precision": 0.2,
+          "recall": 0.5,
+          "f1": 0.28571428571428575,
+          "relevant_retrieved": 1
+        },
+        "10": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1": 0.33333333333333337,
+          "relevant_retrieved": 2
+        },
+        "20": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "f1": 0.18181818181818182,
+          "relevant_retrieved": 2
+        }
+      },
+      "চেয়ার": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "বাংলাদেশ কৃষি সমস্যা": {
+        "5": {
+          "precision": 0.8,
+          "recall": 0.8,
+          "f1": 0.8000000000000002,
+          "relevant_retrieved": 4
+        },
+        "10": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "relevant_retrieved": 5
+        },
+        "20": {
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1": 0.4,
+          "relevant_retrieved": 5
+        }
+      },
+      "বেকারত্ব বাংলাদেশ": {
+        "5": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1": 0.33333333333333337,
+          "relevant_retrieved": 1
+        },
+        "10": {
+          "precision": 0.1,
+          "recall": 1.0,
+          "f1": 0.18181818181818182,
+          "relevant_retrieved": 1
+        },
+        "20": {
+          "precision": 0.05,
+          "recall": 1.0,
+          "f1": 0.09523809523809523,
+          "relevant_retrieved": 1
+        }
+      },
+      "বাংলাদেশ ২০২৬ নির্বাচনের আলোচনা": {
+        "5": {
+          "precision": 0.4,
+          "recall": 0.3333333333333333,
+          "f1": 0.3636363636363636,
+          "relevant_retrieved": 2
+        },
+        "10": {
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1": 0.7499999999999999,
+          "relevant_retrieved": 6
+        },
+        "20": {
+          "precision": 0.3,
+          "recall": 1.0,
+          "f1": 0.4615384615384615,
+          "relevant_retrieved": 6
+        }
+      },
+      "কক্সবাজার শরণার্থী শিবির আগুন": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "নর্সিংদি ভূমিকম্প": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "বাংলাদেশে মুদ্রাস্ফীতি": {
+        "5": {
+          "precision": 0.4,
+          "recall": 0.6666666666666666,
+          "f1": 0.5,
+          "relevant_retrieved": 2
+        },
+        "10": {
+          "precision": 0.3,
+          "recall": 1.0,
+          "f1": 0.4615384615384615,
+          "relevant_retrieved": 3
+        },
+        "20": {
+          "precision": 0.15,
+          "recall": 1.0,
+          "f1": 0.2608695652173913,
+          "relevant_retrieved": 3
+        }
+      },
+      "আরএমজি শিল্পে শ্রমাধিকারের ঝুঁকি": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "উন্নয়ন": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "climate change impact in Bangladesh": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh economy growth": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Dhaka traffic congestion": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "unemployment in Bangladesh": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh interim government reforms": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Rohingya refugee crisis in Bangladesh": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh earthquake preparedness": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh garment worker heat stress": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh T20 World Cup security concerns": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      },
+      "Bangladesh quantum computing research": {
+        "5": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "10": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        },
+        "20": {
+          "precision": 0.0,
+          "recall": 0,
+          "f1": 0,
+          "relevant_retrieved": 0
+        }
+      }
+    }
+  }
+}
